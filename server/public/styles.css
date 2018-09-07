@@ -8,8 +8,15 @@ body {
 
 #mainNav {
     max-height: 0;
+    border-bottom: 1px solid rgb(187, 183, 183, 0.2);
 }
 
 #navName {
     color:#3273dc;
-} 
+}
+
+#para {
+    margin-top: 40px;
+    margin-left: 160px;
+    max-width: 400px;
+}

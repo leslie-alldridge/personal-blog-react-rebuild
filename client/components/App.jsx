@@ -1,11 +1,16 @@
 import React from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Navbar from './Navbar'
+import Hero from './Hero'
 
 const App = () => {
   return (
-    <React.Fragment>
+    <ParallaxProvider>
+    
       <Navbar />
-    </React.Fragment>
+      <Hero />
+    
+    </ParallaxProvider>
     
   )
 }
