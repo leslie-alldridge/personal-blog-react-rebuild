@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <React.Fragment>
+      <Navbar />
+    </React.Fragment>
+    
   )
 }
 

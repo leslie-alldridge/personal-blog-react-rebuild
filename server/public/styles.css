@@ -1,0 +1,15 @@
+body {
+    color: red
+}
+
+#navIcon {
+    margin-right: 30px;
+}
+
+#mainNav {
+    max-height: 0;
+}
+
+#navName {
+    color:#3273dc;
+}
