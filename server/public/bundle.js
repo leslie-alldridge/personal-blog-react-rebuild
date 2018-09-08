@@ -23795,7 +23795,7 @@ var BlogDetail = function BlogDetail() {
               _react2.default.createElement(
                 'p',
                 { 'class': 'title' },
-                'Xero Bulk Void Tool'
+                'Xero Bulk Voiding Tool'
               ),
               _react2.default.createElement(
                 'p',
@@ -23828,7 +23828,11 @@ var BlogDetail = function BlogDetail() {
               _react2.default.createElement(
                 'figure',
                 { id: 'blogDetailImg', 'class': 'image is-4by3' },
-                _react2.default.createElement('img', { src: 'https://bulma.io/images/placeholders/640x480.png' })
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://leslie-alldridge.github.io/', target: '_blank' },
+                  _react2.default.createElement('img', { src: '/start.png' })
+                )
               )
             )
           )
@@ -23844,37 +23848,86 @@ var BlogDetail = function BlogDetail() {
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html.png' }),
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html2.png' }),
           _react2.default.createElement(
-            'p',
-            { 'class': 'textInfo' },
-            'HTML'
+            'div',
+            { 'class': 'textHide' },
+            _react2.default.createElement(
+              'p',
+              { 'class': 'textInfo' },
+              'HTML5'
+            )
           )
         ),
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css3.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css2.png' }),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'textHide' },
+            _react2.default.createElement(
+              'p',
+              { 'class': 'textInfo' },
+              'CSS3'
+            )
+          )
         ),
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react2.png' }),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'textHide' },
+            _react2.default.createElement(
+              'p',
+              { 'class': 'textInfo' },
+              ' React'
+            )
+          )
         ),
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node2.png' }),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'textHide' },
+            _react2.default.createElement(
+              'p',
+              { 'class': 'textInfo' },
+              'NodeJS'
+            )
+          )
         ),
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/python.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/p2.png' }),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'textHide' },
+            _react2.default.createElement(
+              'p',
+              { 'class': 'textInfo' },
+              'Python'
+            )
+          )
         ),
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: 'https://bulma.io/images/placeholders/128x128.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/js2.png' }),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'textHide' },
+            _react2.default.createElement(
+              'p',
+              { 'class': 'textInfo' },
+              'Javascript'
+            )
+          )
         )
       )
     ),

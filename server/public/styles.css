@@ -1,6 +1,6 @@
-body {
+/* body {
     color: red
-}
+} */
 
 #navIcon {
     margin-right: 30px;
@@ -42,8 +42,8 @@ body {
     text-align: center;
     padding: 0;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  line-height: 5vw;
-  transform-origin: left top;
+    line-height: 5vw;
+    transform-origin: left top;
 } 
 
 #title {
@@ -86,10 +86,10 @@ body {
     margin-left: 30px;
 }
 
-#imgBadge:hover {
+/* #imgBadge:hover {
     margin-left: 60px;
     color: red;
-}
+} */
 
 .image {
     margin-left: 6%;
@@ -98,4 +98,45 @@ body {
 #skillsContent {
     margin-top: 15%;
     margin-bottom: 40px;
+}
+
+.textHide {
+    display: none;
+}
+
+#imgBadge:hover + div {
+    display: block;
+    opacity: 1;
+    font-weight: 500;
+    margin-left: 50%;
+}
+
+#imgBadge:hover {
+animation: bounce 0.5s infinite alternate;
+  -webkit-animation: bounce 0.5s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.textInfo {
+    color: black;
+    width: 60px;
+    font-size: 1.25em;
+    padding-left: 3px;
+    text-decoration: underline ;
+    text-decoration-color: #59f;
 }
