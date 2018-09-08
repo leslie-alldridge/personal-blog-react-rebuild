@@ -12,7 +12,8 @@ https://leslie-alldridge.github.io/
 ## Five weeks Later
 
 React with Stateful Components, React Parallax, Bulma CSS, NodeJS, Webpack
-https://github.com/leslie-alldridge/personal-blog-react-rebuild
+Link to commits - today is Sept 08, 2018
+https://github.com/leslie-alldridge/personal-blog-react-rebuild/commits/master
 
 ## Future goals 
 
