@@ -1,8 +1,8 @@
 import React from 'react'
-import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 
-const BlogDetail = () => {
+const BlogDetail = (props) => {
+  
     return ( 
         <div id="blogDetail">
         <div class="tile is-ancestor">
@@ -42,37 +42,37 @@ const BlogDetail = () => {
 
 <div class="container is-fluid">
   <div id="symbols" class="notification">
-  <figure class="image is-128x128">
+  <figure onClick={props.showHTML} class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/html2.png"/>
   <div class="textHide">
   <p class="textInfo">HTML5</p>
   </div>
 </figure>
-<figure class="image is-128x128">
+<figure onClick={props.showCSS} class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/css2.png"/>
   <div class="textHide">
   <p class="textInfo">CSS3</p>
   </div>
 </figure>
-<figure class="image is-128x128">
+<figure onClick={props.showReact} class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/react2.png"/>
   <div class="textHide">
   <p class="textInfo"> React</p>
   </div>
 </figure>
-<figure class="image is-128x128">
+<figure onClick={props.showNode} class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/node2.png"/>
   <div class="textHide">
   <p class="textInfo">NodeJS</p>
   </div>
 </figure>
-<figure class="image is-128x128">
+<figure onClick={props.showPython} class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/p2.png"/>
   <div class="textHide">
   <p class="textInfo">Python</p>
   </div>
 </figure>
-<figure class="image is-128x128">
+<figure onClick={props.showJS} class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/js2.png"/>
   <div class="textHide">
   <p class="textInfo">Javascript</p>
@@ -81,38 +81,7 @@ const BlogDetail = () => {
   </div>
 </div>
 
-<div id = "skillsContent" class="container is-fluid">
-<div class="content">
 
-<h3>Third level</h3>
-  <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
-  <ol>
-    <li>Donec blandit a lorem id convallis.</li>
-    <li>Cras gravida arcu at diam gravida gravida.</li>
-    <li>Integer in volutpat libero.</li>
-    <li>Donec a diam tellus.</li>
-    <li>Aenean nec tortor orci.</li>
-    <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
-    <li>Vivamus maximus ultricies pulvinar.</li>
-  </ol>
-  <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.</blockquote>
-  <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
-  <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.</p>
-  <dl>
-    <dt>Web</dt>
-    <dd>The part of the Internet that contains websites and web pages</dd>
-    <dt>HTML</dt>
-    <dd>A markup language for creating web pages</dd>
-    <dt>CSS</dt>
-    <dd>A technology to make HTML look better</dd>
-  </dl>
-  <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
-  <h4>Fourth level</h4>
-  <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.</p>
-  
-
-</div>
-</div>
       </div>
     )
 }

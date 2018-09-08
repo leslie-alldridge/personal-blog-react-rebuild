@@ -35,7 +35,7 @@ const Hero = () => {
           <Parallax
             offsetXMin={'-320px'}
             offsetXMax={'920px'}>
-          <li>Able to learn</li>
+          <li>Ability to learn</li>
           </Parallax>
           <Parallax
             offsetXMin={'620px'}

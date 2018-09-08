@@ -370,41 +370,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
-
-var _Parallax2 = __webpack_require__(9);
-
-var _Parallax3 = _interopRequireDefault(_Parallax2);
-
-var _ParallaxProvider2 = __webpack_require__(32);
-
-var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
-
-var _ParallaxBanner2 = __webpack_require__(33);
-
-var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
-
-var _ParallaxController2 = __webpack_require__(7);
-
-var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Parallax = _Parallax3.default;
-exports.ParallaxProvider = _ParallaxProvider3.default;
-exports.ParallaxBanner = _ParallaxBanner3.default;
-exports.ParallaxController = _ParallaxController3.default;
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -417,7 +382,7 @@ exports.ParallaxController = _ParallaxController3.default;
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(5);
+  var ReactPropTypesSecret = __webpack_require__(4);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -500,7 +465,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -517,6 +482,41 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
+
+var _Parallax2 = __webpack_require__(9);
+
+var _Parallax3 = _interopRequireDefault(_Parallax2);
+
+var _ParallaxProvider2 = __webpack_require__(32);
+
+var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
+
+var _ParallaxBanner2 = __webpack_require__(33);
+
+var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
+
+var _ParallaxController2 = __webpack_require__(7);
+
+var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Parallax = _Parallax3.default;
+exports.ParallaxProvider = _ParallaxProvider3.default;
+exports.ParallaxBanner = _ParallaxBanner3.default;
+exports.ParallaxController = _ParallaxController3.default;
 
 /***/ }),
 /* 6 */
@@ -1359,7 +1359,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(4);
+var checkPropTypes = __webpack_require__(3);
 
 // TODO: this is special because it gets imported during build.
 
@@ -3777,7 +3777,7 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(4);
+var checkPropTypes = __webpack_require__(3);
 var schedule = __webpack_require__(8);
 var tracking = __webpack_require__(20);
 
@@ -22341,11 +22341,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(3);
+var _reactScrollParallax = __webpack_require__(5);
 
 var _Navbar = __webpack_require__(34);
 
@@ -22359,22 +22361,184 @@ var _Blog = __webpack_require__(36);
 
 var _Blog2 = _interopRequireDefault(_Blog);
 
-var _BlogDetail = __webpack_require__(37);
+var _HTML = __webpack_require__(37);
+
+var _HTML2 = _interopRequireDefault(_HTML);
+
+var _CSS = __webpack_require__(40);
+
+var _CSS2 = _interopRequireDefault(_CSS);
+
+var _React = __webpack_require__(41);
+
+var _React2 = _interopRequireDefault(_React);
+
+var _Node = __webpack_require__(42);
+
+var _Node2 = _interopRequireDefault(_Node);
+
+var _Python = __webpack_require__(43);
+
+var _Python2 = _interopRequireDefault(_Python);
+
+var _JS = __webpack_require__(44);
+
+var _JS2 = _interopRequireDefault(_JS);
+
+var _DefaultIntro = __webpack_require__(39);
+
+var _DefaultIntro2 = _interopRequireDefault(_DefaultIntro);
+
+var _BlogDetail = __webpack_require__(38);
 
 var _BlogDetail2 = _interopRequireDefault(_BlogDetail);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App() {
-  return _react2.default.createElement(
-    _reactScrollParallax.ParallaxProvider,
-    null,
-    _react2.default.createElement(_Navbar2.default, null),
-    _react2.default.createElement(_Hero2.default, null),
-    _react2.default.createElement(_Blog2.default, null),
-    _react2.default.createElement(_BlogDetail2.default, null)
-  );
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_React$Component) {
+  _inherits(App, _React$Component);
+
+  function App(props) {
+    _classCallCheck(this, App);
+
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+    _this.state = {
+      htmlVisible: false,
+      cssVisible: false,
+      reactVisible: false,
+      nodeVisible: false,
+      pythonVisible: false,
+      jsVisible: false,
+      hideDefault: true
+    };
+    _this.showHTML = _this.showHTML.bind(_this);
+    _this.showCSS = _this.showCSS.bind(_this);
+    _this.showReact = _this.showReact.bind(_this);
+    _this.showNode = _this.showNode.bind(_this);
+    _this.showPython = _this.showPython.bind(_this);
+    _this.showJS = _this.showJS.bind(_this);
+    return _this;
+  }
+
+  _createClass(App, [{
+    key: 'showHTML',
+    value: function showHTML() {
+      this.setState(function (prevState) {
+        return {
+          htmlVisible: !prevState.htmlVisible,
+          cssVisible: false,
+          reactVisible: false,
+          nodeVisible: false,
+          pythonVisible: false,
+          jsVisible: false
+        };
+      });
+    }
+  }, {
+    key: 'showCSS',
+    value: function showCSS() {
+      this.setState(function (prevState) {
+        return {
+          cssVisible: !prevState.cssVisible,
+          htmlVisible: false,
+          reactVisible: false,
+          nodeVisible: false,
+          pythonVisible: false,
+          jsVisible: false
+        };
+      });
+    }
+  }, {
+    key: 'showReact',
+    value: function showReact() {
+      this.setState(function (prevState) {
+        return {
+          reactVisible: !prevState.reactVisible,
+          htmlVisible: false,
+          cssVisible: false,
+          nodeVisible: false,
+          pythonVisible: false,
+          jsVisible: false
+        };
+      });
+    }
+  }, {
+    key: 'showNode',
+    value: function showNode() {
+      this.setState(function (prevState) {
+        return {
+          nodeVisible: !prevState.nodeVisible,
+          htmlVisible: false,
+          cssVisible: false,
+          reactVisible: false,
+          pythonVisible: false,
+          jsVisible: false
+        };
+      });
+    }
+  }, {
+    key: 'showPython',
+    value: function showPython() {
+      this.setState(function (prevState) {
+        return {
+          pythonVisible: !prevState.pythonVisible,
+          htmlVisible: false,
+          cssVisible: false,
+          nodeVisible: false,
+          reactVisible: false,
+          jsVisible: false
+        };
+      });
+    }
+  }, {
+    key: 'showJS',
+    value: function showJS() {
+      this.setState(function (prevState) {
+        return {
+          jsVisible: !prevState.jsVisible,
+          htmlVisible: false,
+          cssVisible: false,
+          nodeVisible: false,
+          pythonVisible: false,
+          reactVisible: false
+        };
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _reactScrollParallax.ParallaxProvider,
+        null,
+        _react2.default.createElement(_Navbar2.default, null),
+        _react2.default.createElement(_Hero2.default, null),
+        _react2.default.createElement(_Blog2.default, null),
+        _react2.default.createElement(_BlogDetail2.default, { showHTML: this.showHTML, showCSS: this.showCSS,
+          showReact: this.showReact,
+          showNode: this.showNode,
+          showPython: this.showPython,
+          showJS: this.showJS
+        }),
+        this.state.htmlVisible && _react2.default.createElement(_HTML2.default, null),
+        this.state.cssVisible && _react2.default.createElement(_CSS2.default, null),
+        this.state.reactVisible && _react2.default.createElement(_React2.default, null),
+        this.state.nodeVisible && _react2.default.createElement(_Node2.default, null),
+        this.state.pythonVisible && _react2.default.createElement(_Python2.default, null),
+        this.state.jsVisible && _react2.default.createElement(_JS2.default, null),
+        this.state.hideDefault && _react2.default.createElement(_DefaultIntro2.default, null)
+      );
+    }
+  }]);
+
+  return App;
+}(_react2.default.Component);
 
 exports.default = App;
 
@@ -22394,8 +22558,8 @@ exports.default = App;
 
 var assign = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(4);
+var ReactPropTypesSecret = __webpack_require__(4);
+var checkPropTypes = __webpack_require__(3);
 
 var printWarning = function() {};
 
@@ -22955,7 +23119,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(5);
+var ReactPropTypesSecret = __webpack_require__(4);
 
 function emptyFunction() {}
 
@@ -23569,7 +23733,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(3);
+var _reactScrollParallax = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23638,7 +23802,7 @@ var Hero = function Hero() {
                     _react2.default.createElement(
                       'li',
                       null,
-                      'Able to learn'
+                      'Ability to learn'
                     )
                   ),
                   _react2.default.createElement(
@@ -23690,7 +23854,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(3);
+var _reactScrollParallax = __webpack_require__(5);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23746,92 +23910,159 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(3);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var HTML = function HTML() {
+  return _react2.default.createElement(
+    "div",
+    { id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "HTML 5"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = HTML;
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var BlogDetail = function BlogDetail() {
+var BlogDetail = function BlogDetail(props) {
+
   return _react2.default.createElement(
-    'div',
-    { id: 'blogDetail' },
+    "div",
+    { id: "blogDetail" },
     _react2.default.createElement(
-      'div',
-      { 'class': 'tile is-ancestor' },
+      "div",
+      { "class": "tile is-ancestor" },
       _react2.default.createElement(
-        'div',
-        { 'class': 'tile is-vertical is-12' },
+        "div",
+        { "class": "tile is-vertical is-12" },
         _react2.default.createElement(
-          'div',
-          { 'class': 'tile' },
+          "div",
+          { "class": "tile" },
           _react2.default.createElement(
-            'div',
-            { 'class': 'tile is-parent' },
+            "div",
+            { "class": "tile is-parent" },
             _react2.default.createElement(
-              'article',
-              { 'class': 'tile is-child notification is-info' },
+              "article",
+              { "class": "tile is-child notification is-info" },
               _react2.default.createElement(
-                'p',
-                { 'class': 'title' },
-                'Xero Invoice Reducer'
+                "p",
+                { "class": "title" },
+                "Xero Invoice Reducer"
               ),
               _react2.default.createElement(
-                'p',
-                { 'class': 'subtitle' },
-                'Create summarised invoices with ease'
+                "p",
+                { "class": "subtitle" },
+                "Create summarised invoices with ease"
               ),
               _react2.default.createElement(
-                'figure',
-                { id: 'blogDetailImg', 'class': 'image is-4by3' },
-                _react2.default.createElement('img', { src: 'https://bulma.io/images/placeholders/640x480.png' })
+                "figure",
+                { id: "blogDetailImg", "class": "image is-4by3" },
+                _react2.default.createElement("img", { src: "https://bulma.io/images/placeholders/640x480.png" })
               )
             )
           ),
           _react2.default.createElement(
-            'div',
-            { 'class': 'tile is-parent' },
+            "div",
+            { "class": "tile is-parent" },
             _react2.default.createElement(
-              'article',
-              { 'class': 'tile is-child notification is-info' },
+              "article",
+              { "class": "tile is-child notification is-info" },
               _react2.default.createElement(
-                'p',
-                { 'class': 'title' },
-                'Xero Bulk Voiding Tool'
+                "p",
+                { "class": "title" },
+                "Xero Bulk Voiding Tool"
               ),
               _react2.default.createElement(
-                'p',
-                { 'class': 'subtitle' },
-                'Void invoices in bulk'
+                "p",
+                { "class": "subtitle" },
+                "Void invoices in bulk"
               ),
               _react2.default.createElement(
-                'figure',
-                { id: 'blogDetailImg', 'class': 'image is-4by3' },
-                _react2.default.createElement('img', { src: 'https://bulma.io/images/placeholders/640x480.png' })
+                "figure",
+                { id: "blogDetailImg", "class": "image is-4by3" },
+                _react2.default.createElement("img", { src: "https://bulma.io/images/placeholders/640x480.png" })
               )
             )
           ),
           _react2.default.createElement(
-            'div',
-            { 'class': 'tile is-parent' },
+            "div",
+            { "class": "tile is-parent" },
             _react2.default.createElement(
-              'article',
-              { 'class': 'tile is-child notification is-info' },
+              "article",
+              { "class": "tile is-child notification is-info" },
               _react2.default.createElement(
-                'p',
-                { 'class': 'title' },
-                'We all started somewhere'
+                "p",
+                { "class": "title" },
+                "We all started somewhere"
               ),
               _react2.default.createElement(
-                'p',
-                { 'class': 'subtitle' },
-                'Passion for learning'
+                "p",
+                { "class": "subtitle" },
+                "Passion for learning"
               ),
               _react2.default.createElement(
-                'figure',
-                { id: 'blogDetailImg', 'class': 'image is-4by3' },
+                "figure",
+                { id: "blogDetailImg", "class": "image is-4by3" },
                 _react2.default.createElement(
-                  'a',
-                  { href: 'https://leslie-alldridge.github.io/', target: '_blank' },
-                  _react2.default.createElement('img', { src: '/start.png' })
+                  "a",
+                  { href: "https://leslie-alldridge.github.io/", target: "_blank" },
+                  _react2.default.createElement("img", { src: "/start.png" })
                 )
               )
             )
@@ -23840,227 +24071,94 @@ var BlogDetail = function BlogDetail() {
       )
     ),
     _react2.default.createElement(
-      'div',
-      { 'class': 'container is-fluid' },
+      "div",
+      { "class": "container is-fluid" },
       _react2.default.createElement(
-        'div',
-        { id: 'symbols', 'class': 'notification' },
+        "div",
+        { id: "symbols", "class": "notification" },
         _react2.default.createElement(
-          'figure',
-          { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html2.png' }),
+          "figure",
+          { onClick: props.showHTML, "class": "image is-128x128" },
+          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/html2.png" }),
           _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
+            "div",
+            { "class": "textHide" },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'HTML5'
+              "p",
+              { "class": "textInfo" },
+              "HTML5"
             )
           )
         ),
         _react2.default.createElement(
-          'figure',
-          { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css2.png' }),
+          "figure",
+          { onClick: props.showCSS, "class": "image is-128x128" },
+          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/css2.png" }),
           _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
+            "div",
+            { "class": "textHide" },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'CSS3'
+              "p",
+              { "class": "textInfo" },
+              "CSS3"
             )
           )
         ),
         _react2.default.createElement(
-          'figure',
-          { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react2.png' }),
+          "figure",
+          { onClick: props.showReact, "class": "image is-128x128" },
+          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/react2.png" }),
           _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
+            "div",
+            { "class": "textHide" },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              ' React'
+              "p",
+              { "class": "textInfo" },
+              " React"
             )
           )
         ),
         _react2.default.createElement(
-          'figure',
-          { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node2.png' }),
+          "figure",
+          { onClick: props.showNode, "class": "image is-128x128" },
+          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/node2.png" }),
           _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
+            "div",
+            { "class": "textHide" },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'NodeJS'
+              "p",
+              { "class": "textInfo" },
+              "NodeJS"
             )
           )
         ),
         _react2.default.createElement(
-          'figure',
-          { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/p2.png' }),
+          "figure",
+          { onClick: props.showPython, "class": "image is-128x128" },
+          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/p2.png" }),
           _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
+            "div",
+            { "class": "textHide" },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'Python'
+              "p",
+              { "class": "textInfo" },
+              "Python"
             )
           )
         ),
         _react2.default.createElement(
-          'figure',
-          { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/js2.png' }),
+          "figure",
+          { onClick: props.showJS, "class": "image is-128x128" },
+          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/js2.png" }),
           _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
+            "div",
+            { "class": "textHide" },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'Javascript'
+              "p",
+              { "class": "textInfo" },
+              "Javascript"
             )
           )
-        )
-      )
-    ),
-    _react2.default.createElement(
-      'div',
-      { id: 'skillsContent', 'class': 'container is-fluid' },
-      _react2.default.createElement(
-        'div',
-        { 'class': 'content' },
-        _react2.default.createElement(
-          'h3',
-          null,
-          'Third level'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Quisque ante lacus, malesuada ac auctor vitae, congue ',
-          _react2.default.createElement(
-            'a',
-            { href: '#' },
-            'non ante'
-          ),
-          '. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.'
-        ),
-        _react2.default.createElement(
-          'ol',
-          null,
-          _react2.default.createElement(
-            'li',
-            null,
-            'Donec blandit a lorem id convallis.'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Cras gravida arcu at diam gravida gravida.'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Integer in volutpat libero.'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Donec a diam tellus.'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Aenean nec tortor orci.'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Quisque aliquam cursus urna, non bibendum massa viverra eget.'
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            'Vivamus maximus ultricies pulvinar.'
-          )
-        ),
-        _react2.default.createElement(
-          'blockquote',
-          null,
-          'Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et ',
-          _react2.default.createElement(
-            'em',
-            null,
-            'justo sodales'
-          ),
-          ' elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.'
-        ),
-        _react2.default.createElement(
-          'dl',
-          null,
-          _react2.default.createElement(
-            'dt',
-            null,
-            'Web'
-          ),
-          _react2.default.createElement(
-            'dd',
-            null,
-            'The part of the Internet that contains websites and web pages'
-          ),
-          _react2.default.createElement(
-            'dt',
-            null,
-            'HTML'
-          ),
-          _react2.default.createElement(
-            'dd',
-            null,
-            'A markup language for creating web pages'
-          ),
-          _react2.default.createElement(
-            'dt',
-            null,
-            'CSS'
-          ),
-          _react2.default.createElement(
-            'dd',
-            null,
-            'A technology to make HTML look better'
-          )
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.'
-        ),
-        _react2.default.createElement(
-          'h4',
-          null,
-          'Fourth level'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.'
         )
       )
     )
@@ -24068,6 +24166,424 @@ var BlogDetail = function BlogDetail() {
 };
 
 exports.default = BlogDetail;
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DefaultIntro = function DefaultIntro() {
+    return _react2.default.createElement(
+        "div",
+        { id: "skillsContent", "class": "container is-fluid" },
+        _react2.default.createElement(
+            "div",
+            { "class": "container is-fluid" },
+            _react2.default.createElement(
+                "div",
+                { "class": "content" },
+                _react2.default.createElement(
+                    "h3",
+                    null,
+                    "Overall Skills and Ability"
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Please click on the badges above to see specific information."
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "My passion lies with solving real world problems through code. I enjoy the endless learning that takes place. Historically I'd naturally learn everything my role could offer and look for further opportunities to grow. As a developer I love working in teams and positively adding the the expected output and motivation of the team. I've included a list below to describe my values and mindset.  "
+                ),
+                _react2.default.createElement(
+                    "ul",
+                    null,
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        "I value working in a positive team environment where motivation levels are high."
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        "I work best with people who are honest and hard working."
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        "Honesty and empathy are my core values."
+                    ),
+                    _react2.default.createElement(
+                        "li",
+                        null,
+                        "Helping others and washing their coffee cups when appropriate."
+                    )
+                ),
+                _react2.default.createElement(
+                    "blockquote",
+                    null,
+                    "In summary: I'm an honest, hardworking invidividual that thrives in a team environment and working towards a common goal."
+                )
+            )
+        )
+    );
+};
+
+exports.default = DefaultIntro;
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CSS = function CSS() {
+  return _react2.default.createElement(
+    "div",
+    { id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "CSS3"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = CSS;
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Rct = function Rct() {
+  return _react2.default.createElement(
+    "div",
+    { id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "React"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Rct;
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Node = function Node() {
+  return _react2.default.createElement(
+    "div",
+    { id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Node"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Node;
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Python = function Python() {
+  return _react2.default.createElement(
+    "div",
+    { id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Python"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Python;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var JS = function JS() {
+  return _react2.default.createElement(
+    "div",
+    { id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Javascript"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = JS;
 
 /***/ })
 /******/ ]);
