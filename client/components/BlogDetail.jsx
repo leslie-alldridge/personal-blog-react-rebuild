@@ -44,6 +44,7 @@ const BlogDetail = () => {
   <div id="symbols" class="notification">
   <figure class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/html.png"/>
+  <p class="textInfo">HTML</p>
 </figure>
 <figure class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="/css3.png"/>
@@ -55,7 +56,7 @@ const BlogDetail = () => {
   <img id="imgBadge" class="is-rounded" src="/node.png"/>
 </figure>
 <figure class="image is-128x128">
-  <img id="imgBadge" class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"/>
+  <img id="imgBadge" class="is-rounded" src="/python.png"/>
 </figure>
 <figure class="image is-128x128">
   <img id="imgBadge" class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"/>

@@ -65,6 +65,21 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(13);
+} else {
+  module.exports = __webpack_require__(14);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -254,21 +269,6 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(13);
-} else {
-  module.exports = __webpack_require__(14);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -370,6 +370,41 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
+
+var _Parallax2 = __webpack_require__(9);
+
+var _Parallax3 = _interopRequireDefault(_Parallax2);
+
+var _ParallaxProvider2 = __webpack_require__(32);
+
+var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
+
+var _ParallaxBanner2 = __webpack_require__(33);
+
+var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
+
+var _ParallaxController2 = __webpack_require__(7);
+
+var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Parallax = _Parallax3.default;
+exports.ParallaxProvider = _ParallaxProvider3.default;
+exports.ParallaxBanner = _ParallaxBanner3.default;
+exports.ParallaxController = _ParallaxController3.default;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -382,7 +417,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(4);
+  var ReactPropTypesSecret = __webpack_require__(5);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -462,10 +497,10 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 
 module.exports = checkPropTypes;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -482,41 +517,6 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
-
-var _Parallax2 = __webpack_require__(9);
-
-var _Parallax3 = _interopRequireDefault(_Parallax2);
-
-var _ParallaxProvider2 = __webpack_require__(32);
-
-var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
-
-var _ParallaxBanner2 = __webpack_require__(33);
-
-var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
-
-var _ParallaxController2 = __webpack_require__(7);
-
-var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Parallax = _Parallax3.default;
-exports.ParallaxProvider = _ParallaxProvider3.default;
-exports.ParallaxBanner = _ParallaxBanner3.default;
-exports.ParallaxController = _ParallaxController3.default;
 
 /***/ }),
 /* 6 */
@@ -551,7 +551,7 @@ if (process.env.NODE_ENV !== 'production') {
   module.exports = __webpack_require__(25)();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 7 */
@@ -997,7 +997,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(18);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 9 */
@@ -1012,7 +1012,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1287,7 +1287,7 @@ exports.testForPassiveScroll = _testForPassiveScroll3.default;
 "use strict";
 
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1359,7 +1359,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(3);
+var checkPropTypes = __webpack_require__(4);
 
 // TODO: this is special because it gets imported during build.
 
@@ -3017,7 +3017,7 @@ module.exports = react;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 15 */
@@ -3063,7 +3063,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(19);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 16 */
@@ -3082,7 +3082,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),n=__webpack_require__(2),ba=__webpack_require__(8);function ca(a,b,c,d,e,f,g,k){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var h=[c,d,e,f,g,k],l=0;a=Error(b.replace(/%s/g,function(){return h[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(0),n=__webpack_require__(2),ba=__webpack_require__(8);function ca(a,b,c,d,e,f,g,k){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var h=[c,d,e,f,g,k],l=0;a=Error(b.replace(/%s/g,function(){return h[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function w(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:w("227");function da(a,b,c,d,e,f,g,k,h){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,k,h){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,k,h){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else w("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:w("96",a);if(!pa[c]){b.extractEvents?void 0:w("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,k=d;qa.hasOwnProperty(k)?w("99",k):void 0;qa[k]=f;var h=f.phasedRegistrationNames;if(h){for(e in h)h.hasOwnProperty(e)&&ra(h[e],g,k);e=!0}else f.registrationName?(ra(f.registrationName,g,k),e=!0):e=!1;e?void 0:w("98",d,a)}}}}
@@ -3751,7 +3751,7 @@ if (!canUseDOM) {
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 19 */
@@ -3775,9 +3775,9 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(3);
+var checkPropTypes = __webpack_require__(4);
 var schedule = __webpack_require__(8);
 var tracking = __webpack_require__(20);
 
@@ -21847,7 +21847,7 @@ module.exports = reactDom;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 20 */
@@ -21862,7 +21862,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = __webpack_require__(22);
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 21 */
@@ -22328,7 +22328,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 23 */
@@ -22341,11 +22341,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 var _Navbar = __webpack_require__(34);
 
@@ -22394,8 +22394,8 @@ exports.default = App;
 
 var assign = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(4);
-var checkPropTypes = __webpack_require__(3);
+var ReactPropTypesSecret = __webpack_require__(5);
+var checkPropTypes = __webpack_require__(4);
 
 var printWarning = function() {};
 
@@ -22939,7 +22939,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   return ReactPropTypes;
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 25 */
@@ -22955,7 +22955,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(4);
+var ReactPropTypesSecret = __webpack_require__(5);
 
 function emptyFunction() {}
 
@@ -23214,7 +23214,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23302,7 +23302,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23424,7 +23424,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -23565,11 +23565,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23686,11 +23686,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23742,11 +23742,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23844,7 +23844,12 @@ var BlogDetail = function BlogDetail() {
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html.png' }),
+          _react2.default.createElement(
+            'p',
+            { 'class': 'textInfo' },
+            'HTML'
+          )
         ),
         _react2.default.createElement(
           'figure',
@@ -23864,7 +23869,7 @@ var BlogDetail = function BlogDetail() {
         _react2.default.createElement(
           'figure',
           { 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: 'https://bulma.io/images/placeholders/128x128.png' })
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/python.png' })
         ),
         _react2.default.createElement(
           'figure',

@@ -23,3 +23,12 @@ $(function() {
 // },function(){
 //       $(this).animate({height: '50%'});
 // });
+
+
+$('#title').mouseenter(function() {
+  $('#menu').show();
+});
+
+$('header').mouseleave(function() {
+  $('#menu').hide();
+});
