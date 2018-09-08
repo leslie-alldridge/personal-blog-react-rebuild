@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <nav id="mainNav" className="navbar is-transparent">
+        <nav id="mainNav" className="navbar is-transparent is-fixed-top">
   <div className="navbar-brand">
     <a id="navName" className="navbar-item" href="#">
     <i id="navIcon" className="fas fa-code"></i>

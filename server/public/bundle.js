@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -261,9 +261,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(6);
+  module.exports = __webpack_require__(13);
 } else {
-  module.exports = __webpack_require__(7);
+  module.exports = __webpack_require__(14);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -382,7 +382,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(8);
+  var ReactPropTypesSecret = __webpack_require__(4);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -469,18 +469,819 @@ module.exports = checkPropTypes;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(11);
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
+
+var _Parallax2 = __webpack_require__(9);
+
+var _Parallax3 = _interopRequireDefault(_Parallax2);
+
+var _ParallaxProvider2 = __webpack_require__(32);
+
+var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
+
+var _ParallaxBanner2 = __webpack_require__(33);
+
+var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
+
+var _ParallaxController2 = __webpack_require__(7);
+
+var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Parallax = _Parallax3.default;
+exports.ParallaxProvider = _ParallaxProvider3.default;
+exports.ParallaxBanner = _ParallaxBanner3.default;
+exports.ParallaxController = _ParallaxController3.default;
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
+
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(24)(isValidElement, throwOnDirectAccess);
 } else {
-  module.exports = __webpack_require__(12);
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(25)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 5 */
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _index = __webpack_require__(11);
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+/**
+ * -------------------------------------------------------
+ * Parallax Controller
+ * -------------------------------------------------------
+ *
+ * The global controller for setting up window scroll/resize
+ * listeners, managing and caching parallax element positions,
+ * determining which elements are inside the viewport based on
+ * scroll position, and then updating parallax element styles
+ * based on min/max offsets and current scroll position.
+ *
+ */
+function ParallaxController() {
+    // All parallax elements to be updated
+    var elements = [];
+
+    // Tracks current scroll y distance
+    var scrollY = 0;
+
+    // Window inner height
+    var windowHeight = 0;
+
+    // ID to increment for elements
+    var id = 0;
+
+    // Ticking
+    var ticking = false;
+
+    // Scroll direction
+    // let scrollDown = null;
+
+    // Passive support
+    var supportsPassive = (0, _index.testForPassiveScroll)();
+
+    function _addListeners() {
+        window.addEventListener('scroll', _handleScroll, supportsPassive ? { passive: true } : false);
+        window.addEventListener('resize', _handleResize, false);
+    }
+
+    function _removeListeners() {
+        window.removeEventListener('scroll', _handleScroll, supportsPassive ? { passive: true } : false);
+        window.removeEventListener('resize', _handleResize, false);
+    }
+
+    _addListeners();
+
+    /**
+     * Window scroll handler. Sets the 'scrollY'
+     * and then calls '_updateElementPositions()'.
+     */
+    function _handleScroll() {
+        // reference to prev scroll y
+        // const prevScrollY = scrollY;
+
+        // Save current scroll
+        scrollY = window.pageYOffset; // Supports IE 9 and up.
+
+        // direction
+        // scrollDown = scrollY > prevScrollY;
+
+        // Only called if the last animation request has been
+        // completed and there are parallax elements to update
+        if (!ticking && elements.length > 0) {
+            ticking = true;
+            window.requestAnimationFrame(_updateElementPositions);
+        }
+    }
+
+    /**
+     * Window resize handler. Sets the new window inner height
+     * then updates parallax element attributes and positions.
+     */
+    function _handleResize() {
+        _setWindowHeight();
+        _updateElementAttributes();
+        _updateElementPositions();
+    }
+
+    /**
+     * Creates a unique id to distinguish parallax elements.
+     * @return {Number}
+     */
+    function _createID() {
+        ++id;
+        return id;
+    }
+
+    /**
+     * Update element positions.
+     * Determines if the element is in view based on the cached
+     * attributes, if so set the elements parallax styles.
+     */
+    function _updateElementPositions() {
+        elements.forEach(function (element) {
+            if (element.props.disabled) return;
+
+            // check if the element is in view then
+            var isInView = (0, _index.isElementInView)(element, windowHeight, scrollY);
+
+            // set styles if it is
+            if (isInView) _setParallaxStyles(element);
+
+            // reset ticking so more animations can be called
+            ticking = false;
+        });
+    }
+
+    /**
+     * Update element attributes.
+     * Sets up the elements offsets based on the props passed from
+     * the component then caches the elements current position and
+     * other important attributes.
+     */
+    function _updateElementAttributes() {
+        elements.forEach(function (element) {
+            if (element.props.disabled) return;
+
+            _setupOffsets(element);
+
+            _cacheAttributes(element);
+        });
+    }
+
+    /**
+     * Remove parallax styles from all elements.
+     */
+    function _removeParallaxStyles() {
+        elements.forEach(function (element) {
+            _resetStyles(element);
+        });
+    }
+
+    /**
+     * Cache the window height.
+     */
+    function _setWindowHeight() {
+        var html = document.documentElement;
+        windowHeight = window.innerHeight || html.clientHeight;
+    }
+
+    /**
+     * Takes a parallax element and caches important values that
+     * cause layout reflow and paints. Stores the values as an
+     * attribute object accesible on the parallax element.
+     * @param {object} element
+     */
+    function _cacheAttributes(element) {
+        var _element$offsets = element.offsets,
+            yMin = _element$offsets.yMin,
+            yMax = _element$offsets.yMax,
+            xMax = _element$offsets.xMax,
+            xMin = _element$offsets.xMin;
+        var slowerScrollRate = element.props.slowerScrollRate;
+
+        // NOTE: Many of these cause layout and reflow so we're not
+        // calculating them on every frame -- instead these values
+        // are cached on the element to access later when determining
+        // the element's position and offset.
+
+        var el = element.elOuter;
+        var rect = el.getBoundingClientRect();
+        var elHeight = el.offsetHeight;
+        var elWidth = el.offsetWidth;
+        var scrollY = window.pageYOffset;
+
+        // NOTE: offsetYMax and offsetYMin are percents
+        // based of the height of the element. They must be
+        // calculated as px to correctly determine whether
+        // the element is in the viewport.
+        var yPercent = yMax.unit === '%' || yMin.unit === '%';
+        var xPercent = xMax.unit === '%' || xMin.unit === '%';
+
+        // X offsets
+        var yMinPx = yMin.value;
+        var yMaxPx = yMax.value;
+
+        if (yPercent) {
+            var h100 = elHeight / 100;
+            yMaxPx = yMax.value * h100;
+            yMinPx = yMin.value * h100; // negative value
+        }
+
+        // Y offsets
+        var xMinPx = xMax.value;
+        var xMaxPx = xMin.value;
+
+        if (xPercent) {
+            var w100 = elWidth / 100;
+            xMaxPx = xMax.value * w100;
+            xMinPx = xMin.value * w100; // negative value
+        }
+
+        // NOTE: must add the current scroll position when the
+        // element is checked so that we get its absolute position
+        // relative to the document and not the viewport then
+        // add the min/max offsets calculated above.
+        var top = 0;
+        var bottom = 0;
+
+        if (slowerScrollRate) {
+            top = rect.top + scrollY + yMinPx;
+            bottom = rect.bottom + scrollY + yMaxPx;
+        } else {
+            top = rect.top + scrollY + yMaxPx * -1;
+            bottom = rect.bottom + scrollY + yMinPx * -1;
+        }
+
+        // NOTE: Total distance the element will move from when
+        // the top enters the view to the bottom leaving
+        // accounting for elements height and max/min offsets.
+        var totalDist = windowHeight + (elHeight + Math.abs(yMinPx) + yMaxPx);
+
+        element.attributes = {
+            top: top,
+            bottom: bottom,
+            elHeight: elHeight,
+            elWidth: elWidth,
+            yMaxPx: yMaxPx,
+            yMinPx: yMinPx,
+            xMaxPx: xMaxPx,
+            xMinPx: xMinPx,
+            totalDist: totalDist
+        };
+    }
+
+    /**
+     * Takes a parallax element and parses the offset props to get the value
+     * and unit. Sets these values as offset object accessible on the element.
+     * @param {object} element
+     */
+    function _setupOffsets(element) {
+        var _element$props = element.props,
+            offsetYMin = _element$props.offsetYMin,
+            offsetYMax = _element$props.offsetYMax,
+            offsetXMax = _element$props.offsetXMax,
+            offsetXMin = _element$props.offsetXMin;
+
+
+        var yMin = (0, _index.parseValueAndUnit)(offsetYMin);
+        var yMax = (0, _index.parseValueAndUnit)(offsetYMax);
+        var xMin = (0, _index.parseValueAndUnit)(offsetXMax);
+        var xMax = (0, _index.parseValueAndUnit)(offsetXMin);
+
+        if (xMin.unit !== xMax.unit || yMin.unit !== yMax.unit) {
+            throw new Error('Must provide matching units for the min and max offset values of each axis.');
+        }
+
+        var xUnit = xMin.unit || '%';
+        var yUnit = yMin.unit || '%';
+
+        element.offsets = {
+            xUnit: xUnit,
+            yUnit: yUnit,
+            yMin: yMin,
+            yMax: yMax,
+            xMin: xMin,
+            xMax: xMax
+        };
+    }
+
+    /**
+     * Takes a parallax element and set the styles based on the
+     * offsets and percent the element has moved though the viewport.
+     * @param {object} element
+     */
+    function _setParallaxStyles(element) {
+        var top = element.attributes.top - scrollY;
+        var totalDist = element.attributes.totalDist;
+
+        // Percent the element has moved based on current and total distance to move
+
+        var percentMoved = (top * -1 + windowHeight) / totalDist * 100;
+
+        // Scale percentMoved to min/max percent determined by offset props
+        var slowerScrollRate = element.props.slowerScrollRate;
+
+        // Get the parallax X and Y offsets
+
+        var offsets = (0, _index.getParallaxOffsets)(element.offsets, percentMoved, slowerScrollRate);
+
+        // Apply styles
+        var el = element.elInner;
+
+        // prettier-ignore
+        el.style.transform = 'translate3d(' + offsets.x.value + offsets.x.unit + ', ' + offsets.y.value + offsets.y.unit + ', 0)';
+    }
+
+    /**
+     * Takes a parallax element and removes parallax offset styles.
+     * @param {object} element
+     */
+    function _resetStyles(element) {
+        var el = element.elInner;
+        el.style.transform = '';
+    }
+
+    /**
+     * -------------------------------------------------------
+     * Public methods
+     * -------------------------------------------------------
+     */
+
+    /**
+     * Gets the parallax elements in the controller
+     * @return {array} parallax elements
+     */
+    this.getElements = function () {
+        return elements;
+    };
+
+    /**
+     * Creates a new parallax element object with new id
+     * and options to store in the 'elements' array.
+     * @param {object} options
+     * @return {object} element
+     */
+    this.createElement = function (options) {
+        var id = _createID();
+        var newElement = _extends({
+            id: id
+        }, options);
+
+        var updatedElements = [].concat(_toConsumableArray(elements), [newElement]);
+        elements = updatedElements;
+        this.update();
+
+        return newElement;
+    };
+
+    /**
+     * Creates a new parallax element object with new id
+     * and options to store in the 'elements' array.
+     * @param {object} element
+     */
+    this.removeElement = function (element) {
+        var updatedElements = elements.filter(function (el) {
+            return el.id !== element.id;
+        });
+        elements = updatedElements;
+    };
+
+    /**
+     * Updates an existing parallax element object with new options.
+     * @param {object} element
+     * @param {object} options
+     */
+    this.updateElement = function (element, options) {
+        var updatedElements = elements.map(function (el) {
+            // create element with new options and replaces the old
+            if (el.id === element.id) {
+                // update props
+                el.props = options.props;
+            }
+            return el;
+        });
+
+        elements = updatedElements;
+
+        // call update to set attributes and positions based on the new options
+        this.update();
+    };
+
+    /**
+     * Remove element styles.
+     * @param {object} element
+     */
+    this.resetElementStyles = function (element) {
+        _resetStyles(element);
+    };
+
+    /**
+     * Updates all parallax element attributes and postitions.
+     */
+    this.update = function () {
+        _setWindowHeight();
+        _updateElementAttributes();
+        _updateElementPositions();
+    };
+
+    /**
+     * Removes listeners, reset all styles then nullifies the global ParallaxController.
+     */
+    this.destroy = function () {
+        _removeListeners();
+        _removeParallaxStyles();
+        window.ParallaxController = null;
+    };
+}
+
+/**
+ * Static method to instantiate the ParallaxController.
+ * Returns a new or existing instance of the ParallaxController.
+ * @returns {Object} ParallaxController
+ */
+ParallaxController.init = function () {
+    var hasWindow = typeof window !== 'undefined';
+
+    if (!hasWindow) {
+        throw new Error('Looks like ParallaxController.init() was called on the server. This method must be called on the client.');
+    }
+
+    var controller = new ParallaxController();
+
+    // Keep global reference for legacy versions <= 1.1.0
+    if (hasWindow && !window.ParallaxController) {
+        window.ParallaxController = controller;
+    }
+
+    return controller;
+};
+
+exports.default = ParallaxController;
+module.exports = exports['default'];
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(17);
+} else {
+  module.exports = __webpack_require__(18);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(6);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _propValidation = __webpack_require__(10);
+
+var _ParallaxController = __webpack_require__(7);
+
+var _ParallaxController2 = _interopRequireDefault(_ParallaxController);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Parallax = function (_Component) {
+    _inherits(Parallax, _Component);
+
+    function Parallax() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, Parallax);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Parallax.__proto__ || Object.getPrototypeOf(Parallax)).call.apply(_ref, [this].concat(args))), _this), _this.mapRefOuter = function (ref) {
+            _this._outer = ref;
+        }, _this.mapRefInner = function (ref) {
+            _this._inner = ref;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(Parallax, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            // Make sure the provided controller is an instance of the Parallax Controller
+            var isInstance = this.controller instanceof _ParallaxController2.default;
+
+            // Throw if neither context or global is available
+            if (!this.controller && !isInstance) {
+                throw new Error("Must wrap your application's <Parallax /> components in a <ParallaxProvider />.");
+            }
+
+            // Deprecation warning for <=1.0.0
+            // If no context is available but the window global is then warn
+            if (!this.context.parallaxController && window.ParallaxController) {
+                console.log('Calling ParallaxController.init() has been deprecated in favor of using the <ParallaxProvider /> component. For usage details see: https://github.com/jscottsmith/react-scroll-parallax/tree/v1.1.0#usage');
+            }
+
+            // create a new parallax element and save the reference
+            this.element = this.controller.createElement({
+                elInner: this._inner,
+                elOuter: this._outer,
+                props: {
+                    disabled: this.props.disabled,
+                    offsetXMax: this.props.offsetXMax,
+                    offsetXMin: this.props.offsetXMin,
+                    offsetYMax: this.props.offsetYMax,
+                    offsetYMin: this.props.offsetYMin,
+                    slowerScrollRate: this.props.slowerScrollRate
+                }
+            });
+        }
+    }, {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
+            // updates the elements props when relevant parallax props change
+            if (this.props.disabled !== nextProps.disabled || this.props.offsetXMax !== nextProps.offsetXMax || this.props.offsetXMin !== nextProps.offsetXMin || this.props.offsetYMax !== nextProps.offsetYMax || this.props.offsetYMin !== nextProps.offsetYMin || this.props.slowerScrollRate !== nextProps.slowerScrollRate) {
+                this.controller.updateElement(this.element, {
+                    props: {
+                        disabled: nextProps.disabled,
+                        offsetXMax: nextProps.offsetXMax,
+                        offsetXMin: nextProps.offsetXMin,
+                        offsetYMax: nextProps.offsetYMax,
+                        offsetYMin: nextProps.offsetYMin,
+                        slowerScrollRate: nextProps.slowerScrollRate
+                    }
+                });
+            }
+            // resets element styles when disabled
+            if (this.props.disabled !== nextProps.disabled && nextProps.disabled) {
+                this.controller.resetElementStyles(this.element);
+            }
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            this.controller.removeElement(this.element);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                children = _props.children,
+                className = _props.className,
+                Tag = _props.tag,
+                styleOuter = _props.styleOuter,
+                styleInner = _props.styleInner;
+
+
+            var rootClass = 'parallax-outer' + (className ? ' ' + className : '');
+
+            return _react2.default.createElement(
+                Tag,
+                {
+                    className: rootClass,
+                    ref: this.mapRefOuter,
+                    style: styleOuter
+                },
+                _react2.default.createElement(
+                    'div',
+                    {
+                        className: 'parallax-inner',
+                        ref: this.mapRefInner,
+                        style: styleInner
+                    },
+                    children
+                )
+            );
+        }
+    }, {
+        key: 'controller',
+        get: function get() {
+            // Legacy versions may use the global, not context
+            return this.context.parallaxController || window.ParallaxController;
+        }
+
+        // refs
+
+    }]);
+
+    return Parallax;
+}(_react.Component);
+
+Parallax.defaultProps = {
+    disabled: false,
+    offsetYMax: 0,
+    offsetYMin: 0,
+    offsetXMax: 0,
+    offsetXMin: 0,
+    slowerScrollRate: false, // determines whether scroll rate is faster or slower than standard scroll
+    tag: 'div'
+};
+Parallax.propTypes = {
+    children: _propTypes2.default.node,
+    className: _propTypes2.default.string,
+    disabled: _propTypes2.default.bool.isRequired,
+    offsetXMax: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+    offsetXMin: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
+    offsetYMax: _propValidation.offsetMax,
+    offsetYMin: _propValidation.offsetMin,
+    slowerScrollRate: _propTypes2.default.bool.isRequired,
+    styleOuter: _propTypes2.default.object,
+    styleInner: _propTypes2.default.object,
+    tag: _propTypes2.default.string.isRequired
+};
+Parallax.contextTypes = {
+    parallaxController: _propTypes2.default.object // not required because this could be rendered on the server.
+};
+exports.default = Parallax;
+module.exports = exports['default'];
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.offsetMin = offsetMin;
+exports.offsetMax = offsetMax;
+function offsetMin(props, propName) {
+    var componentName = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'ANONYMOUS';
+
+    var value = props[propName];
+    var isValid = typeof value === 'string' || typeof value === 'number';
+
+    if (!isValid) {
+        return new Error('[' + propName + '] in ' + componentName + ' must be a string with with "%"" or "px" units or number.');
+    }
+
+    if (props[propName]) {
+        if (typeof value === 'string') {
+            value = parseInt(value, 10);
+        }
+        return value <= 0 ? null : new Error('[' + propName + '] in ' + componentName + ' is greater than zero. [' + propName + '] must be less than or equal to zero.');
+    }
+    return null;
+}
+
+function offsetMax(props, propName) {
+    var componentName = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'ANONYMOUS';
+
+    var value = props[propName];
+    var isValid = typeof value === 'string' || typeof value === 'number';
+
+    if (!isValid) {
+        return new Error('[' + propName + '] in ' + componentName + ' must be a string with with "%"" or "px" units or number.');
+    }
+
+    if (props[propName]) {
+        if (typeof value === 'string') {
+            value = parseInt(value, 10);
+        }
+        return value >= 0 ? null : new Error('[' + propName + '] in ' + componentName + ' is less than zero. [' + propName + '] must be greater than or equal to zero.');
+    }
+    return null;
+}
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.testForPassiveScroll = exports.scaleBetween = exports.parseValueAndUnit = exports.isElementInView = exports.getParallaxOffsets = exports.clamp = undefined;
+
+var _clamp2 = __webpack_require__(26);
+
+var _clamp3 = _interopRequireDefault(_clamp2);
+
+var _getParallaxOffsets2 = __webpack_require__(27);
+
+var _getParallaxOffsets3 = _interopRequireDefault(_getParallaxOffsets2);
+
+var _isElementInView2 = __webpack_require__(28);
+
+var _isElementInView3 = _interopRequireDefault(_isElementInView2);
+
+var _parseValueAndUnit2 = __webpack_require__(29);
+
+var _parseValueAndUnit3 = _interopRequireDefault(_parseValueAndUnit2);
+
+var _scaleBetween2 = __webpack_require__(30);
+
+var _scaleBetween3 = _interopRequireDefault(_scaleBetween2);
+
+var _testForPassiveScroll2 = __webpack_require__(31);
+
+var _testForPassiveScroll3 = _interopRequireDefault(_testForPassiveScroll2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.clamp = _clamp3.default;
+exports.getParallaxOffsets = _getParallaxOffsets3.default;
+exports.isElementInView = _isElementInView3.default;
+exports.parseValueAndUnit = _parseValueAndUnit3.default;
+exports.scaleBetween = _scaleBetween3.default;
+exports.testForPassiveScroll = _testForPassiveScroll3.default;
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -490,11 +1291,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(9);
+var _reactDom = __webpack_require__(15);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(17);
+var _App = __webpack_require__(23);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -505,7 +1306,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /***/ }),
-/* 6 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -536,7 +1337,7 @@ assign:m}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default||Z;
 
 
 /***/ }),
-/* 7 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2219,26 +3020,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-/* 9 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2276,15 +3058,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(10);
+  module.exports = __webpack_require__(16);
 } else {
-  module.exports = __webpack_require__(13);
+  module.exports = __webpack_require__(19);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 10 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2300,7 +3082,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),n=__webpack_require__(2),ba=__webpack_require__(4);function ca(a,b,c,d,e,f,g,k){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var h=[c,d,e,f,g,k],l=0;a=Error(b.replace(/%s/g,function(){return h[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
+var aa=__webpack_require__(1),n=__webpack_require__(2),ba=__webpack_require__(8);function ca(a,b,c,d,e,f,g,k){if(!a){a=void 0;if(void 0===b)a=Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var h=[c,d,e,f,g,k],l=0;a=Error(b.replace(/%s/g,function(){return h[l++]}));a.name="Invariant Violation"}a.framesToPop=1;throw a;}}
 function w(a){for(var b=arguments.length-1,c="https://reactjs.org/docs/error-decoder.html?invariant="+a,d=0;d<b;d++)c+="&args[]="+encodeURIComponent(arguments[d+1]);ca(!1,"Minified React error #"+a+"; visit %s for the full message or use the non-minified dev environment for full errors and additional helpful warnings. ",c)}aa?void 0:w("227");function da(a,b,c,d,e,f,g,k,h){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}
 var ea=!1,fa=null,ha=!1,ia=null,ja={onError:function(a){ea=!0;fa=a}};function ka(a,b,c,d,e,f,g,k,h){ea=!1;fa=null;da.apply(ja,arguments)}function la(a,b,c,d,e,f,g,k,h){ka.apply(this,arguments);if(ea){if(ea){var l=fa;ea=!1;fa=null}else w("198"),l=void 0;ha||(ha=!0,ia=l)}}var ma=null,na={};
 function oa(){if(ma)for(var a in na){var b=na[a],c=ma.indexOf(a);-1<c?void 0:w("96",a);if(!pa[c]){b.extractEvents?void 0:w("97",a);pa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,k=d;qa.hasOwnProperty(k)?w("99",k):void 0;qa[k]=f;var h=f.phasedRegistrationNames;if(h){for(e in h)h.hasOwnProperty(e)&&ra(h[e],g,k);e=!0}else f.registrationName?(ra(f.registrationName,g,k),e=!0):e=!1;e?void 0:w("98",d,a)}}}}
@@ -2527,7 +3309,7 @@ module.exports=Oh.default||Oh;
 
 
 /***/ }),
-/* 11 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2549,7 +3331,7 @@ q=null}}}else{var G=new Map;exports.unstable_scheduleWork=function(a){var b={sch
 
 
 /***/ }),
-/* 12 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2972,7 +3754,7 @@ if (!canUseDOM) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2996,8 +3778,8 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(1);
 var _assign = __webpack_require__(2);
 var checkPropTypes = __webpack_require__(3);
-var schedule = __webpack_require__(4);
-var tracking = __webpack_require__(14);
+var schedule = __webpack_require__(8);
+var tracking = __webpack_require__(20);
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -21068,22 +21850,22 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(21);
 } else {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(22);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21100,7 +21882,7 @@ Object.defineProperty(exports,"__esModule",{value:!0});var b=0;exports.__interac
 
 
 /***/ }),
-/* 16 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21549,7 +22331,7 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21563,15 +22345,23 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(25);
+var _reactScrollParallax = __webpack_require__(5);
 
-var _Navbar = __webpack_require__(18);
+var _Navbar = __webpack_require__(34);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Hero = __webpack_require__(19);
+var _Hero = __webpack_require__(35);
 
 var _Hero2 = _interopRequireDefault(_Hero);
+
+var _Blog = __webpack_require__(36);
+
+var _Blog2 = _interopRequireDefault(_Blog);
+
+var _BlogDetail = __webpack_require__(37);
+
+var _BlogDetail2 = _interopRequireDefault(_BlogDetail);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21580,981 +22370,16 @@ var App = function App() {
     _reactScrollParallax.ParallaxProvider,
     null,
     _react2.default.createElement(_Navbar2.default, null),
-    _react2.default.createElement(_Hero2.default, null)
+    _react2.default.createElement(_Hero2.default, null),
+    _react2.default.createElement(_Blog2.default, null),
+    _react2.default.createElement(_BlogDetail2.default, null)
   );
 };
 
 exports.default = App;
 
 /***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Navbar = function Navbar() {
-  return _react2.default.createElement(
-    "nav",
-    { id: "mainNav", className: "navbar is-transparent" },
-    _react2.default.createElement(
-      "div",
-      { className: "navbar-brand" },
-      _react2.default.createElement(
-        "a",
-        { id: "navName", className: "navbar-item", href: "#" },
-        _react2.default.createElement("i", { id: "navIcon", className: "fas fa-code" }),
-        "Leslie Alldridge "
-      ),
-      _react2.default.createElement(
-        "div",
-        { className: "navbar-burger burger" },
-        _react2.default.createElement("span", null),
-        _react2.default.createElement("span", null),
-        _react2.default.createElement("span", null)
-      )
-    ),
-    _react2.default.createElement(
-      "div",
-      { id: "navbarExampleTransparentExample", className: "navbar-menu" },
-      _react2.default.createElement(
-        "div",
-        { className: "navbar-start" },
-        _react2.default.createElement(
-          "a",
-          { className: "navbar-item", href: "#" },
-          "Home"
-        ),
-        _react2.default.createElement(
-          "div",
-          { className: "navbar-item is-hoverable" },
-          _react2.default.createElement(
-            "a",
-            { className: "navbar-item", href: "#" },
-            "Portfolio"
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "navbar-item is-hoverable" },
-            _react2.default.createElement(
-              "a",
-              { className: "navbar-item", href: "#" },
-              "Blog"
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "navbar-item is-hoverable" },
-            _react2.default.createElement(
-              "a",
-              { className: "navbar-item", href: "#" },
-              "Contact"
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "navbar-item is-hoverable" },
-            _react2.default.createElement(
-              "a",
-              { className: "navbar-item", href: "#" },
-              "About"
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        "div",
-        { className: "navbar-end" },
-        _react2.default.createElement(
-          "div",
-          { className: "navbar-item" },
-          _react2.default.createElement(
-            "div",
-            { className: "field is-grouped" },
-            _react2.default.createElement(
-              "p",
-              { className: "control" },
-              _react2.default.createElement(
-                "a",
-                { className: "bd-tw-button button",
-                  target: "_blank", href: "https://github.com/leslie-alldridge" },
-                _react2.default.createElement(
-                  "span",
-                  { className: "icon" },
-                  _react2.default.createElement("i", { className: "fab fa-github" })
-                ),
-                _react2.default.createElement(
-                  "span",
-                  null,
-                  "GitHub"
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "p",
-              { className: "control" },
-              _react2.default.createElement(
-                "a",
-                { className: "bd-tw-button button", target: "_blank", href: "https://nz.linkedin.com/in/lesliealldridge" },
-                _react2.default.createElement(
-                  "span",
-                  { className: "icon" },
-                  _react2.default.createElement("i", { className: "fab fa-linkedin" })
-                ),
-                _react2.default.createElement(
-                  "span",
-                  null,
-                  "LinkedIn"
-                )
-              )
-            )
-          )
-        )
-      )
-    )
-  );
-};
-
-exports.default = Navbar;
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactScrollParallax = __webpack_require__(25);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Hero = function Hero() {
-    return _react2.default.createElement(
-        'div',
-        { id: 'para' },
-        _react2.default.createElement(
-            _reactScrollParallax.Parallax,
-            {
-                offsetYMax: 70,
-                offsetYMin: -70,
-                offsetXMax: -30,
-                offsetXMin: 30
-
-            },
-            'lolwhat'
-        ),
-        _react2.default.createElement(
-            'p',
-            null,
-            'hi The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" 1914 translation by H. Rackham "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat." 1914 translation by H. Rackham "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains." The standard Lorem Ipsum passage, used since the 1500s "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" 1914 translation by H. Rackham "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?" Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat." 1914 translation by H. Rackham "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."'
-        )
-    );
-};
-
-exports.default = Hero;
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (process.env.NODE_ENV !== 'production') {
-  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-    Symbol.for &&
-    Symbol.for('react.element')) ||
-    0xeac7;
-
-  var isValidElement = function(object) {
-    return typeof object === 'object' &&
-      object !== null &&
-      object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(26)(isValidElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(27)();
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _index = __webpack_require__(24);
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
-
-/**
- * -------------------------------------------------------
- * Parallax Controller
- * -------------------------------------------------------
- *
- * The global controller for setting up window scroll/resize
- * listeners, managing and caching parallax element positions,
- * determining which elements are inside the viewport based on
- * scroll position, and then updating parallax element styles
- * based on min/max offsets and current scroll position.
- *
- */
-function ParallaxController() {
-    // All parallax elements to be updated
-    var elements = [];
-
-    // Tracks current scroll y distance
-    var scrollY = 0;
-
-    // Window inner height
-    var windowHeight = 0;
-
-    // ID to increment for elements
-    var id = 0;
-
-    // Ticking
-    var ticking = false;
-
-    // Scroll direction
-    // let scrollDown = null;
-
-    // Passive support
-    var supportsPassive = (0, _index.testForPassiveScroll)();
-
-    function _addListeners() {
-        window.addEventListener('scroll', _handleScroll, supportsPassive ? { passive: true } : false);
-        window.addEventListener('resize', _handleResize, false);
-    }
-
-    function _removeListeners() {
-        window.removeEventListener('scroll', _handleScroll, supportsPassive ? { passive: true } : false);
-        window.removeEventListener('resize', _handleResize, false);
-    }
-
-    _addListeners();
-
-    /**
-     * Window scroll handler. Sets the 'scrollY'
-     * and then calls '_updateElementPositions()'.
-     */
-    function _handleScroll() {
-        // reference to prev scroll y
-        // const prevScrollY = scrollY;
-
-        // Save current scroll
-        scrollY = window.pageYOffset; // Supports IE 9 and up.
-
-        // direction
-        // scrollDown = scrollY > prevScrollY;
-
-        // Only called if the last animation request has been
-        // completed and there are parallax elements to update
-        if (!ticking && elements.length > 0) {
-            ticking = true;
-            window.requestAnimationFrame(_updateElementPositions);
-        }
-    }
-
-    /**
-     * Window resize handler. Sets the new window inner height
-     * then updates parallax element attributes and positions.
-     */
-    function _handleResize() {
-        _setWindowHeight();
-        _updateElementAttributes();
-        _updateElementPositions();
-    }
-
-    /**
-     * Creates a unique id to distinguish parallax elements.
-     * @return {Number}
-     */
-    function _createID() {
-        ++id;
-        return id;
-    }
-
-    /**
-     * Update element positions.
-     * Determines if the element is in view based on the cached
-     * attributes, if so set the elements parallax styles.
-     */
-    function _updateElementPositions() {
-        elements.forEach(function (element) {
-            if (element.props.disabled) return;
-
-            // check if the element is in view then
-            var isInView = (0, _index.isElementInView)(element, windowHeight, scrollY);
-
-            // set styles if it is
-            if (isInView) _setParallaxStyles(element);
-
-            // reset ticking so more animations can be called
-            ticking = false;
-        });
-    }
-
-    /**
-     * Update element attributes.
-     * Sets up the elements offsets based on the props passed from
-     * the component then caches the elements current position and
-     * other important attributes.
-     */
-    function _updateElementAttributes() {
-        elements.forEach(function (element) {
-            if (element.props.disabled) return;
-
-            _setupOffsets(element);
-
-            _cacheAttributes(element);
-        });
-    }
-
-    /**
-     * Remove parallax styles from all elements.
-     */
-    function _removeParallaxStyles() {
-        elements.forEach(function (element) {
-            _resetStyles(element);
-        });
-    }
-
-    /**
-     * Cache the window height.
-     */
-    function _setWindowHeight() {
-        var html = document.documentElement;
-        windowHeight = window.innerHeight || html.clientHeight;
-    }
-
-    /**
-     * Takes a parallax element and caches important values that
-     * cause layout reflow and paints. Stores the values as an
-     * attribute object accesible on the parallax element.
-     * @param {object} element
-     */
-    function _cacheAttributes(element) {
-        var _element$offsets = element.offsets,
-            yMin = _element$offsets.yMin,
-            yMax = _element$offsets.yMax,
-            xMax = _element$offsets.xMax,
-            xMin = _element$offsets.xMin;
-        var slowerScrollRate = element.props.slowerScrollRate;
-
-        // NOTE: Many of these cause layout and reflow so we're not
-        // calculating them on every frame -- instead these values
-        // are cached on the element to access later when determining
-        // the element's position and offset.
-
-        var el = element.elOuter;
-        var rect = el.getBoundingClientRect();
-        var elHeight = el.offsetHeight;
-        var elWidth = el.offsetWidth;
-        var scrollY = window.pageYOffset;
-
-        // NOTE: offsetYMax and offsetYMin are percents
-        // based of the height of the element. They must be
-        // calculated as px to correctly determine whether
-        // the element is in the viewport.
-        var yPercent = yMax.unit === '%' || yMin.unit === '%';
-        var xPercent = xMax.unit === '%' || xMin.unit === '%';
-
-        // X offsets
-        var yMinPx = yMin.value;
-        var yMaxPx = yMax.value;
-
-        if (yPercent) {
-            var h100 = elHeight / 100;
-            yMaxPx = yMax.value * h100;
-            yMinPx = yMin.value * h100; // negative value
-        }
-
-        // Y offsets
-        var xMinPx = xMax.value;
-        var xMaxPx = xMin.value;
-
-        if (xPercent) {
-            var w100 = elWidth / 100;
-            xMaxPx = xMax.value * w100;
-            xMinPx = xMin.value * w100; // negative value
-        }
-
-        // NOTE: must add the current scroll position when the
-        // element is checked so that we get its absolute position
-        // relative to the document and not the viewport then
-        // add the min/max offsets calculated above.
-        var top = 0;
-        var bottom = 0;
-
-        if (slowerScrollRate) {
-            top = rect.top + scrollY + yMinPx;
-            bottom = rect.bottom + scrollY + yMaxPx;
-        } else {
-            top = rect.top + scrollY + yMaxPx * -1;
-            bottom = rect.bottom + scrollY + yMinPx * -1;
-        }
-
-        // NOTE: Total distance the element will move from when
-        // the top enters the view to the bottom leaving
-        // accounting for elements height and max/min offsets.
-        var totalDist = windowHeight + (elHeight + Math.abs(yMinPx) + yMaxPx);
-
-        element.attributes = {
-            top: top,
-            bottom: bottom,
-            elHeight: elHeight,
-            elWidth: elWidth,
-            yMaxPx: yMaxPx,
-            yMinPx: yMinPx,
-            xMaxPx: xMaxPx,
-            xMinPx: xMinPx,
-            totalDist: totalDist
-        };
-    }
-
-    /**
-     * Takes a parallax element and parses the offset props to get the value
-     * and unit. Sets these values as offset object accessible on the element.
-     * @param {object} element
-     */
-    function _setupOffsets(element) {
-        var _element$props = element.props,
-            offsetYMin = _element$props.offsetYMin,
-            offsetYMax = _element$props.offsetYMax,
-            offsetXMax = _element$props.offsetXMax,
-            offsetXMin = _element$props.offsetXMin;
-
-
-        var yMin = (0, _index.parseValueAndUnit)(offsetYMin);
-        var yMax = (0, _index.parseValueAndUnit)(offsetYMax);
-        var xMin = (0, _index.parseValueAndUnit)(offsetXMax);
-        var xMax = (0, _index.parseValueAndUnit)(offsetXMin);
-
-        if (xMin.unit !== xMax.unit || yMin.unit !== yMax.unit) {
-            throw new Error('Must provide matching units for the min and max offset values of each axis.');
-        }
-
-        var xUnit = xMin.unit || '%';
-        var yUnit = yMin.unit || '%';
-
-        element.offsets = {
-            xUnit: xUnit,
-            yUnit: yUnit,
-            yMin: yMin,
-            yMax: yMax,
-            xMin: xMin,
-            xMax: xMax
-        };
-    }
-
-    /**
-     * Takes a parallax element and set the styles based on the
-     * offsets and percent the element has moved though the viewport.
-     * @param {object} element
-     */
-    function _setParallaxStyles(element) {
-        var top = element.attributes.top - scrollY;
-        var totalDist = element.attributes.totalDist;
-
-        // Percent the element has moved based on current and total distance to move
-
-        var percentMoved = (top * -1 + windowHeight) / totalDist * 100;
-
-        // Scale percentMoved to min/max percent determined by offset props
-        var slowerScrollRate = element.props.slowerScrollRate;
-
-        // Get the parallax X and Y offsets
-
-        var offsets = (0, _index.getParallaxOffsets)(element.offsets, percentMoved, slowerScrollRate);
-
-        // Apply styles
-        var el = element.elInner;
-
-        // prettier-ignore
-        el.style.transform = 'translate3d(' + offsets.x.value + offsets.x.unit + ', ' + offsets.y.value + offsets.y.unit + ', 0)';
-    }
-
-    /**
-     * Takes a parallax element and removes parallax offset styles.
-     * @param {object} element
-     */
-    function _resetStyles(element) {
-        var el = element.elInner;
-        el.style.transform = '';
-    }
-
-    /**
-     * -------------------------------------------------------
-     * Public methods
-     * -------------------------------------------------------
-     */
-
-    /**
-     * Gets the parallax elements in the controller
-     * @return {array} parallax elements
-     */
-    this.getElements = function () {
-        return elements;
-    };
-
-    /**
-     * Creates a new parallax element object with new id
-     * and options to store in the 'elements' array.
-     * @param {object} options
-     * @return {object} element
-     */
-    this.createElement = function (options) {
-        var id = _createID();
-        var newElement = _extends({
-            id: id
-        }, options);
-
-        var updatedElements = [].concat(_toConsumableArray(elements), [newElement]);
-        elements = updatedElements;
-        this.update();
-
-        return newElement;
-    };
-
-    /**
-     * Creates a new parallax element object with new id
-     * and options to store in the 'elements' array.
-     * @param {object} element
-     */
-    this.removeElement = function (element) {
-        var updatedElements = elements.filter(function (el) {
-            return el.id !== element.id;
-        });
-        elements = updatedElements;
-    };
-
-    /**
-     * Updates an existing parallax element object with new options.
-     * @param {object} element
-     * @param {object} options
-     */
-    this.updateElement = function (element, options) {
-        var updatedElements = elements.map(function (el) {
-            // create element with new options and replaces the old
-            if (el.id === element.id) {
-                // update props
-                el.props = options.props;
-            }
-            return el;
-        });
-
-        elements = updatedElements;
-
-        // call update to set attributes and positions based on the new options
-        this.update();
-    };
-
-    /**
-     * Remove element styles.
-     * @param {object} element
-     */
-    this.resetElementStyles = function (element) {
-        _resetStyles(element);
-    };
-
-    /**
-     * Updates all parallax element attributes and postitions.
-     */
-    this.update = function () {
-        _setWindowHeight();
-        _updateElementAttributes();
-        _updateElementPositions();
-    };
-
-    /**
-     * Removes listeners, reset all styles then nullifies the global ParallaxController.
-     */
-    this.destroy = function () {
-        _removeListeners();
-        _removeParallaxStyles();
-        window.ParallaxController = null;
-    };
-}
-
-/**
- * Static method to instantiate the ParallaxController.
- * Returns a new or existing instance of the ParallaxController.
- * @returns {Object} ParallaxController
- */
-ParallaxController.init = function () {
-    var hasWindow = typeof window !== 'undefined';
-
-    if (!hasWindow) {
-        throw new Error('Looks like ParallaxController.init() was called on the server. This method must be called on the client.');
-    }
-
-    var controller = new ParallaxController();
-
-    // Keep global reference for legacy versions <= 1.1.0
-    if (hasWindow && !window.ParallaxController) {
-        window.ParallaxController = controller;
-    }
-
-    return controller;
-};
-
-exports.default = ParallaxController;
-module.exports = exports['default'];
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(20);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _propValidation = __webpack_require__(23);
-
-var _ParallaxController = __webpack_require__(21);
-
-var _ParallaxController2 = _interopRequireDefault(_ParallaxController);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Parallax = function (_Component) {
-    _inherits(Parallax, _Component);
-
-    function Parallax() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, Parallax);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Parallax.__proto__ || Object.getPrototypeOf(Parallax)).call.apply(_ref, [this].concat(args))), _this), _this.mapRefOuter = function (ref) {
-            _this._outer = ref;
-        }, _this.mapRefInner = function (ref) {
-            _this._inner = ref;
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(Parallax, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            // Make sure the provided controller is an instance of the Parallax Controller
-            var isInstance = this.controller instanceof _ParallaxController2.default;
-
-            // Throw if neither context or global is available
-            if (!this.controller && !isInstance) {
-                throw new Error("Must wrap your application's <Parallax /> components in a <ParallaxProvider />.");
-            }
-
-            // Deprecation warning for <=1.0.0
-            // If no context is available but the window global is then warn
-            if (!this.context.parallaxController && window.ParallaxController) {
-                console.log('Calling ParallaxController.init() has been deprecated in favor of using the <ParallaxProvider /> component. For usage details see: https://github.com/jscottsmith/react-scroll-parallax/tree/v1.1.0#usage');
-            }
-
-            // create a new parallax element and save the reference
-            this.element = this.controller.createElement({
-                elInner: this._inner,
-                elOuter: this._outer,
-                props: {
-                    disabled: this.props.disabled,
-                    offsetXMax: this.props.offsetXMax,
-                    offsetXMin: this.props.offsetXMin,
-                    offsetYMax: this.props.offsetYMax,
-                    offsetYMin: this.props.offsetYMin,
-                    slowerScrollRate: this.props.slowerScrollRate
-                }
-            });
-        }
-    }, {
-        key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(nextProps) {
-            // updates the elements props when relevant parallax props change
-            if (this.props.disabled !== nextProps.disabled || this.props.offsetXMax !== nextProps.offsetXMax || this.props.offsetXMin !== nextProps.offsetXMin || this.props.offsetYMax !== nextProps.offsetYMax || this.props.offsetYMin !== nextProps.offsetYMin || this.props.slowerScrollRate !== nextProps.slowerScrollRate) {
-                this.controller.updateElement(this.element, {
-                    props: {
-                        disabled: nextProps.disabled,
-                        offsetXMax: nextProps.offsetXMax,
-                        offsetXMin: nextProps.offsetXMin,
-                        offsetYMax: nextProps.offsetYMax,
-                        offsetYMin: nextProps.offsetYMin,
-                        slowerScrollRate: nextProps.slowerScrollRate
-                    }
-                });
-            }
-            // resets element styles when disabled
-            if (this.props.disabled !== nextProps.disabled && nextProps.disabled) {
-                this.controller.resetElementStyles(this.element);
-            }
-        }
-    }, {
-        key: 'componentWillUnmount',
-        value: function componentWillUnmount() {
-            this.controller.removeElement(this.element);
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                children = _props.children,
-                className = _props.className,
-                Tag = _props.tag,
-                styleOuter = _props.styleOuter,
-                styleInner = _props.styleInner;
-
-
-            var rootClass = 'parallax-outer' + (className ? ' ' + className : '');
-
-            return _react2.default.createElement(
-                Tag,
-                {
-                    className: rootClass,
-                    ref: this.mapRefOuter,
-                    style: styleOuter
-                },
-                _react2.default.createElement(
-                    'div',
-                    {
-                        className: 'parallax-inner',
-                        ref: this.mapRefInner,
-                        style: styleInner
-                    },
-                    children
-                )
-            );
-        }
-    }, {
-        key: 'controller',
-        get: function get() {
-            // Legacy versions may use the global, not context
-            return this.context.parallaxController || window.ParallaxController;
-        }
-
-        // refs
-
-    }]);
-
-    return Parallax;
-}(_react.Component);
-
-Parallax.defaultProps = {
-    disabled: false,
-    offsetYMax: 0,
-    offsetYMin: 0,
-    offsetXMax: 0,
-    offsetXMin: 0,
-    slowerScrollRate: false, // determines whether scroll rate is faster or slower than standard scroll
-    tag: 'div'
-};
-Parallax.propTypes = {
-    children: _propTypes2.default.node,
-    className: _propTypes2.default.string,
-    disabled: _propTypes2.default.bool.isRequired,
-    offsetXMax: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
-    offsetXMin: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
-    offsetYMax: _propValidation.offsetMax,
-    offsetYMin: _propValidation.offsetMin,
-    slowerScrollRate: _propTypes2.default.bool.isRequired,
-    styleOuter: _propTypes2.default.object,
-    styleInner: _propTypes2.default.object,
-    tag: _propTypes2.default.string.isRequired
-};
-Parallax.contextTypes = {
-    parallaxController: _propTypes2.default.object // not required because this could be rendered on the server.
-};
-exports.default = Parallax;
-module.exports = exports['default'];
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.offsetMin = offsetMin;
-exports.offsetMax = offsetMax;
-function offsetMin(props, propName) {
-    var componentName = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'ANONYMOUS';
-
-    var value = props[propName];
-    var isValid = typeof value === 'string' || typeof value === 'number';
-
-    if (!isValid) {
-        return new Error('[' + propName + '] in ' + componentName + ' must be a string with with "%"" or "px" units or number.');
-    }
-
-    if (props[propName]) {
-        if (typeof value === 'string') {
-            value = parseInt(value, 10);
-        }
-        return value <= 0 ? null : new Error('[' + propName + '] in ' + componentName + ' is greater than zero. [' + propName + '] must be less than or equal to zero.');
-    }
-    return null;
-}
-
-function offsetMax(props, propName) {
-    var componentName = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'ANONYMOUS';
-
-    var value = props[propName];
-    var isValid = typeof value === 'string' || typeof value === 'number';
-
-    if (!isValid) {
-        return new Error('[' + propName + '] in ' + componentName + ' must be a string with with "%"" or "px" units or number.');
-    }
-
-    if (props[propName]) {
-        if (typeof value === 'string') {
-            value = parseInt(value, 10);
-        }
-        return value >= 0 ? null : new Error('[' + propName + '] in ' + componentName + ' is less than zero. [' + propName + '] must be greater than or equal to zero.');
-    }
-    return null;
-}
-
-/***/ }),
 /* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.testForPassiveScroll = exports.scaleBetween = exports.parseValueAndUnit = exports.isElementInView = exports.getParallaxOffsets = exports.clamp = undefined;
-
-var _clamp2 = __webpack_require__(28);
-
-var _clamp3 = _interopRequireDefault(_clamp2);
-
-var _getParallaxOffsets2 = __webpack_require__(29);
-
-var _getParallaxOffsets3 = _interopRequireDefault(_getParallaxOffsets2);
-
-var _isElementInView2 = __webpack_require__(30);
-
-var _isElementInView3 = _interopRequireDefault(_isElementInView2);
-
-var _parseValueAndUnit2 = __webpack_require__(31);
-
-var _parseValueAndUnit3 = _interopRequireDefault(_parseValueAndUnit2);
-
-var _scaleBetween2 = __webpack_require__(32);
-
-var _scaleBetween3 = _interopRequireDefault(_scaleBetween2);
-
-var _testForPassiveScroll2 = __webpack_require__(33);
-
-var _testForPassiveScroll3 = _interopRequireDefault(_testForPassiveScroll2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.clamp = _clamp3.default;
-exports.getParallaxOffsets = _getParallaxOffsets3.default;
-exports.isElementInView = _isElementInView3.default;
-exports.parseValueAndUnit = _parseValueAndUnit3.default;
-exports.scaleBetween = _scaleBetween3.default;
-exports.testForPassiveScroll = _testForPassiveScroll3.default;
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
-
-var _Parallax2 = __webpack_require__(22);
-
-var _Parallax3 = _interopRequireDefault(_Parallax2);
-
-var _ParallaxProvider2 = __webpack_require__(34);
-
-var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
-
-var _ParallaxBanner2 = __webpack_require__(35);
-
-var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
-
-var _ParallaxController2 = __webpack_require__(21);
-
-var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Parallax = _Parallax3.default;
-exports.ParallaxProvider = _ParallaxProvider3.default;
-exports.ParallaxBanner = _ParallaxBanner3.default;
-exports.ParallaxController = _ParallaxController3.default;
-
-/***/ }),
-/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22569,7 +22394,7 @@ exports.ParallaxController = _ParallaxController3.default;
 
 var assign = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(8);
+var ReactPropTypesSecret = __webpack_require__(4);
 var checkPropTypes = __webpack_require__(3);
 
 var printWarning = function() {};
@@ -23117,7 +22942,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23130,7 +22955,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(8);
+var ReactPropTypesSecret = __webpack_require__(4);
 
 function emptyFunction() {}
 
@@ -23183,7 +23008,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 28 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23201,7 +23026,7 @@ function clamp(number, lower, upper) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 29 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23212,7 +23037,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = getParallaxOffsets;
 
-var _index = __webpack_require__(24);
+var _index = __webpack_require__(11);
 
 /**
  * Gets the parallax X and Y offsets to be applied to an element
@@ -23258,7 +23083,7 @@ function getParallaxOffsets(offsets, percentMoved, slowerScrollRate) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 30 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23290,7 +23115,7 @@ function isElementInView(element, windowHeight, scrollY) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 31 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23334,7 +23159,7 @@ function parseValueAndUnit(str) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 32 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23351,7 +23176,7 @@ function scaleBetween(value, newMin, newMax, oldMin, oldMax) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 33 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23377,7 +23202,7 @@ function testForPassiveScroll() {
 module.exports = exports['default'];
 
 /***/ }),
-/* 34 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23393,11 +23218,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(20);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _ParallaxController = __webpack_require__(21);
+var _ParallaxController = __webpack_require__(7);
 
 var _ParallaxController2 = _interopRequireDefault(_ParallaxController);
 
@@ -23465,7 +23290,7 @@ exports.default = ParallaxProvider;
 module.exports = exports['default'];
 
 /***/ }),
-/* 35 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23481,15 +23306,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(20);
+var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Parallax = __webpack_require__(22);
+var _Parallax = __webpack_require__(9);
 
 var _Parallax2 = _interopRequireDefault(_Parallax);
 
-var _propValidation = __webpack_require__(23);
+var _propValidation = __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23587,6 +23412,604 @@ ParallaxBanner.propTypes = {
 
 exports.default = ParallaxBanner;
 module.exports = exports['default'];
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Navbar = function Navbar() {
+  return _react2.default.createElement(
+    "nav",
+    { id: "mainNav", className: "navbar is-transparent is-fixed-top" },
+    _react2.default.createElement(
+      "div",
+      { className: "navbar-brand" },
+      _react2.default.createElement(
+        "a",
+        { id: "navName", className: "navbar-item", href: "#" },
+        _react2.default.createElement("i", { id: "navIcon", className: "fas fa-code" }),
+        "Leslie Alldridge "
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "navbar-burger burger" },
+        _react2.default.createElement("span", null),
+        _react2.default.createElement("span", null),
+        _react2.default.createElement("span", null)
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { id: "navbarExampleTransparentExample", className: "navbar-menu" },
+      _react2.default.createElement(
+        "div",
+        { className: "navbar-start" },
+        _react2.default.createElement(
+          "a",
+          { className: "navbar-item", href: "#" },
+          "Home"
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "navbar-item is-hoverable" },
+          _react2.default.createElement(
+            "a",
+            { className: "navbar-item", href: "#" },
+            "Portfolio"
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "navbar-item is-hoverable" },
+            _react2.default.createElement(
+              "a",
+              { className: "navbar-item", href: "#" },
+              "Blog"
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "navbar-item is-hoverable" },
+            _react2.default.createElement(
+              "a",
+              { className: "navbar-item", href: "#" },
+              "Contact"
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "navbar-item is-hoverable" },
+            _react2.default.createElement(
+              "a",
+              { className: "navbar-item", href: "#" },
+              "About"
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "navbar-end" },
+        _react2.default.createElement(
+          "div",
+          { className: "navbar-item" },
+          _react2.default.createElement(
+            "div",
+            { className: "field is-grouped" },
+            _react2.default.createElement(
+              "p",
+              { className: "control" },
+              _react2.default.createElement(
+                "a",
+                { className: "bd-tw-button button",
+                  target: "_blank", href: "https://github.com/leslie-alldridge" },
+                _react2.default.createElement(
+                  "span",
+                  { className: "icon" },
+                  _react2.default.createElement("i", { className: "fab fa-github" })
+                ),
+                _react2.default.createElement(
+                  "span",
+                  null,
+                  "GitHub"
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "p",
+              { className: "control" },
+              _react2.default.createElement(
+                "a",
+                { className: "bd-tw-button button", target: "_blank", href: "https://nz.linkedin.com/in/lesliealldridge" },
+                _react2.default.createElement(
+                  "span",
+                  { className: "icon" },
+                  _react2.default.createElement("i", { className: "fab fa-linkedin" })
+                ),
+                _react2.default.createElement(
+                  "span",
+                  null,
+                  "LinkedIn"
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = Navbar;
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactScrollParallax = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Hero = function Hero() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'div',
+      { id: 'para' },
+      _react2.default.createElement(
+        'section',
+        { className: 'hero is-info is-fullheight' },
+        _react2.default.createElement(
+          'div',
+          { className: 'hero-body' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'h1',
+              { id: 'title', className: 'title' },
+              'Leslie Alldridge'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { className: 'subtitle' },
+              'Welcome to my online portfolio'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { className: 'subtitle' },
+              _react2.default.createElement(
+                'div',
+                { id: 'lax' },
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  _react2.default.createElement(
+                    _reactScrollParallax.Parallax,
+                    {
+                      offsetXMin: '420px',
+                      offsetXMax: '-820px' },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Empathy'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactScrollParallax.Parallax,
+                    {
+                      offsetXMin: '-620px',
+                      offsetXMax: '620px' },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Team Member'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactScrollParallax.Parallax,
+                    {
+                      offsetXMin: '-320px',
+                      offsetXMax: '920px' },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Able to learn'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactScrollParallax.Parallax,
+                    {
+                      offsetXMin: '620px',
+                      offsetXMax: '-620px' },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Optimistic'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactScrollParallax.Parallax,
+                    {
+                      offsetXMin: '-620px',
+                      offsetXMax: '620px' },
+                    _react2.default.createElement(
+                      'li',
+                      null,
+                      'Motivator'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = Hero;
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactScrollParallax = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Blog = function Blog() {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'section',
+            { 'class': 'hero' },
+            _react2.default.createElement(
+                _reactScrollParallax.ParallaxBanner,
+                {
+                    layers: [{
+                        image: '/dev.jpeg',
+                        amount: 0.4,
+                        slowerScrollRate: false
+                    }],
+                    style: {
+                        height: '300px'
+                    }
+                },
+                _react2.default.createElement(
+                    _reactScrollParallax.Parallax,
+                    {
+                        offsetXMin: '-420px',
+                        offsetXMax: '820px' },
+                    _react2.default.createElement(
+                        'h1',
+                        { id: 'blogTitle', 'class': 'title' },
+                        'Personal Porfolio'
+                    )
+                )
+            )
+        )
+    );
+};
+
+exports.default = Blog;
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactScrollParallax = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var BlogDetail = function BlogDetail() {
+  return _react2.default.createElement(
+    'div',
+    { id: 'blogDetail' },
+    _react2.default.createElement(
+      'div',
+      { 'class': 'tile is-ancestor' },
+      _react2.default.createElement(
+        'div',
+        { 'class': 'tile is-vertical is-12' },
+        _react2.default.createElement(
+          'div',
+          { 'class': 'tile' },
+          _react2.default.createElement(
+            'div',
+            { 'class': 'tile is-parent' },
+            _react2.default.createElement(
+              'article',
+              { 'class': 'tile is-child notification is-info' },
+              _react2.default.createElement(
+                'p',
+                { 'class': 'title' },
+                'Xero Invoice Reducer'
+              ),
+              _react2.default.createElement(
+                'p',
+                { 'class': 'subtitle' },
+                'Create summarised invoices with ease'
+              ),
+              _react2.default.createElement(
+                'figure',
+                { id: 'blogDetailImg', 'class': 'image is-4by3' },
+                _react2.default.createElement('img', { src: 'https://bulma.io/images/placeholders/640x480.png' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'tile is-parent' },
+            _react2.default.createElement(
+              'article',
+              { 'class': 'tile is-child notification is-info' },
+              _react2.default.createElement(
+                'p',
+                { 'class': 'title' },
+                'Xero Bulk Void Tool'
+              ),
+              _react2.default.createElement(
+                'p',
+                { 'class': 'subtitle' },
+                'Void invoices in bulk'
+              ),
+              _react2.default.createElement(
+                'figure',
+                { id: 'blogDetailImg', 'class': 'image is-4by3' },
+                _react2.default.createElement('img', { src: 'https://bulma.io/images/placeholders/640x480.png' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { 'class': 'tile is-parent' },
+            _react2.default.createElement(
+              'article',
+              { 'class': 'tile is-child notification is-info' },
+              _react2.default.createElement(
+                'p',
+                { 'class': 'title' },
+                'We all started somewhere'
+              ),
+              _react2.default.createElement(
+                'p',
+                { 'class': 'subtitle' },
+                'Passion for learning'
+              ),
+              _react2.default.createElement(
+                'figure',
+                { id: 'blogDetailImg', 'class': 'image is-4by3' },
+                _react2.default.createElement('img', { src: 'https://bulma.io/images/placeholders/640x480.png' })
+              )
+            )
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { 'class': 'container is-fluid' },
+      _react2.default.createElement(
+        'div',
+        { id: 'symbols', 'class': 'notification' },
+        _react2.default.createElement(
+          'figure',
+          { 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html.png' })
+        ),
+        _react2.default.createElement(
+          'figure',
+          { 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css3.png' })
+        ),
+        _react2.default.createElement(
+          'figure',
+          { 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react.png' })
+        ),
+        _react2.default.createElement(
+          'figure',
+          { 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node.png' })
+        ),
+        _react2.default.createElement(
+          'figure',
+          { 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: 'https://bulma.io/images/placeholders/128x128.png' })
+        ),
+        _react2.default.createElement(
+          'figure',
+          { 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: 'https://bulma.io/images/placeholders/128x128.png' })
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { id: 'skillsContent', 'class': 'container is-fluid' },
+      _react2.default.createElement(
+        'div',
+        { 'class': 'content' },
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Third level'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Quisque ante lacus, malesuada ac auctor vitae, congue ',
+          _react2.default.createElement(
+            'a',
+            { href: '#' },
+            'non ante'
+          ),
+          '. Phasellus lacus ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.'
+        ),
+        _react2.default.createElement(
+          'ol',
+          null,
+          _react2.default.createElement(
+            'li',
+            null,
+            'Donec blandit a lorem id convallis.'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            'Cras gravida arcu at diam gravida gravida.'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            'Integer in volutpat libero.'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            'Donec a diam tellus.'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            'Aenean nec tortor orci.'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            'Quisque aliquam cursus urna, non bibendum massa viverra eget.'
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            'Vivamus maximus ultricies pulvinar.'
+          )
+        ),
+        _react2.default.createElement(
+          'blockquote',
+          null,
+          'Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est tellus sit amet turpis.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et ',
+          _react2.default.createElement(
+            'em',
+            null,
+            'justo sodales'
+          ),
+          ' elementum. Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas vestibulum interdum commodo.'
+        ),
+        _react2.default.createElement(
+          'dl',
+          null,
+          _react2.default.createElement(
+            'dt',
+            null,
+            'Web'
+          ),
+          _react2.default.createElement(
+            'dd',
+            null,
+            'The part of the Internet that contains websites and web pages'
+          ),
+          _react2.default.createElement(
+            'dt',
+            null,
+            'HTML'
+          ),
+          _react2.default.createElement(
+            'dd',
+            null,
+            'A markup language for creating web pages'
+          ),
+          _react2.default.createElement(
+            'dt',
+            null,
+            'CSS'
+          ),
+          _react2.default.createElement(
+            'dd',
+            null,
+            'A technology to make HTML look better'
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.'
+        ),
+        _react2.default.createElement(
+          'h4',
+          null,
+          'Fourth level'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at elementum ex efficitur.'
+        )
+      )
+    )
+  );
+};
+
+exports.default = BlogDetail;
 
 /***/ })
 /******/ ]);

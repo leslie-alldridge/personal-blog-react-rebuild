@@ -8,6 +8,8 @@ body {
 
 #mainNav {
     max-height: 0;
+    min-height: 80px;
+    font-size: 1.25em;
     border-bottom: 1px solid rgb(187, 183, 183, 0.2);
 }
 
@@ -16,7 +18,78 @@ body {
 }
 
 #para {
-    margin-top: 40px;
-    margin-left: 160px;
-    max-width: 400px;
+    text-align: center;
+}
+
+.hero.is-info {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url('sg.jpg') no-repeat center center fixed;
+      background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#lax {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+    margin-top: 150px;
+    text-align: center;
+    padding: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  line-height: 5vw;
+  transform-origin: left top;
+} 
+
+#title {
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+
+#blogTitle {
+    padding-top: 10%;
+    color: white;
+    font-size: 2.25em;
+}
+
+#blogDetail {
+    margin-top: 3%;
+    max-width: 95%;
+    margin-left: 2.5%;
+}
+
+#blogDetailImg {
+    margin-left: 10px;
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+  }
+  
+  #blogDetailImg :hover{
+    background:#59f;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+
+#symbols {
+    display: flex;
+    float: left;
+    width: 100%;
+    align-items: center;
+}
+
+#imgBadge {
+    margin-left: 30px;
+}
+
+.image {
+    margin-left: 6%;
+}
+
+#skillsContent {
+    margin-top: 15%;
 }
