@@ -4,7 +4,15 @@ import React from 'react'
 const BlogDetail = (props) => {
   
     return ( 
-        <div id="blogDetail">
+        <div data-aos="zoom-in"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-top
+        " id="blogDetail">
         <div class="tile is-ancestor">
   <div class="tile is-vertical is-12">
     <div class="tile">

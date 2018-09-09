@@ -11,7 +11,7 @@ const Hero = () => {
         
   <div className="hero-body">
     <div className="container">
-      <h1 id="title" className="title">
+      <h1 id="title" data-aos="zoom-in" data-aos-duration="4000" className="title">
         Leslie Alldridge
       </h1>
       <h2 className="subtitle">

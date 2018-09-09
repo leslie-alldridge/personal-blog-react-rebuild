@@ -22365,31 +22365,31 @@ var _HTML = __webpack_require__(37);
 
 var _HTML2 = _interopRequireDefault(_HTML);
 
-var _CSS = __webpack_require__(40);
+var _CSS = __webpack_require__(38);
 
 var _CSS2 = _interopRequireDefault(_CSS);
 
-var _React = __webpack_require__(41);
+var _React = __webpack_require__(39);
 
 var _React2 = _interopRequireDefault(_React);
 
-var _Node = __webpack_require__(42);
+var _Node = __webpack_require__(40);
 
 var _Node2 = _interopRequireDefault(_Node);
 
-var _Python = __webpack_require__(43);
+var _Python = __webpack_require__(41);
 
 var _Python2 = _interopRequireDefault(_Python);
 
-var _JS = __webpack_require__(44);
+var _JS = __webpack_require__(42);
 
 var _JS2 = _interopRequireDefault(_JS);
 
-var _DefaultIntro = __webpack_require__(39);
+var _DefaultIntro = __webpack_require__(43);
 
 var _DefaultIntro2 = _interopRequireDefault(_DefaultIntro);
 
-var _BlogDetail = __webpack_require__(38);
+var _BlogDetail = __webpack_require__(44);
 
 var _BlogDetail2 = _interopRequireDefault(_BlogDetail);
 
@@ -23755,7 +23755,7 @@ var Hero = function Hero() {
             { className: 'container' },
             _react2.default.createElement(
               'h1',
-              { id: 'title', className: 'title' },
+              { id: 'title', 'data-aos': 'zoom-in', 'data-aos-duration': '4000', className: 'title' },
               'Leslie Alldridge'
             ),
             _react2.default.createElement(
@@ -23915,7 +23915,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var HTML = function HTML() {
   return _react2.default.createElement(
     "div",
-    { id: "skillsContent", "class": "container is-fluid" },
+    { "data-aos": "slide-up", id: "skillsContent", "class": "container is-fluid" },
     _react2.default.createElement(
       "div",
       { "class": "container is-fluid" },
@@ -23980,11 +23980,483 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var CSS = function CSS() {
+  return _react2.default.createElement(
+    "div",
+    { "data-aos": "slide-right", id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "CSS3"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = CSS;
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Rct = function Rct() {
+  return _react2.default.createElement(
+    "div",
+    { "data-aos": "slide-right", id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "React"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Rct;
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Node = function Node() {
+  return _react2.default.createElement(
+    "div",
+    { "data-aos": "slide-right", id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Node"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Node;
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Python = function Python() {
+  return _react2.default.createElement(
+    "div",
+    { "data-aos": "slide-right", id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Python"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Python;
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var JS = function JS() {
+  return _react2.default.createElement(
+    "div",
+    { "data-aos": "slide-right", id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Javascript"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Ability to create HTML, CSS and Javascript static websites"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Awareness of compability issues with older technology and the importance of using alt tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Keen to learn how to optimise search results with meta tags."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+        )
+      )
+    )
+  );
+};
+
+exports.default = JS;
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var DefaultIntro = function DefaultIntro() {
+  return _react2.default.createElement(
+    "div",
+    { "data-aos": "slide-up", id: "skillsContent", "class": "container is-fluid" },
+    _react2.default.createElement(
+      "div",
+      { "class": "container is-fluid" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content" },
+        _react2.default.createElement(
+          "h3",
+          null,
+          "Overall Skills and Ability"
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "Please click on the badges above to see specific information."
+        ),
+        _react2.default.createElement(
+          "p",
+          null,
+          "My passion lies with solving real world problems through code. I enjoy the endless learning that takes place. Historically I'd naturally learn everything my role could offer and look for further opportunities to grow. As a developer I love working in teams and positively adding the the expected output and motivation of the team. I've included a list below to describe my values and mindset.  "
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "I value working in a positive team environment where motivation levels are high."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "I work best with people who are honest and hard working."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Honesty and empathy are my core values."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Helping others and washing their coffee cups when appropriate."
+          )
+        ),
+        _react2.default.createElement(
+          "blockquote",
+          null,
+          "In summary: I'm an honest, hardworking invidividual that thrives in a team environment and working towards a common goal."
+        ),
+        _react2.default.createElement(
+          "h2",
+          { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
+          _react2.default.createElement("i", { id: "horn", "class": "fas fa-bullhorn" }),
+          "Please check out my ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://github.com/leslie-alldridge" },
+            "GitHub page"
+          ),
+          " to see my other projects."
+        ),
+        " ",
+        _react2.default.createElement(
+          "p",
+          null,
+          "I've listed some below, they all use Javascript so I've noted the additional features: "
+        ),
+        _react2.default.createElement(
+          "ul",
+          null,
+          _react2.default.createElement(
+            "li",
+            null,
+            "Rubik's Cube timer (mobile friendly) with SQL databases, Charts.js graphs, Bootstrap styling and two API sources"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Xero Invoice Reducer and Bulk Voiding Tools with OAuth, complex data structures and API calls, handlebars, express and Bootstrap"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Expensify with React, Redux and Firebase Authentication + Database"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Apple share pricing graph - D3.js graph and API calls"
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "This portfolio! 100% React based with Bulma CSS, CSS3 animations, React Parallax and more."
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = DefaultIntro;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var BlogDetail = function BlogDetail(props) {
 
   return _react2.default.createElement(
     "div",
-    { id: "blogDetail" },
+    { "data-aos": "zoom-in",
+      "data-aos-offset": "0",
+      "data-aos-delay": "0",
+      "data-aos-duration": "500",
+      "data-aos-easing": "ease-in-out",
+      "data-aos-mirror": "true",
+      "data-aos-once": "false",
+      "data-aos-anchor-placement": "top-top ", id: "blogDetail" },
     _react2.default.createElement(
       "div",
       { "class": "tile is-ancestor" },
@@ -24166,424 +24638,6 @@ var BlogDetail = function BlogDetail(props) {
 };
 
 exports.default = BlogDetail;
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var DefaultIntro = function DefaultIntro() {
-    return _react2.default.createElement(
-        "div",
-        { id: "skillsContent", "class": "container is-fluid" },
-        _react2.default.createElement(
-            "div",
-            { "class": "container is-fluid" },
-            _react2.default.createElement(
-                "div",
-                { "class": "content" },
-                _react2.default.createElement(
-                    "h3",
-                    null,
-                    "Overall Skills and Ability"
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "Please click on the badges above to see specific information."
-                ),
-                _react2.default.createElement(
-                    "p",
-                    null,
-                    "My passion lies with solving real world problems through code. I enjoy the endless learning that takes place. Historically I'd naturally learn everything my role could offer and look for further opportunities to grow. As a developer I love working in teams and positively adding the the expected output and motivation of the team. I've included a list below to describe my values and mindset.  "
-                ),
-                _react2.default.createElement(
-                    "ul",
-                    null,
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "I value working in a positive team environment where motivation levels are high."
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "I work best with people who are honest and hard working."
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Honesty and empathy are my core values."
-                    ),
-                    _react2.default.createElement(
-                        "li",
-                        null,
-                        "Helping others and washing their coffee cups when appropriate."
-                    )
-                ),
-                _react2.default.createElement(
-                    "blockquote",
-                    null,
-                    "In summary: I'm an honest, hardworking invidividual that thrives in a team environment and working towards a common goal."
-                )
-            )
-        )
-    );
-};
-
-exports.default = DefaultIntro;
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var CSS = function CSS() {
-  return _react2.default.createElement(
-    "div",
-    { id: "skillsContent", "class": "container is-fluid" },
-    _react2.default.createElement(
-      "div",
-      { "class": "container is-fluid" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content" },
-        _react2.default.createElement(
-          "h3",
-          null,
-          "CSS3"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
-        ),
-        _react2.default.createElement(
-          "ul",
-          null,
-          _react2.default.createElement(
-            "li",
-            null,
-            "Ability to create HTML, CSS and Javascript static websites"
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
-          )
-        ),
-        _react2.default.createElement(
-          "blockquote",
-          null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
-        )
-      )
-    )
-  );
-};
-
-exports.default = CSS;
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Rct = function Rct() {
-  return _react2.default.createElement(
-    "div",
-    { id: "skillsContent", "class": "container is-fluid" },
-    _react2.default.createElement(
-      "div",
-      { "class": "container is-fluid" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content" },
-        _react2.default.createElement(
-          "h3",
-          null,
-          "React"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
-        ),
-        _react2.default.createElement(
-          "ul",
-          null,
-          _react2.default.createElement(
-            "li",
-            null,
-            "Ability to create HTML, CSS and Javascript static websites"
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
-          )
-        ),
-        _react2.default.createElement(
-          "blockquote",
-          null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
-        )
-      )
-    )
-  );
-};
-
-exports.default = Rct;
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Node = function Node() {
-  return _react2.default.createElement(
-    "div",
-    { id: "skillsContent", "class": "container is-fluid" },
-    _react2.default.createElement(
-      "div",
-      { "class": "container is-fluid" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content" },
-        _react2.default.createElement(
-          "h3",
-          null,
-          "Node"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
-        ),
-        _react2.default.createElement(
-          "ul",
-          null,
-          _react2.default.createElement(
-            "li",
-            null,
-            "Ability to create HTML, CSS and Javascript static websites"
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
-          )
-        ),
-        _react2.default.createElement(
-          "blockquote",
-          null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
-        )
-      )
-    )
-  );
-};
-
-exports.default = Node;
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Python = function Python() {
-  return _react2.default.createElement(
-    "div",
-    { id: "skillsContent", "class": "container is-fluid" },
-    _react2.default.createElement(
-      "div",
-      { "class": "container is-fluid" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content" },
-        _react2.default.createElement(
-          "h3",
-          null,
-          "Python"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
-        ),
-        _react2.default.createElement(
-          "ul",
-          null,
-          _react2.default.createElement(
-            "li",
-            null,
-            "Ability to create HTML, CSS and Javascript static websites"
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
-          )
-        ),
-        _react2.default.createElement(
-          "blockquote",
-          null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
-        )
-      )
-    )
-  );
-};
-
-exports.default = Python;
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var JS = function JS() {
-  return _react2.default.createElement(
-    "div",
-    { id: "skillsContent", "class": "container is-fluid" },
-    _react2.default.createElement(
-      "div",
-      { "class": "container is-fluid" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content" },
-        _react2.default.createElement(
-          "h3",
-          null,
-          "Javascript"
-        ),
-        _react2.default.createElement(
-          "p",
-          null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
-        ),
-        _react2.default.createElement(
-          "ul",
-          null,
-          _react2.default.createElement(
-            "li",
-            null,
-            "Ability to create HTML, CSS and Javascript static websites"
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
-          )
-        ),
-        _react2.default.createElement(
-          "blockquote",
-          null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
-        )
-      )
-    )
-  );
-};
-
-exports.default = JS;
 
 /***/ })
 /******/ ]);

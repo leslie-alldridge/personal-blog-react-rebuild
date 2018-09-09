@@ -3,7 +3,7 @@ import React from 'react'
 
 const DefaultIntro = () => {
     return ( 
-<div id = "skillsContent" class="container is-fluid">
+<div data-aos="slide-up" id = "skillsContent" class="container is-fluid">
 <div class="container is-fluid">
 <div class="content">
 
@@ -20,6 +20,18 @@ const DefaultIntro = () => {
     <li>Helping others and washing their coffee cups when appropriate.</li>
   </ul>
   <blockquote>In summary: I'm an honest, hardworking invidividual that thrives in a team environment and working towards a common goal.</blockquote>
+
+  <h2 data-aos="zoom-out-left" data-aos-duration="9000"><i id="horn" class="fas fa-bullhorn"></i>
+
+  Please check out my <a href="https://github.com/leslie-alldridge">GitHub page</a> to see my other projects.
+  </h2> <p>I've listed some below, they all use Javascript so I've noted the additional features: </p>
+  <ul>
+      <li>Rubik's Cube timer (mobile friendly) with SQL databases, Charts.js graphs, Bootstrap styling and two API sources</li>
+      <li>Xero Invoice Reducer and Bulk Voiding Tools with OAuth, complex data structures and API calls, handlebars, express and Bootstrap</li>
+      <li>Expensify with React, Redux and Firebase Authentication + Database</li>
+      <li>Apple share pricing graph - D3.js graph and API calls</li>
+      <li>This portfolio! 100% React based with Bulma CSS, CSS3 animations, React Parallax and more.</li>
+  </ul>
 </div>
 </div></div>
     )}

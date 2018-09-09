@@ -3,7 +3,7 @@ import React from 'react'
 
 const CSS = () => {
     return ( 
-<div id = "skillsContent" class="container is-fluid">
+<div data-aos="slide-right" id = "skillsContent" class="container is-fluid">
 <div class="container is-fluid">
 <div class="content">
 

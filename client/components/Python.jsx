@@ -3,7 +3,7 @@ import React from 'react'
 
 const Python = () => {
     return ( 
-<div id = "skillsContent" class="container is-fluid">
+<div data-aos="slide-right" id = "skillsContent" class="container is-fluid">
 <div class="container is-fluid">
 <div class="content">
 
@@ -18,9 +18,11 @@ const Python = () => {
     <li>Awareness of compability issues with older technology and the importance of using alt tags.</li>
     <li>Keen to learn how to optimise search results with meta tags.</li>
   </ul>
+  
   <blockquote>In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses.</blockquote>
 </div>
 </div>
+
 </div>
     )}
 

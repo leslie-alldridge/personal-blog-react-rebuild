@@ -3,7 +3,7 @@ import React from 'react'
 
 const HTML = () => {
     return ( 
-<div id = "skillsContent" class="container is-fluid">
+<div data-aos="slide-up" id = "skillsContent" class="container is-fluid">
 <div class="container is-fluid">
 <div class="content">
 

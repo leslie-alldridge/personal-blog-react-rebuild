@@ -61,6 +61,7 @@
     margin-top: 3%;
     max-width: 95%;
     margin-left: 2.5%;
+    margin-bottom: 15%;
 }
 
 #blogDetailImg {
@@ -96,7 +97,7 @@
 }
 
 #skillsContent {
-    margin-top: 15%;
+    /* margin-top: 10%; */
     margin-bottom: 40px;
     width: 90%;
 }
@@ -141,4 +142,10 @@ animation: bounce 0.5s infinite alternate;
     padding-left: 3px;
     text-decoration: underline ;
     text-decoration-color: #59f;
+}
+
+/* Animations */
+
+#horn {
+    margin-right: 15px;
 }
