@@ -26,6 +26,6 @@ two hours of planning and 3-4 hours of development time.
 
 I felt confident with Bulma CSS and Parallax effects even though it was my first time using them. The code flowed well thanks to my touchtyping ability and I could quickly get the website up and running while ensuring it matched my wireframe designs. 
 
-I didn't realise till halfway that App needed to be a stateful component. In future I will include that in my planning phase so I can quickly set up state and add to it during the build, instead of thinking "whoops I needed state, let's redo some components to handle state and props." 
+I didn't realise till halfway that App and Personal Blogs both needed to be a stateful component. In future I will include that in my planning phase so I can quickly set up state and add to it during the build, instead of thinking "whoops I needed state, let's redo some components to handle state and props." 
 
-We also learned API and SQL but there's no need for those features at this current time. 
+We also learned API and SQL but there's no need for those features at this current time. Redux is coming in the next week. 
