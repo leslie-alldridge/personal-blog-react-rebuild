@@ -370,6 +370,41 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
+
+var _Parallax2 = __webpack_require__(9);
+
+var _Parallax3 = _interopRequireDefault(_Parallax2);
+
+var _ParallaxProvider2 = __webpack_require__(32);
+
+var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
+
+var _ParallaxBanner2 = __webpack_require__(33);
+
+var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
+
+var _ParallaxController2 = __webpack_require__(7);
+
+var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Parallax = _Parallax3.default;
+exports.ParallaxProvider = _ParallaxProvider3.default;
+exports.ParallaxBanner = _ParallaxBanner3.default;
+exports.ParallaxController = _ParallaxController3.default;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -382,7 +417,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(4);
+  var ReactPropTypesSecret = __webpack_require__(5);
   var loggedTypeFailures = {};
 
   printWarning = function(text) {
@@ -465,7 +500,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -482,41 +517,6 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ParallaxController = exports.ParallaxBanner = exports.ParallaxProvider = exports.Parallax = undefined;
-
-var _Parallax2 = __webpack_require__(9);
-
-var _Parallax3 = _interopRequireDefault(_Parallax2);
-
-var _ParallaxProvider2 = __webpack_require__(32);
-
-var _ParallaxProvider3 = _interopRequireDefault(_ParallaxProvider2);
-
-var _ParallaxBanner2 = __webpack_require__(33);
-
-var _ParallaxBanner3 = _interopRequireDefault(_ParallaxBanner2);
-
-var _ParallaxController2 = __webpack_require__(7);
-
-var _ParallaxController3 = _interopRequireDefault(_ParallaxController2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Parallax = _Parallax3.default;
-exports.ParallaxProvider = _ParallaxProvider3.default;
-exports.ParallaxBanner = _ParallaxBanner3.default;
-exports.ParallaxController = _ParallaxController3.default;
 
 /***/ }),
 /* 6 */
@@ -1359,7 +1359,7 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(3);
+var checkPropTypes = __webpack_require__(4);
 
 // TODO: this is special because it gets imported during build.
 
@@ -3777,7 +3777,7 @@ if (process.env.NODE_ENV !== "production") {
 
 var React = __webpack_require__(0);
 var _assign = __webpack_require__(2);
-var checkPropTypes = __webpack_require__(3);
+var checkPropTypes = __webpack_require__(4);
 var schedule = __webpack_require__(8);
 var tracking = __webpack_require__(20);
 
@@ -22347,7 +22347,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 var _Navbar = __webpack_require__(34);
 
@@ -22564,8 +22564,8 @@ exports.default = App;
 
 var assign = __webpack_require__(2);
 
-var ReactPropTypesSecret = __webpack_require__(4);
-var checkPropTypes = __webpack_require__(3);
+var ReactPropTypesSecret = __webpack_require__(5);
+var checkPropTypes = __webpack_require__(4);
 
 var printWarning = function() {};
 
@@ -23125,7 +23125,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 
-var ReactPropTypesSecret = __webpack_require__(4);
+var ReactPropTypesSecret = __webpack_require__(5);
 
 function emptyFunction() {}
 
@@ -23739,7 +23739,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -23860,7 +23860,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24334,7 +24334,7 @@ var _PersonalB = __webpack_require__(45);
 
 var _PersonalB2 = _interopRequireDefault(_PersonalB);
 
-var _reactScrollParallax = __webpack_require__(5);
+var _reactScrollParallax = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24482,9 +24482,41 @@ var Technical = function (_React$Component) {
                 "section",
                 null,
                 _react2.default.createElement(
+                  "h4",
+                  null,
+                  "React and Redux"
+                ),
+                _react2.default.createElement(
                   "p",
                   null,
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                  "This website is 100% React and utlises both stateless and stateful components. I love the way React can be so flexible with its rendering and provide a simple but effective way to code. I love teaching others the difference between state and props and explaining the direction props goes throughout multiple layers of components. React is the most challenging language we learn at DevAcademy so I've taken it upon myself to fall in love with React and learn everything I can about it."
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "columns" },
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
                 )
               )
             ),
@@ -24568,9 +24600,41 @@ var PersonalB = function (_React$Component) {
                 "section",
                 null,
                 _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Learning to learn"
+                ),
+                _react2.default.createElement(
                   "p",
                   null,
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                  "Learning to learn is a great skill that isn't acquired naturally for most people. We can all learn, but there's true power in finding what helps you learn best. I've noticed when learning new concepts it no longer takes an entire day. I can apply myself to the subject and in a few hours time, find myself teaching others how to better understand that same topic. I'm never afraid to learn new things and continually reflect on my progress towards goals that I've set for learning new content."
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "columns" },
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
                 )
               )
             ),

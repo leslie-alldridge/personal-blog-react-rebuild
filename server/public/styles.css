@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     font-size: 1.25em;
-    margin-top: 150px;
+    margin-top: 2%;
     text-align: center;
     padding: 0;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -81,6 +81,7 @@
     float: left;
     width: 100%;
     align-items: center;
+    padding-right: 8%;
 }
 
 #imgBadge {
@@ -159,18 +160,19 @@ animation: bounce 0.5s infinite alternate;
     display: inline-block;
 }
 .progress-value {
-    background-color: #673ab7;
+    background-color: #59f;
     transition: 0.3s all linear;
     border-radius: 1.25em;
     height: 16px;
     display: inline-block;
-    animation: progress 3s ease-in-out forwards;
-    -webkit-animation: progress 3s ease-in-out forwards;
+    animation: progress 9s ease-in-out forwards;
+    -webkit-animation: progress 9s ease-in-out forwards;
 }
 .progress-value.green {
     background-color: #59f;
-    animation: progress-3 3s ease-in-out forwards;
-    -webkit-animation: progress-3 3s ease-in-out forwards;
+    animation: progress-3 9s ease-in-out forwards;
+    -webkit-animation: progress-3 9s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 
 /* animation */
