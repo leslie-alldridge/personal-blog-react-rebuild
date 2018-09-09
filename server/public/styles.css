@@ -10,7 +10,7 @@
     max-height: 0;
     min-height: 80px;
     font-size: 1.25em;
-    border-bottom: 1px solid rgb(187, 183, 183, 0.2);
+    border-bottom: 1px solid #59f;
 }
 
 #navName {
@@ -196,9 +196,6 @@ animation: bounce 0.5s infinite alternate;
 /* tabs */
 .hidden{ display: none; }
 
-#nested ul {
-  
-}
 
 #eda-tab-content {
     background-color: red;
@@ -237,6 +234,8 @@ animation: bounce 0.5s infinite alternate;
       transform: translate(10px, 0);
     }
   }
-  
-  
-  
+
+  .navbar-link.is-active, a.navbar-item.is-active {
+    color: #59f;
+  }
+

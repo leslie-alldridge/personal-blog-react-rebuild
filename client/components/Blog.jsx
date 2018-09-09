@@ -4,7 +4,7 @@ import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 const Blog = () => {
     return (
-        <div>
+        <div className="target" id="1">
        <section class="hero">
   
       
