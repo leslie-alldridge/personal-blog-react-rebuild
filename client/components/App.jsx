@@ -9,6 +9,7 @@ import Rct from './React'
 import Node from './Node'
 import Python from './Python'
 import JS from './JS'
+import Personal from './Personal'
 import DefaultIntro from './DefaultIntro'
 import BlogDetail from './BlogDetail'
 
@@ -23,6 +24,7 @@ class App extends React.Component {
       pythonVisible: false,
       jsVisible: false,
       hideDefault: true,
+      aboutVisible: true,
     }
     this.showHTML = this.showHTML.bind(this)
     this.showCSS = this.showCSS.bind(this)
@@ -95,6 +97,7 @@ class App extends React.Component {
   return (
     <ParallaxProvider>
       <Navbar />
+      
       <Hero />
       <Blog />
       <BlogDetail showHTML={this.showHTML} showCSS={this.showCSS}
@@ -110,6 +113,8 @@ class App extends React.Component {
       {this.state.pythonVisible && <Python/>}
       {this.state.jsVisible && <JS/>}
       {this.state.hideDefault && <DefaultIntro/>}
+
+      <Personal/>
     </ParallaxProvider>
     
   )

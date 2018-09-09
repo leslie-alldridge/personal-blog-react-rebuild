@@ -19,12 +19,12 @@ const DefaultIntro = () => {
     <li>Honesty and empathy are my core values.</li>
     <li>Helping others and washing their coffee cups when appropriate.</li>
   </ul>
-  <blockquote>In summary: I'm an honest, hardworking invidividual that thrives in a team environment and working towards a common goal.</blockquote>
+  <blockquote>I'm an honest, hardworking invidividual that thrives in a team environment. I enjoy the challenge of learning new things and love to teach others.</blockquote>
 
   <h2 data-aos="zoom-out-left" data-aos-duration="9000"><i id="horn" class="fas fa-bullhorn"></i>
 
   Please check out my <a href="https://github.com/leslie-alldridge">GitHub page</a> to see my other projects.
-  </h2> <p>I've listed some below, they all use Javascript so I've noted the additional features: </p>
+  </h2> <p>I've listed some below, they all use Javascript so it has been omitted from the below: </p>
   <ul>
       <li>Rubik's Cube timer (mobile friendly) with SQL databases, Charts.js graphs, Bootstrap styling and two API sources</li>
       <li>Xero Invoice Reducer and Bulk Voiding Tools with OAuth, complex data structures and API calls, handlebars, express and Bootstrap</li>

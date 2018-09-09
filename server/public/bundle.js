@@ -22385,11 +22385,15 @@ var _JS = __webpack_require__(42);
 
 var _JS2 = _interopRequireDefault(_JS);
 
-var _DefaultIntro = __webpack_require__(43);
+var _Personal = __webpack_require__(43);
+
+var _Personal2 = _interopRequireDefault(_Personal);
+
+var _DefaultIntro = __webpack_require__(46);
 
 var _DefaultIntro2 = _interopRequireDefault(_DefaultIntro);
 
-var _BlogDetail = __webpack_require__(44);
+var _BlogDetail = __webpack_require__(47);
 
 var _BlogDetail2 = _interopRequireDefault(_BlogDetail);
 
@@ -22416,7 +22420,8 @@ var App = function (_React$Component) {
       nodeVisible: false,
       pythonVisible: false,
       jsVisible: false,
-      hideDefault: true
+      hideDefault: true,
+      aboutVisible: true
     };
     _this.showHTML = _this.showHTML.bind(_this);
     _this.showCSS = _this.showCSS.bind(_this);
@@ -22532,7 +22537,8 @@ var App = function (_React$Component) {
         this.state.nodeVisible && _react2.default.createElement(_Node2.default, null),
         this.state.pythonVisible && _react2.default.createElement(_Python2.default, null),
         this.state.jsVisible && _react2.default.createElement(_JS2.default, null),
-        this.state.hideDefault && _react2.default.createElement(_DefaultIntro2.default, null)
+        this.state.hideDefault && _react2.default.createElement(_DefaultIntro2.default, null),
+        _react2.default.createElement(_Personal2.default, null)
       );
     }
   }]);
@@ -24311,6 +24317,287 @@ exports.default = JS;
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Technical = __webpack_require__(44);
+
+var _Technical2 = _interopRequireDefault(_Technical);
+
+var _PersonalB = __webpack_require__(45);
+
+var _PersonalB2 = _interopRequireDefault(_PersonalB);
+
+var _reactScrollParallax = __webpack_require__(5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Personal = function (_React$Component) {
+    _inherits(Personal, _React$Component);
+
+    function Personal(props) {
+        _classCallCheck(this, Personal);
+
+        var _this = _possibleConstructorReturn(this, (Personal.__proto__ || Object.getPrototypeOf(Personal)).call(this, props));
+
+        _this.state = {
+            personal: true,
+            technical: false
+        };
+        _this.showPersonal = _this.showPersonal.bind(_this);
+        _this.showTechnical = _this.showTechnical.bind(_this);
+        return _this;
+    }
+
+    _createClass(Personal, [{
+        key: 'showPersonal',
+        value: function showPersonal() {
+            this.setState({
+                personal: true,
+                technical: false
+            });
+        }
+    }, {
+        key: 'showTechnical',
+        value: function showTechnical() {
+            console.log('hitte');
+            this.setState({
+                technical: true,
+                personal: false
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+
+            return _react2.default.createElement(
+                'div',
+                { 'data-aos': 'fade-in', id: 'skillsContent', 'class': 'container is-fluid' },
+                _react2.default.createElement(
+                    'div',
+                    { 'class': 'container is-fluid' },
+                    _react2.default.createElement(
+                        'div',
+                        { 'class': 'content' },
+                        _react2.default.createElement(
+                            _reactScrollParallax.Parallax,
+                            {
+                                offsetXMin: '-620px',
+                                offsetXMax: '800px' },
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                'Personal & Technical Blogs'
+                            )
+                        ),
+                        _react2.default.createElement('span', { 'class': 'progress-value green', style: { width: 100 } }),
+                        _react2.default.createElement('br', null),
+                        this.state.technical && _react2.default.createElement(_Technical2.default, { func: this.showPersonal }),
+                        this.state.personal && _react2.default.createElement(_PersonalB2.default, { func: this.showTechnical })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Personal;
+}(_react2.default.Component);
+
+exports.default = Personal;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Technical = function (_React$Component) {
+  _inherits(Technical, _React$Component);
+
+  function Technical(props) {
+    _classCallCheck(this, Technical);
+
+    var _this = _possibleConstructorReturn(this, (Technical.__proto__ || Object.getPrototypeOf(Technical)).call(this, props));
+
+    _this.state = {};
+    console.log(props);
+
+    return _this;
+  }
+
+  _createClass(Technical, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        " ",
+        _react2.default.createElement(
+          "div",
+          { "class": "container is-fluid" },
+          _react2.default.createElement(
+            "h2",
+            { onClick: this.props.func, id: "pbTitle" },
+            "Technical Blog Topics ",
+            _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "columns" },
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Technical;
+}(_react2.default.Component);
+
+exports.default = Technical;
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var PersonalB = function (_React$Component) {
+  _inherits(PersonalB, _React$Component);
+
+  function PersonalB(props) {
+    _classCallCheck(this, PersonalB);
+
+    var _this = _possibleConstructorReturn(this, (PersonalB.__proto__ || Object.getPrototypeOf(PersonalB)).call(this, props));
+
+    _this.state = {};
+    console.log(props);
+
+    return _this;
+  }
+
+  _createClass(PersonalB, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { "class": "container is-fluid" },
+          _react2.default.createElement(
+            "h2",
+            { onClick: this.props.func, id: "pbTitle" },
+            "Personal Blog Topics ",
+            _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "columns" },
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return PersonalB;
+}(_react2.default.Component);
+
+exports.default = PersonalB;
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
@@ -24372,7 +24659,7 @@ var DefaultIntro = function DefaultIntro() {
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: I'm an honest, hardworking invidividual that thrives in a team environment and working towards a common goal."
+          "I'm an honest, hardworking invidividual that thrives in a team environment. I enjoy the challenge of learning new things and love to teach others."
         ),
         _react2.default.createElement(
           "h2",
@@ -24390,7 +24677,7 @@ var DefaultIntro = function DefaultIntro() {
         _react2.default.createElement(
           "p",
           null,
-          "I've listed some below, they all use Javascript so I've noted the additional features: "
+          "I've listed some below, they all use Javascript so it has been omitted from the below: "
         ),
         _react2.default.createElement(
           "ul",
@@ -24429,7 +24716,7 @@ var DefaultIntro = function DefaultIntro() {
 exports.default = DefaultIntro;
 
 /***/ }),
-/* 44 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
