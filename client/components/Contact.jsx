@@ -2,6 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
+      <div>
         <div class="container">
        
 
@@ -10,7 +11,7 @@ const Contact = () => {
   <article class="media">
     <div class="media-left">
     <figure class="image is-128x128">
-    <img class="is-rounded" src="/pimg.jpg"/>
+    <img id="myIMG" class="is-rounded" src="/pimg.jpg"/>
 </figure>
     </div>
     <div class="media-content">
@@ -43,7 +44,7 @@ const Contact = () => {
     </div>
   </article>
 
-</div>  
+</div>  </div>
         </div>
     )
 }

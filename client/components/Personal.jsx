@@ -35,6 +35,7 @@ class Personal extends React.Component {
     render() {
 
     return ( 
+        <div className="target" id="2">
 <div  data-aos="fade-in" id = "skillsContent" class="container is-fluid">
 <div class="container is-fluid">
 <div class="content">
@@ -55,6 +56,7 @@ class Personal extends React.Component {
   {this.state.technical && <Technical func={this.showPersonal}/>}
   {this.state.personal && <PersonalB func={this.showTechnical}/>}
   </div>
+</div>
 </div>
 </div>
     )}

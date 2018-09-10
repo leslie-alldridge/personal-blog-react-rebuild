@@ -25,17 +25,17 @@ const Navbar = () => {
         </a>
         
         <div className="navbar-item is-hoverable">
-        <a className="navbar-item is-active"  href="#">
+        <a className="navbar-item is-active"  href="#2">
           Blog
         </a>
         </div>
         <div className="navbar-item is-hoverable">
-        <a className="navbar-item" href="#">
+        <a className="navbar-item" href="#3">
           Contact
         </a>
         </div>
         <div className="navbar-item is-hoverable">
-        <a className="navbar-item" href="#">
+        <a className="navbar-item" href="#4">
           About
         </a>
         </div>

@@ -14,6 +14,7 @@ import DefaultIntro from './DefaultIntro'
 import BlogDetail from './BlogDetail'
 import Contact from './Contact'
 import About from './About'
+import Footer from './Footer'
 
 class App extends React.Component {
   constructor(props){
@@ -119,6 +120,7 @@ class App extends React.Component {
       <Personal/>
       <Contact />
       <About />
+      <Footer />
     </ParallaxProvider>
     
   )

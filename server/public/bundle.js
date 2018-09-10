@@ -22405,6 +22405,10 @@ var _About = __webpack_require__(49);
 
 var _About2 = _interopRequireDefault(_About);
 
+var _Footer = __webpack_require__(50);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22548,7 +22552,8 @@ var App = function (_React$Component) {
         this.state.hideDefault && _react2.default.createElement(_DefaultIntro2.default, null),
         _react2.default.createElement(_Personal2.default, null),
         _react2.default.createElement(_Contact2.default, null),
-        _react2.default.createElement(_About2.default, null)
+        _react2.default.createElement(_About2.default, null),
+        _react2.default.createElement(_Footer2.default, null)
       );
     }
   }]);
@@ -23655,7 +23660,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item is-active", href: "#" },
+              { className: "navbar-item is-active", href: "#2" },
               "Blog"
             )
           ),
@@ -23664,7 +23669,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item", href: "#" },
+              { className: "navbar-item", href: "#3" },
               "Contact"
             )
           ),
@@ -23673,7 +23678,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item", href: "#" },
+              { className: "navbar-item", href: "#4" },
               "About"
             )
           )
@@ -24394,28 +24399,32 @@ var Personal = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { 'data-aos': 'fade-in', id: 'skillsContent', 'class': 'container is-fluid' },
+                { className: 'target', id: '2' },
                 _react2.default.createElement(
                     'div',
-                    { 'class': 'container is-fluid' },
+                    { 'data-aos': 'fade-in', id: 'skillsContent', 'class': 'container is-fluid' },
                     _react2.default.createElement(
                         'div',
-                        { 'class': 'content' },
+                        { 'class': 'container is-fluid' },
                         _react2.default.createElement(
-                            _reactScrollParallax.Parallax,
-                            {
-                                offsetXMin: '-620px',
-                                offsetXMax: '800px' },
+                            'div',
+                            { 'class': 'content' },
                             _react2.default.createElement(
-                                'h3',
-                                null,
-                                'Personal & Technical Blogs'
-                            )
-                        ),
-                        _react2.default.createElement('span', { 'class': 'progress-value green', style: { width: 100 } }),
-                        _react2.default.createElement('br', null),
-                        this.state.technical && _react2.default.createElement(_Technical2.default, { func: this.showPersonal }),
-                        this.state.personal && _react2.default.createElement(_PersonalB2.default, { func: this.showTechnical })
+                                _reactScrollParallax.Parallax,
+                                {
+                                    offsetXMin: '-620px',
+                                    offsetXMax: '800px' },
+                                _react2.default.createElement(
+                                    'h3',
+                                    null,
+                                    'Personal & Technical Blogs'
+                                )
+                            ),
+                            _react2.default.createElement('span', { 'class': 'progress-value green', style: { width: 100 } }),
+                            _react2.default.createElement('br', null),
+                            this.state.technical && _react2.default.createElement(_Technical2.default, { func: this.showPersonal }),
+                            this.state.personal && _react2.default.createElement(_PersonalB2.default, { func: this.showTechnical })
+                        )
                     )
                 )
             );
@@ -24650,7 +24659,7 @@ var PersonalB = function (_React$Component) {
             ),
             _react2.default.createElement(
               "div",
-              { "class": "column" },
+              { className: "target", id: "3", "class": "column" },
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             )
           )
@@ -25020,111 +25029,116 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Contact = function Contact() {
   return _react2.default.createElement(
     "div",
-    { "class": "container" },
+    null,
     _react2.default.createElement(
       "div",
-      { "class": "box" },
+      { "class": "container" },
       _react2.default.createElement(
-        "article",
-        { "class": "media" },
+        "div",
+        { "class": "box" },
         _react2.default.createElement(
-          "div",
-          { "class": "media-left" },
-          _react2.default.createElement(
-            "figure",
-            { "class": "image is-128x128" },
-            _react2.default.createElement("img", { "class": "is-rounded", src: "/pimg.jpg" })
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { "class": "media-content" },
+          "article",
+          { "class": "media" },
           _react2.default.createElement(
             "div",
-            { "class": "content" },
+            { "class": "media-left" },
             _react2.default.createElement(
-              "p",
-              null,
-              _react2.default.createElement(
-                "strong",
-                { id: "myName" },
-                "Leslie Alldridge "
-              ),
-              _react2.default.createElement("br", null),
-              _react2.default.createElement(
-                "ul",
-                null,
-                _react2.default.createElement(
-                  "li",
-                  { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
-                  _react2.default.createElement(
-                    "strong",
-                    null,
-                    "Email:"
-                  ),
-                  " leslie.alldridge@gmail.com"
-                ),
-                _react2.default.createElement(
-                  "li",
-                  { "data-aos": "zoom-in-left", "data-aos-duration": "11000" },
-                  _react2.default.createElement(
-                    "strong",
-                    null,
-                    "Mobile:"
-                  ),
-                  " 027-331-3416"
-                ),
-                _react2.default.createElement(
-                  "li",
-                  { "data-aos": "zoom-out-left", "data-aos-duration": "13000" },
-                  _react2.default.createElement(
-                    "strong",
-                    null,
-                    "Location:"
-                  ),
-                  " Wellington, New Zealand"
-                ),
-                _react2.default.createElement(
-                  "li",
-                  { "data-aos": "zoom-in-left", "data-aos-duration": "15000" },
-                  _react2.default.createElement(
-                    "strong",
-                    null,
-                    "Find me online:"
-                  ),
-                  " My GitHub and LinkedIn pages are linked below"
-                )
-              )
+              "figure",
+              { "class": "image is-128x128" },
+              _react2.default.createElement("img", { id: "myIMG", "class": "is-rounded", src: "/pimg.jpg" })
             )
           ),
           _react2.default.createElement(
-            "nav",
-            { "class": "level is-mobile" },
+            "div",
+            { "class": "media-content" },
             _react2.default.createElement(
               "div",
-              { "class": "level-left" },
+              { "class": "content" },
               _react2.default.createElement(
-                "a",
-                { href: "https://github.com/leslie-alldridge", target: "_blank", "class": "level-item", "aria-label": "github" },
+                "p",
+                null,
                 _react2.default.createElement(
-                  "span",
-                  { "class": "icon is-small" },
-                  _react2.default.createElement("i", { "class": "fab fa-github", "aria-hidden": "true" })
+                  "strong",
+                  { id: "myName" },
+                  "Leslie Alldridge "
+                ),
+                _react2.default.createElement("br", null),
+                _react2.default.createElement(
+                  "ul",
+                  null,
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Email:"
+                    ),
+                    " leslie.alldridge@gmail.com"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-in-left", "data-aos-duration": "11000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Mobile:"
+                    ),
+                    " 027-331-3416"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-out-left", "data-aos-duration": "13000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Location:"
+                    ),
+                    " Wellington, New Zealand"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-in-left", "data-aos-duration": "15000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Find me online:"
+                    ),
+                    " My GitHub and LinkedIn pages are linked below"
+                  )
                 )
-              ),
+              )
+            ),
+            _react2.default.createElement(
+              "nav",
+              { "class": "level is-mobile" },
               _react2.default.createElement(
-                "a",
-                { href: "https://nz.linkedin.com/in/lesliealldridge", target: "_blank", "class": "level-item", "aria-label": "linkedin" },
+                "div",
+                { "class": "level-left" },
                 _react2.default.createElement(
-                  "span",
-                  { "class": "icon is-small" },
-                  _react2.default.createElement("i", { "class": "fab fa-linkedin", "aria-hidden": "true" })
+                  "a",
+                  { href: "https://github.com/leslie-alldridge", target: "_blank", "class": "level-item", "aria-label": "github" },
+                  _react2.default.createElement(
+                    "span",
+                    { "class": "icon is-small" },
+                    _react2.default.createElement("i", { "class": "fab fa-github", "aria-hidden": "true" })
+                  )
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { href: "https://nz.linkedin.com/in/lesliealldridge", target: "_blank", "class": "level-item", "aria-label": "linkedin" },
+                  _react2.default.createElement(
+                    "span",
+                    { "class": "icon is-small" },
+                    _react2.default.createElement("i", { "class": "fab fa-linkedin", "aria-hidden": "true" })
+                  )
                 )
               )
             )
           )
         )
-      )
+      ),
+      "  "
     )
   );
 };
@@ -25151,7 +25165,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var About = function About() {
   return _react2.default.createElement(
     "div",
-    null,
+    { className: "target", id: "4" },
     _react2.default.createElement(
       "div",
       { id: "aboutPage", "class": "container" },
@@ -25166,7 +25180,7 @@ var About = function About() {
             { "class": "tile is-ancestor" },
             _react2.default.createElement(
               "div",
-              { "class": "tile is-vertical is-8" },
+              { id: "wideTile", "class": "tile is-vertical is-8" },
               _react2.default.createElement(
                 "div",
                 { "class": "tile" },
@@ -25175,16 +25189,25 @@ var About = function About() {
                   { "data-aos": "flip-down", "data-aos-duration": "15000", "class": "tile is-parent is-vertical" },
                   _react2.default.createElement(
                     "article",
-                    { "class": "tile is-child notification is-primary" },
+                    { id: "firstTile", "class": "tile is-child notification is-primary" },
                     _react2.default.createElement(
                       "p",
                       { "class": "title" },
                       "About me"
                     ),
                     _react2.default.createElement(
-                      "p",
-                      null,
-                      "Hello I'm leslie it's nice to meet you. I love solving rubik's cubes and stuff"
+                      "div",
+                      { "class": "content" },
+                      "Hi there! First of all, thanks for checking out my portfolio.",
+                      _react2.default.createElement("p", null),
+                      "My strongest skills are bringing energy into a team, finding more efficient ways to carry out repetitive tasks and thinking of creative solutions to a problem. Outside of the workplace, you'll find me at the gym, practising karate, solving rubik's cubes and learning something new.",
+                      _react2.default.createElement("p", null),
+                      "I've finally found my passion after three careers. I'm driven to become a full stack developer and do the best work of my life. This career will offer me a place where I'll never master my role and be continually learning new technologies and stacks as the industry evolves.",
+                      _react2.default.createElement("p", null),
+                      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.  ",
+                      _react2.default.createElement("p", null),
+                      _react2.default.createElement("p", null),
+                      "I can bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
                     )
                   )
                 )
@@ -25200,7 +25223,7 @@ var About = function About() {
             { "class": "tile is-ancestor" },
             _react2.default.createElement(
               "div",
-              { "class": "tile is-vertical is-8" },
+              { id: "wideTile", "class": "tile is-vertical is-8" },
               _react2.default.createElement(
                 "div",
                 { "class": "tile" },
@@ -25210,49 +25233,69 @@ var About = function About() {
                     "class": "tile is-parent is-vertical" },
                   _react2.default.createElement(
                     "article",
-                    { "class": "tile is-child notification is-primary" },
+                    { id: "firstTile", "class": "tile is-child notification is-primary" },
                     _react2.default.createElement(
                       "p",
                       { "class": "title" },
                       "About my portfolio"
                     ),
                     _react2.default.createElement(
-                      "p",
-                      null,
-                      "This website is powered by:",
+                      "div",
+                      { "class": "content" },
+                      "During my time at DevAcademy I decided to do a reflection at the halfway point to see how far I've grown in a short amount of time.",
+                      _react2.default.createElement("p", null),
+                      "Compared to my portfolio website pre-bootcamp, I'm proud to say I spent much less time on this website and achieved an outcome that exceeded my expectations.",
+                      _react2.default.createElement("p", null),
+                      "I've included more details about my reflections in the readme over on GitHub (",
                       _react2.default.createElement(
-                        "ol",
+                        "a",
+                        { href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild" },
+                        "here"
+                      ),
+                      ") This website is powered by the following technologies:",
+                      _react2.default.createElement(
+                        "ul",
                         null,
                         _react2.default.createElement(
                           "li",
                           null,
-                          "React"
+                          " React"
                         ),
                         _react2.default.createElement(
                           "li",
                           null,
-                          "Bulma CSS"
+                          " Bulma CSS"
                         ),
                         _react2.default.createElement(
                           "li",
                           null,
-                          "React Parallax"
+                          " React Parallax"
                         ),
                         _react2.default.createElement(
                           "li",
                           null,
-                          "CSS 3 Animations"
+                          " CSS 3 Animations"
                         ),
                         _react2.default.createElement(
                           "li",
                           null,
-                          "Node JS"
+                          " Node JS"
                         ),
                         _react2.default.createElement(
                           "li",
                           null,
-                          "Webpack"
+                          " Webpack"
                         )
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "If you have any questions about the technologies used or want to learn how I developed certain parts of this page, please let me know.",
+                        _react2.default.createElement("p", null),
+                        _react2.default.createElement("p", null),
+                        "For anyone looking at this page thinking \"Wow, how'd he do that?\", drop me a message or email and I'll be in touch.",
+                        _react2.default.createElement("p", null),
+                        "Please note: Page will be edited to reflect my new projects and blogs."
                       )
                     )
                   )
@@ -25268,6 +25311,63 @@ var About = function About() {
 };
 
 exports.default = About;
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "footer",
+      { "class": "footer" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content has-text-centered" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Portfolio by Leslie Alldridge - 2018. Created with ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://reactjs.org/" },
+            "React"
+          ),
+          ", ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
+            "React Parallax"
+          ),
+          ", ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://bulma.io/" },
+            "Bulma"
+          ),
+          ", Node JS and CSS3."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
