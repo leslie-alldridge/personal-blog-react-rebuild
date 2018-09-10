@@ -234,15 +234,13 @@ animation: bounce 0.5s infinite alternate;
       transform: translate(10px, 0);
     }
   }
-<<<<<<< HEAD
   
 #myName {
     color: #3273dc;
 }
-=======
+
 
   .navbar-link.is-active, a.navbar-item.is-active {
     color: #59f;
   }
 
->>>>>>> b058acadedaf459e4d23b7904e95b48fe4199eef
