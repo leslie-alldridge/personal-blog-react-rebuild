@@ -31,7 +31,7 @@ $(window).on('scroll', function() {
       if($(window).scrollTop() >= $(this).offset().top) {
           var id = $(this).attr('id');
           $('#nav div a').removeClass('is-active');
-          $('#nav div a[href=#'+ id +']').addClass('is-active');
+          $('nav a[href="#'+ id +'"]').addClass('is-active');
       }
   });
 });
