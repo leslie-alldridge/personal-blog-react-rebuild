@@ -244,3 +244,10 @@ animation: bounce 0.5s infinite alternate;
     color: #59f;
   }
 
+  #aboutPage {
+      margin-top: 3%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+

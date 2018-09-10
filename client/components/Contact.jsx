@@ -43,7 +43,7 @@ const Contact = () => {
     </div>
   </article>
 
-</div>  <p>hlelplcapld</p>
+</div>  
         </div>
     )
 }

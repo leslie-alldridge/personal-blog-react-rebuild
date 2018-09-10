@@ -13,6 +13,7 @@ import Personal from './Personal'
 import DefaultIntro from './DefaultIntro'
 import BlogDetail from './BlogDetail'
 import Contact from './Contact'
+import About from './About'
 
 class App extends React.Component {
   constructor(props){
@@ -117,6 +118,7 @@ class App extends React.Component {
 
       <Personal/>
       <Contact />
+      <About />
     </ParallaxProvider>
     
   )

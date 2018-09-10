@@ -22401,6 +22401,10 @@ var _Contact = __webpack_require__(48);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
+var _About = __webpack_require__(49);
+
+var _About2 = _interopRequireDefault(_About);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22543,7 +22547,8 @@ var App = function (_React$Component) {
         this.state.jsVisible && _react2.default.createElement(_JS2.default, null),
         this.state.hideDefault && _react2.default.createElement(_DefaultIntro2.default, null),
         _react2.default.createElement(_Personal2.default, null),
-        _react2.default.createElement(_Contact2.default, null)
+        _react2.default.createElement(_Contact2.default, null),
+        _react2.default.createElement(_About2.default, null)
       );
     }
   }]);
@@ -25120,17 +25125,149 @@ var Contact = function Contact() {
           )
         )
       )
-    ),
-    "  ",
-    _react2.default.createElement(
-      "p",
-      null,
-      "hlelplcapld"
     )
   );
 };
 
 exports.default = Contact;
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = function About() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "div",
+      { id: "aboutPage", "class": "container" },
+      _react2.default.createElement(
+        "div",
+        { "class": "columns" },
+        _react2.default.createElement(
+          "div",
+          { "class": "column" },
+          _react2.default.createElement(
+            "div",
+            { "class": "tile is-ancestor" },
+            _react2.default.createElement(
+              "div",
+              { "class": "tile is-vertical is-8" },
+              _react2.default.createElement(
+                "div",
+                { "class": "tile" },
+                _react2.default.createElement(
+                  "div",
+                  { "data-aos": "flip-down", "data-aos-duration": "15000", "class": "tile is-parent is-vertical" },
+                  _react2.default.createElement(
+                    "article",
+                    { "class": "tile is-child notification is-primary" },
+                    _react2.default.createElement(
+                      "p",
+                      { "class": "title" },
+                      "About me"
+                    ),
+                    _react2.default.createElement(
+                      "p",
+                      null,
+                      "Hello I'm leslie it's nice to meet you. I love solving rubik's cubes and stuff"
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "column" },
+          _react2.default.createElement(
+            "div",
+            { "class": "tile is-ancestor" },
+            _react2.default.createElement(
+              "div",
+              { "class": "tile is-vertical is-8" },
+              _react2.default.createElement(
+                "div",
+                { "class": "tile" },
+                _react2.default.createElement(
+                  "div",
+                  { "data-aos": "flip-down", "data-aos-duration": "15000",
+                    "class": "tile is-parent is-vertical" },
+                  _react2.default.createElement(
+                    "article",
+                    { "class": "tile is-child notification is-primary" },
+                    _react2.default.createElement(
+                      "p",
+                      { "class": "title" },
+                      "About my portfolio"
+                    ),
+                    _react2.default.createElement(
+                      "p",
+                      null,
+                      "This website is powered by:",
+                      _react2.default.createElement(
+                        "ol",
+                        null,
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          "React"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          "Bulma CSS"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          "React Parallax"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          "CSS 3 Animations"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          "Node JS"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          "Webpack"
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        " "
+      )
+    )
+  );
+};
+
+exports.default = About;
 
 /***/ })
 /******/ ]);
