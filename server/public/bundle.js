@@ -22397,6 +22397,10 @@ var _BlogDetail = __webpack_require__(47);
 
 var _BlogDetail2 = _interopRequireDefault(_BlogDetail);
 
+var _Contact = __webpack_require__(48);
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22538,7 +22542,8 @@ var App = function (_React$Component) {
         this.state.pythonVisible && _react2.default.createElement(_Python2.default, null),
         this.state.jsVisible && _react2.default.createElement(_JS2.default, null),
         this.state.hideDefault && _react2.default.createElement(_DefaultIntro2.default, null),
-        _react2.default.createElement(_Personal2.default, null)
+        _react2.default.createElement(_Personal2.default, null),
+        _react2.default.createElement(_Contact2.default, null)
       );
     }
   }]);
@@ -24989,6 +24994,143 @@ var BlogDetail = function BlogDetail(props) {
 };
 
 exports.default = BlogDetail;
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contact = function Contact() {
+  return _react2.default.createElement(
+    "div",
+    { "class": "container" },
+    _react2.default.createElement(
+      "div",
+      { "class": "box" },
+      _react2.default.createElement(
+        "article",
+        { "class": "media" },
+        _react2.default.createElement(
+          "div",
+          { "class": "media-left" },
+          _react2.default.createElement(
+            "figure",
+            { "class": "image is-128x128" },
+            _react2.default.createElement("img", { "class": "is-rounded", src: "/pimg.jpg" })
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "media-content" },
+          _react2.default.createElement(
+            "div",
+            { "class": "content" },
+            _react2.default.createElement(
+              "p",
+              null,
+              _react2.default.createElement(
+                "strong",
+                { id: "myName" },
+                "Leslie Alldridge "
+              ),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                  "li",
+                  { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
+                  _react2.default.createElement(
+                    "strong",
+                    null,
+                    "Email:"
+                  ),
+                  " leslie.alldridge@gmail.com"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  { "data-aos": "zoom-in-left", "data-aos-duration": "11000" },
+                  _react2.default.createElement(
+                    "strong",
+                    null,
+                    "Mobile:"
+                  ),
+                  " 027-331-3416"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  { "data-aos": "zoom-out-left", "data-aos-duration": "13000" },
+                  _react2.default.createElement(
+                    "strong",
+                    null,
+                    "Location:"
+                  ),
+                  " Wellington, New Zealand"
+                ),
+                _react2.default.createElement(
+                  "li",
+                  { "data-aos": "zoom-in-left", "data-aos-duration": "15000" },
+                  _react2.default.createElement(
+                    "strong",
+                    null,
+                    "Find me online:"
+                  ),
+                  " My GitHub and LinkedIn pages are linked below"
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "nav",
+            { "class": "level is-mobile" },
+            _react2.default.createElement(
+              "div",
+              { "class": "level-left" },
+              _react2.default.createElement(
+                "a",
+                { href: "https://github.com/leslie-alldridge", target: "_blank", "class": "level-item", "aria-label": "github" },
+                _react2.default.createElement(
+                  "span",
+                  { "class": "icon is-small" },
+                  _react2.default.createElement("i", { "class": "fab fa-github", "aria-hidden": "true" })
+                )
+              ),
+              _react2.default.createElement(
+                "a",
+                { href: "https://nz.linkedin.com/in/lesliealldridge", target: "_blank", "class": "level-item", "aria-label": "linkedin" },
+                _react2.default.createElement(
+                  "span",
+                  { "class": "icon is-small" },
+                  _react2.default.createElement("i", { "class": "fab fa-linkedin", "aria-hidden": "true" })
+                )
+              )
+            )
+          )
+        )
+      )
+    ),
+    "  ",
+    _react2.default.createElement(
+      "p",
+      null,
+      "hlelplcapld"
+    )
+  );
+};
+
+exports.default = Contact;
 
 /***/ })
 /******/ ]);

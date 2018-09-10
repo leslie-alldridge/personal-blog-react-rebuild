@@ -238,5 +238,6 @@ animation: bounce 0.5s infinite alternate;
     }
   }
   
-  
-  
+#myName {
+    color: #3273dc;
+}

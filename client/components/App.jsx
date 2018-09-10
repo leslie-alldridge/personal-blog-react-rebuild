@@ -12,6 +12,7 @@ import JS from './JS'
 import Personal from './Personal'
 import DefaultIntro from './DefaultIntro'
 import BlogDetail from './BlogDetail'
+import Contact from './Contact'
 
 class App extends React.Component {
   constructor(props){
@@ -115,6 +116,7 @@ class App extends React.Component {
       {this.state.hideDefault && <DefaultIntro/>}
 
       <Personal/>
+      <Contact />
     </ParallaxProvider>
     
   )
