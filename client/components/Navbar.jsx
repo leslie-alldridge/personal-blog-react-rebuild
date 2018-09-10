@@ -14,18 +14,18 @@ const Navbar = () => {
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" className="navbar-menu">
+  <div id="navbarExampleTransparentExample nav" className="navbar-menu">
     <div className="navbar-start">
       <a className="navbar-item" href="#">
         Home
       </a>
       <div className="navbar-item is-hoverable">
-        <a className="navbar-item" href="#">
+        <a className="navbar-item is-active" href="#1">
           Portfolio
         </a>
         
         <div className="navbar-item is-hoverable">
-        <a className="navbar-item" href="#">
+        <a className="navbar-item is-active"  href="#">
           Blog
         </a>
         </div>

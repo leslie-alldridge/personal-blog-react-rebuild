@@ -17,30 +17,21 @@ $('header').mouseleave(function() {
 });
 
 
-var ready = () => {
 
-  $('.tab').on('click', (e) => {
-      var tabName = (e.currentTarget.attributes[0].nodeValue);
-      removeActive();
-    hideAll();
-    console.log(tabName)
-    $('#' + tabName).addClass('is-active');
-    $('#' + tabName + '-content').removeClass('hidden');
+
+$('#nav nav a').on('click', function(event) {
+  $(this).parent().find('a').removeClass('is-active');
+  $(this).addClass('is-active');
+});
+
+
+
+$(window).on('scroll', function() {
+  $('.target').each(function() {
+      if($(window).scrollTop() >= $(this).offset().top) {
+          var id = $(this).attr('id');
+          $('#nav nav a').removeClass('is-active');
+          $('#nav nav a[href=#'+ id +']').addClass('is-active');
+      }
   });
-
-  var removeActive = () => {
-    $('li').each(function() {
-      $(this).removeClass('is-active');
-    });
-  }
-
-  var hideAll = () => {
-    $('#registerAgent-tab-content').addClass('hidden');
-    $('#da-tab-content').addClass('hidden');
-    $('#mindfulness2-tab-content').addClass('hidden');
-  }
-
-}
-
-$(document).ready(ready);
-$(document).on("page:load", ready);
+});

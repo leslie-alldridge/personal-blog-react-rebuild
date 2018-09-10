@@ -23628,7 +23628,7 @@ var Navbar = function Navbar() {
     ),
     _react2.default.createElement(
       "div",
-      { id: "navbarExampleTransparentExample", className: "navbar-menu" },
+      { id: "navbarExampleTransparentExample nav", className: "navbar-menu" },
       _react2.default.createElement(
         "div",
         { className: "navbar-start" },
@@ -23642,7 +23642,7 @@ var Navbar = function Navbar() {
           { className: "navbar-item is-hoverable" },
           _react2.default.createElement(
             "a",
-            { className: "navbar-item", href: "#" },
+            { className: "navbar-item is-active", href: "#1" },
             "Portfolio"
           ),
           _react2.default.createElement(
@@ -23650,7 +23650,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item", href: "#" },
+              { className: "navbar-item is-active", href: "#" },
               "Blog"
             )
           ),
@@ -23872,7 +23872,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Blog = function Blog() {
     return _react2.default.createElement(
         'div',
-        null,
+        { className: 'target', id: '1' },
         _react2.default.createElement(
             'section',
             { 'class': 'hero' },
