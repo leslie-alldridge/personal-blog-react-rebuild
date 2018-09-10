@@ -23638,7 +23638,7 @@ var Navbar = function Navbar() {
     ),
     _react2.default.createElement(
       "div",
-      { id: "navbarExampleTransparentExample nav", className: "navbar-menu" },
+      { id: "nav", className: "navbar-menu" },
       _react2.default.createElement(
         "div",
         { className: "navbar-start" },
@@ -23652,7 +23652,7 @@ var Navbar = function Navbar() {
           { className: "navbar-item is-hoverable" },
           _react2.default.createElement(
             "a",
-            { className: "navbar-item is-active", href: "#1" },
+            { className: "navbar-item", href: "#1" },
             "Portfolio"
           ),
           _react2.default.createElement(
