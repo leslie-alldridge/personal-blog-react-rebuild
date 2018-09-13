@@ -23644,7 +23644,7 @@ var Navbar = function Navbar() {
         { className: "navbar-start" },
         _react2.default.createElement(
           "a",
-          { className: "navbar-item", href: "#" },
+          { className: "navbar-item is-active", href: "#0" },
           "Home"
         ),
         _react2.default.createElement(
@@ -23660,7 +23660,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item is-active", href: "#2" },
+              { className: "navbar-item", href: "#2" },
               "Blog"
             )
           ),
@@ -23761,7 +23761,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Hero = function Hero() {
   return _react2.default.createElement(
     'div',
-    null,
+    { 'class': 'target', id: '0' },
     _react2.default.createElement(
       'div',
       { id: 'para' },
@@ -24638,7 +24638,7 @@ var PersonalB = function (_React$Component) {
           ),
           _react2.default.createElement(
             "div",
-            { "class": "columns" },
+            { "class": "columns target", id: "3" },
             _react2.default.createElement(
               "div",
               { "class": "column" },
@@ -24741,7 +24741,7 @@ var DefaultIntro = function DefaultIntro() {
         ),
         _react2.default.createElement(
           "blockquote",
-          null,
+          { id: "quote" },
           "I'm an honest, hardworking invidividual that thrives in a team environment. I enjoy the challenge of learning new things and love to teach others."
         ),
         _react2.default.createElement(
@@ -24855,7 +24855,11 @@ var BlogDetail = function BlogDetail(props) {
               _react2.default.createElement(
                 "figure",
                 { id: "blogDetailImg", "class": "image is-4by3" },
-                _react2.default.createElement("img", { src: "https://bulma.io/images/placeholders/640x480.png" })
+                _react2.default.createElement(
+                  "a",
+                  { href: "https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer", target: "_blank" },
+                  _react2.default.createElement("img", { src: "/duplicate.png" })
+                )
               )
             )
           ),
@@ -24878,7 +24882,11 @@ var BlogDetail = function BlogDetail(props) {
               _react2.default.createElement(
                 "figure",
                 { id: "blogDetailImg", "class": "image is-4by3" },
-                _react2.default.createElement("img", { src: "https://bulma.io/images/placeholders/640x480.png" })
+                _react2.default.createElement(
+                  "a",
+                  { href: "https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1", target: "_blank" },
+                  _react2.default.createElement("img", { src: "/void2.png" })
+                )
               )
             )
           ),
@@ -25124,6 +25132,7 @@ var Contact = function Contact() {
                     _react2.default.createElement("i", { "class": "fab fa-github", "aria-hidden": "true" })
                   )
                 ),
+                _react2.default.createElement("div", { className: "target", id: "4" }),
                 _react2.default.createElement(
                   "a",
                   { href: "https://nz.linkedin.com/in/lesliealldridge", target: "_blank", "class": "level-item", "aria-label": "linkedin" },
@@ -25165,7 +25174,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var About = function About() {
   return _react2.default.createElement(
     "div",
-    { className: "target", id: "4" },
+    null,
     _react2.default.createElement(
       "div",
       { id: "aboutPage", "class": "container" },
@@ -25207,7 +25216,7 @@ var About = function About() {
                       "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.  ",
                       _react2.default.createElement("p", null),
                       _react2.default.createElement("p", null),
-                      "I can bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
+                      "I will bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
                     )
                   )
                 )
@@ -25303,8 +25312,7 @@ var About = function About() {
               )
             )
           )
-        ),
-        " "
+        )
       )
     )
   );

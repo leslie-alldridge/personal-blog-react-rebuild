@@ -19,7 +19,7 @@ const DefaultIntro = () => {
     <li>Honesty and empathy are my core values.</li>
     <li>Helping others and washing their coffee cups when appropriate.</li>
   </ul>
-  <blockquote>I'm an honest, hardworking invidividual that thrives in a team environment. I enjoy the challenge of learning new things and love to teach others.</blockquote>
+  <blockquote id="quote">I'm an honest, hardworking invidividual that thrives in a team environment. I enjoy the challenge of learning new things and love to teach others.</blockquote>
 
   <h2 data-aos="zoom-out-left" data-aos-duration="9000"><i id="horn" class="fas fa-bullhorn"></i>
 

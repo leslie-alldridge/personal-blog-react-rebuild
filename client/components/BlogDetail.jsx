@@ -21,7 +21,7 @@ const BlogDetail = (props) => {
           <p class="title">Xero Invoice Reducer</p>
           <p class="subtitle">Create summarised invoices with ease</p>
 <figure id="blogDetailImg" class="image is-4by3">            
-<img src="https://bulma.io/images/placeholders/640x480.png"/>
+<a href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer" target="_blank"><img src="/duplicate.png"/></a> 
           </figure>
         </article>
       </div>
@@ -30,7 +30,7 @@ const BlogDetail = (props) => {
           <p class="title">Xero Bulk Voiding Tool</p>
           <p class="subtitle">Void invoices in bulk</p>
 <figure id="blogDetailImg" class="image is-4by3">            
-<img src="https://bulma.io/images/placeholders/640x480.png"/>
+<a href="https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1" target="_blank"><img src="/void2.png"/></a>
           </figure>
         </article>
       </div>

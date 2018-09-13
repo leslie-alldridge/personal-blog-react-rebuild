@@ -4,7 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 const Hero = () => {
     return (
-        <div>
+        <div class="target" id="0">
         <div id='para'>
         
             <section className="hero is-info is-fullheight">

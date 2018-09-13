@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-      <div>
+      <div >
         <div class="container">
        
 
@@ -27,6 +27,7 @@ const Contact = () => {
         </ul>
           </p>
       </div>
+
       <nav class="level is-mobile">
         <div class="level-left">
           <a href="https://github.com/leslie-alldridge" target="_blank" class="level-item" aria-label="github">
@@ -34,17 +35,21 @@ const Contact = () => {
               <i class="fab fa-github" aria-hidden="true"></i>
             </span>
           </a>
+          <div className="target" id="4"></div>
           <a href="https://nz.linkedin.com/in/lesliealldridge" target="_blank" class="level-item" aria-label="linkedin">
             <span class="icon is-small">
               <i class="fab fa-linkedin" aria-hidden="true"></i>
+
             </span>
           </a>
+          
         </div>
       </nav>
     </div>
   </article>
 
 </div>  </div>
+
         </div>
     )
 }

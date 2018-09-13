@@ -36,7 +36,7 @@ render()
 </div>
 </div>
 
-<div class="columns">
+<div class="columns target" id="3">
   <div class="column">
     <section>
     <h4>Mindfulness</h4>

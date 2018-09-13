@@ -1,39 +1,26 @@
-/* body {
-    color: red
-} */
-
 #navIcon {
     margin-right: 30px;
 }
-
 #mainNav {
     max-height: 0;
     min-height: 80px;
     font-size: 1.25em;
     border-bottom: 1px solid #59f;
 }
-
 #navName {
     color:#3273dc;
 }
-
 #para {
     text-align: center;
 }
-
 .hero.is-info {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url('sg.jpg') no-repeat center center fixed;
-      background-attachment: fixed;
-
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('sg.jpg') no-repeat center center fixed;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
 #lax {
     display: flex;
     flex-direction: column;
@@ -44,38 +31,32 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     line-height: 5vw;
     transform-origin: left top;
-} 
-
+}
 #title {
     padding-bottom: 10px;
     font-size: 3em;
 }
-
 #blogTitle {
     padding-top: 10%;
     color: white;
     font-size: 2.25em;
 }
-
 #blogDetail {
     margin-top: 3%;
     max-width: 95%;
     margin-left: 2.5%;
     margin-bottom: 15%;
 }
-
 #blogDetailImg {
     margin-left: 10px;
     -webkit-transition: 0.5s;
-            transition: 0.5s;
-  }
-  
-  #blogDetailImg :hover{
+    transition: 0.5s;
+}
+#blogDetailImg :hover{
     background:#59f;
     -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-  }
-
+    transform: scale(1.05);
+}
 #symbols {
     display: flex;
     float: left;
@@ -83,59 +64,47 @@
     align-items: center;
     padding-right: 8%;
 }
-
 #imgBadge {
     margin-left: 30px;
 }
 
-/* #imgBadge:hover {
-    margin-left: 60px;
-    color: red;
-} */
-
 .image {
     margin-left: 6%;
 }
-
 #skillsContent {
-    /* margin-top: 10%; */
     margin-bottom: 40px;
     width: 90%;
 }
-
 .textHide {
     display: none;
 }
-
 #imgBadge:hover + div {
     display: block;
     opacity: 1;
     font-weight: 500;
     margin-left: 50%;
 }
-
 #imgBadge:hover {
     cursor: pointer;
-animation: bounce 0.5s infinite alternate;
-  -webkit-animation: bounce 0.5s infinite alternate;
+    animation: bounce 0.5s infinite alternate;
+    -webkit-animation: bounce 0.5s infinite alternate;
 }
 @keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-15px);
-  }
+    from {
+        transform: translateY(0px);
+   }
+    to {
+        transform: translateY(-15px);
+   }
 }
 @-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-15px);
-  }
+    from {
+        transform: translateY(0px);
+   }
+    to {
+        transform: translateY(-15px);
+   }
 }
-
 .textInfo {
     color: black;
     width: 60px;
@@ -144,13 +113,10 @@ animation: bounce 0.5s infinite alternate;
     text-decoration: underline ;
     text-decoration-color: #59f;
 }
-
 /* Animations */
-
 #horn {
     margin-right: 15px;
 }
-
 .progress-bar {
     margin-bottom: 1rem;
     background-color: lightgray;
@@ -165,50 +131,45 @@ animation: bounce 0.5s infinite alternate;
     border-radius: 1.25em;
     height: 16px;
     display: inline-block;
-    animation: progress 9s ease-in-out forwards;
-    -webkit-animation: progress 9s ease-in-out forwards;
+    animation: progress 15s ease-in-out forwards;
+    -webkit-animation: progress 15s ease-in-out forwards;
 }
 .progress-value.green {
     background-color: #59f;
-    animation: progress-3 9s ease-in-out forwards;
-    -webkit-animation: progress-3 9s ease-in-out forwards;
+    animation: progress-3 15s ease-in-out forwards;
+    -webkit-animation: progress-3 15s ease-in-out forwards;
     animation-iteration-count: infinite;
 }
-
 /* animation */
- @keyframes progress-3 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+@keyframes progress-3 {
+    from {
+        width: 0;
+   }
+    to {
+        width: 100%;
+   }
 }
- @-webkit-keyframes progress-3 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+@-webkit-keyframes progress-3 {
+    from {
+        width: 0;
+   }
+    to {
+        width: 100%;
+   }
 }
-
 /* tabs */
-.hidden{ display: none; }
-
-
+.hidden{
+    display: none;
+}
 #eda-tab-content {
     background-color: red;
     max-width: 50%;
-    
 }
-
 #pbTitle {
     text-align: center;
     margin-top: 1%;
     padding-bottom: 1%;
 }
-
 #arrow {
     margin-left: 10px;
     padding-top: 2px;
@@ -217,50 +178,41 @@ animation: bounce 0.5s infinite alternate;
 #arrow:hover {
     cursor: pointer;
 }
-
-
 .arrow1 {
     animation: slide1 1.2s ease-in-out infinite;
     margin-left: 9px;
-  }
-
-  @keyframes slide1 {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-  
+}
+@keyframes slide1 {
+    0%, 100% {
+        transform: translate(0, 0);
+   }
     50% {
-      transform: translate(10px, 0);
-    }
-  }
-  
+        transform: translate(10px, 0);
+   }
+}
 #myName {
     color: #3273dc;
 }
-
-
-  .navbar-link.is-active, a.navbar-item.is-active {
+.navbar-link.is-active, a.navbar-item.is-active {
     color: #59f;
-  }
-
-  #aboutPage {
-      margin-top: 3%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-
+}
+#aboutPage {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #myIMG {
     border: 2px solid #59f;
 }
-
 #firstTile {
     background-color: #3273dc;
 }
-
 #wideTile {
     width: 100%;
     min-height: 710px;
 }
-
+#quote {
+    background-color:#dce4f1b9;
+    border-radius: 4px;
+}
