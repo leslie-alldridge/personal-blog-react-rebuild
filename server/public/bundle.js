@@ -24515,7 +24515,20 @@ var Technical = function (_React$Component) {
             _react2.default.createElement(
               "div",
               { "class": "column" },
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                )
+              )
             )
           ),
           _react2.default.createElement(
@@ -24542,7 +24555,20 @@ var Technical = function (_React$Component) {
             _react2.default.createElement(
               "div",
               { "class": "column" },
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                )
+              )
             )
           )
         )
@@ -24563,7 +24589,7 @@ exports.default = Technical;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24581,94 +24607,120 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var PersonalB = function (_React$Component) {
-  _inherits(PersonalB, _React$Component);
+    _inherits(PersonalB, _React$Component);
 
-  function PersonalB(props) {
-    _classCallCheck(this, PersonalB);
+    function PersonalB(props) {
+        _classCallCheck(this, PersonalB);
 
-    var _this = _possibleConstructorReturn(this, (PersonalB.__proto__ || Object.getPrototypeOf(PersonalB)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (PersonalB.__proto__ || Object.getPrototypeOf(PersonalB)).call(this, props));
 
-    _this.state = {};
-    console.log(props);
+        _this.state = {};
+        console.log(props);
 
-    return _this;
-  }
-
-  _createClass(PersonalB, [{
-    key: "render",
-    value: function render() {
-      return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-          "div",
-          { "class": "container is-fluid" },
-          _react2.default.createElement(
-            "h2",
-            { onClick: this.props.func, id: "pbTitle" },
-            "Personal Blog Topics ",
-            _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
-          ),
-          _react2.default.createElement(
-            "div",
-            { "class": "columns" },
-            _react2.default.createElement(
-              "div",
-              { "class": "column" },
-              _react2.default.createElement(
-                "section",
-                null,
-                _react2.default.createElement(
-                  "h4",
-                  null,
-                  "Learning to learn"
-                ),
-                _react2.default.createElement(
-                  "p",
-                  null,
-                  "Learning to learn is a great skill that isn't acquired naturally for most people. We can all learn, but there's true power in finding what helps you learn best. I've noticed when learning new concepts it no longer takes an entire day. I can apply myself to the subject and in a few hours time, find myself teaching others how to better understand that same topic. I'm never afraid to learn new things and continually reflect on my progress towards goals that I've set for learning new content."
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { "class": "column" },
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { "class": "columns target", id: "3" },
-            _react2.default.createElement(
-              "div",
-              { "class": "column" },
-              _react2.default.createElement(
-                "section",
-                null,
-                _react2.default.createElement(
-                  "h4",
-                  null,
-                  "Mindfulness"
-                ),
-                _react2.default.createElement(
-                  "p",
-                  null,
-                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { className: "target", id: "3", "class": "column" },
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            )
-          )
-        )
-      );
+        return _this;
     }
-  }]);
 
-  return PersonalB;
+    _createClass(PersonalB, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                null,
+                _react2.default.createElement(
+                    "div",
+                    { "class": "container is-fluid" },
+                    _react2.default.createElement(
+                        "h2",
+                        { onClick: this.props.func, id: "pbTitle" },
+                        "Personal Blog Topics ",
+                        _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { "class": "columns" },
+                        _react2.default.createElement(
+                            "div",
+                            { "class": "column" },
+                            _react2.default.createElement(
+                                "section",
+                                null,
+                                _react2.default.createElement(
+                                    "h4",
+                                    null,
+                                    "Learning to learn"
+                                ),
+                                _react2.default.createElement(
+                                    "p",
+                                    null,
+                                    "Learning to learn is a great skill that isn't acquired naturally for most people. We can all learn, but there's true power in finding what helps you learn best. I've noticed when learning new concepts it no longer takes an entire day. I can apply myself to the subject and in a few hours time, find myself teaching others how to better understand that same topic. I'm never afraid to learn new things and continually reflect on my progress towards goals that I've set for learning new content."
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { "class": "column" },
+                            _react2.default.createElement(
+                                "section",
+                                null,
+                                _react2.default.createElement(
+                                    "h4",
+                                    null,
+                                    "Mindfulness"
+                                ),
+                                _react2.default.createElement(
+                                    "p",
+                                    null,
+                                    "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                                )
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { "class": "columns target", id: "3" },
+                        _react2.default.createElement(
+                            "div",
+                            { "class": "column" },
+                            _react2.default.createElement(
+                                "section",
+                                null,
+                                _react2.default.createElement(
+                                    "h4",
+                                    null,
+                                    "Mindfulness"
+                                ),
+                                _react2.default.createElement(
+                                    "p",
+                                    null,
+                                    "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                                )
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "div",
+                            { className: "target", id: "3", "class": "column" },
+                            _react2.default.createElement(
+                                "section",
+                                null,
+                                _react2.default.createElement(
+                                    "h4",
+                                    null,
+                                    "Mindfulness"
+                                ),
+                                _react2.default.createElement(
+                                    "p",
+                                    null,
+                                    "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return PersonalB;
 }(_react2.default.Component);
 
 exports.default = PersonalB;

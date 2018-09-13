@@ -28,8 +28,15 @@ rendering and provide a simple but effective way to code. I love teaching others
     </section>
   </div>
   <div class="column">
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
+  <section>
+    <h4>Mindfulness</h4>
+<p> 
+Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. 
+This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as 
+meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving 
+a rubik's cube, I can continue to practice mindfulness throughout my day. 
+</p>
+    </section>
 </div>
 </div>
 
@@ -46,8 +53,15 @@ a rubik's cube, I can continue to practice mindfulness throughout my day.
     </section>
   </div>
   <div class="column">
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
+  <section>
+    <h4>Mindfulness</h4>
+<p> 
+Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. 
+This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as 
+meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving 
+a rubik's cube, I can continue to practice mindfulness throughout my day. 
+</p>
+    </section>
 </div>
 </div>
 
