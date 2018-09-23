@@ -23632,13 +23632,32 @@ var Navbar = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
 
     _this.state = {
-      showBurger: false
+      showBurger: false,
+      width: 0,
+      height: 0
     };
     _this.toggleBurger = _this.toggleBurger.bind(_this);
+    _this.updateWindowDimensions = _this.updateWindowDimensions.bind(_this);
     return _this;
   }
 
   _createClass(Navbar, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.updateWindowDimensions();
+      window.addEventListener("resize", this.updateWindowDimensions);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      window.removeEventListener("resize", this.updateWindowDimensions);
+    }
+  }, {
+    key: "updateWindowDimensions",
+    value: function updateWindowDimensions() {
+      this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }
+  }, {
     key: "toggleBurger",
     value: function toggleBurger() {
       this.setState({ showBurger: !this.state.showBurger });
@@ -23653,138 +23672,101 @@ var Navbar = function (_React$Component) {
         { id: "mainNav", className: "navbar is-transparent is-fixed-top" },
         _react2.default.createElement(
           "div",
-          { className: "navbar-brand" },
-          _react2.default.createElement(
-            "a",
-            { id: "navName", className: "navbar-item", href: "#" },
-            _react2.default.createElement("i", { id: "navIcon", className: "fas fa-code" }),
-            "Leslie Alldridge",
-            " "
-          ),
-          _react2.default.createElement(
-            "span",
-            {
-              onClick: this.toggleBurger,
-              className: "navbar-burger burger " + (showBurger ? "is-active" : ""),
-              "data-target": "navbarMenuHeroA"
-            },
-            _react2.default.createElement("span", null),
-            _react2.default.createElement("span", null),
-            _react2.default.createElement("span", null)
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          {
-            id: "navbarMenuHeroA",
-            className: "navbar-menu " + (showBurger ? "is-active" : "")
-          },
+          { className: "container" },
           _react2.default.createElement(
             "div",
-            { className: "navbar-end" },
-            "Logout"
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { id: "nav", className: "navbar-menu" },
-          _react2.default.createElement(
-            "div",
-            { className: "navbar-start" },
+            { className: "navbar-brand" },
             _react2.default.createElement(
+              "a",
+              { id: "navName", className: "navbar-item", href: "#" },
+              _react2.default.createElement("i", { id: "navIcon", className: "fas fa-code" }),
+              "Leslie Alldridge"
+            ),
+            this.state.width > 1088 && _react2.default.createElement(
               "a",
               { className: "navbar-item is-active", href: "#0" },
               "Home"
             ),
-            _react2.default.createElement(
+            this.state.width > 1088 && _react2.default.createElement(
               "div",
               { className: "navbar-item is-hoverable" },
               _react2.default.createElement(
                 "a",
                 { className: "navbar-item", href: "#1" },
                 "Portfolio"
-              ),
+              )
+            ),
+            this.state.width > 1088 && _react2.default.createElement(
+              "div",
+              { className: "navbar-item is-hoverable" },
               _react2.default.createElement(
+                "a",
+                { className: "navbar-item", href: "#2" },
+                "Blog"
+              )
+            ),
+            this.state.width > 1088 && _react2.default.createElement(
+              "div",
+              { className: "navbar-item is-hoverable" },
+              _react2.default.createElement(
+                "a",
+                { className: "navbar-item", href: "#3" },
+                "Contact"
+              )
+            ),
+            this.state.width > 1088 && _react2.default.createElement(
+              "div",
+              { className: "navbar-item is-hoverable" },
+              _react2.default.createElement(
+                "a",
+                { className: "navbar-item", href: "#4" },
+                "About"
+              )
+            ),
+            _react2.default.createElement(
+              "span",
+              {
+                onClick: this.toggleBurger,
+                className: "navbar-burger burger " + (showBurger ? "is-active" : ""),
+                "data-target": "navbarMenuHeroA"
+              },
+              _react2.default.createElement("span", null),
+              _react2.default.createElement("span", null),
+              _react2.default.createElement("span", null)
+            ),
+            _react2.default.createElement(
+              "div",
+              {
+                id: "navbarMenuHeroA",
+                className: "navbar-menu " + (showBurger ? "is-active" : "")
+              },
+              this.state.width <= 1088 && _react2.default.createElement(
                 "div",
-                { className: "navbar-item is-hoverable" },
+                { className: "navbar-end" },
+                _react2.default.createElement(
+                  "a",
+                  { className: "navbar-item", href: "#0" },
+                  "Home"
+                ),
+                _react2.default.createElement(
+                  "a",
+                  { className: "navbar-item", href: "#1" },
+                  "Portfolio"
+                ),
                 _react2.default.createElement(
                   "a",
                   { className: "navbar-item", href: "#2" },
                   "Blog"
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "navbar-item is-hoverable" },
+                ),
                 _react2.default.createElement(
                   "a",
                   { className: "navbar-item", href: "#3" },
                   "Contact"
-                )
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "navbar-item is-hoverable" },
+                ),
                 _react2.default.createElement(
                   "a",
                   { className: "navbar-item", href: "#4" },
                   "About"
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { className: "navbar-end" },
-            _react2.default.createElement(
-              "div",
-              { className: "navbar-item" },
-              _react2.default.createElement(
-                "div",
-                { className: "field is-grouped" },
-                _react2.default.createElement(
-                  "p",
-                  { className: "control" },
-                  _react2.default.createElement(
-                    "a",
-                    {
-                      className: "bd-tw-button button",
-                      target: "_blank",
-                      href: "https://github.com/leslie-alldridge"
-                    },
-                    _react2.default.createElement(
-                      "span",
-                      { className: "icon" },
-                      _react2.default.createElement("i", { className: "fab fa-github" })
-                    ),
-                    _react2.default.createElement(
-                      "span",
-                      null,
-                      "GitHub"
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  "p",
-                  { className: "control" },
-                  _react2.default.createElement(
-                    "a",
-                    {
-                      className: "bd-tw-button button",
-                      target: "_blank",
-                      href: "https://nz.linkedin.com/in/lesliealldridge"
-                    },
-                    _react2.default.createElement(
-                      "span",
-                      { className: "icon" },
-                      _react2.default.createElement("i", { className: "fab fa-linkedin" })
-                    ),
-                    _react2.default.createElement(
-                      "span",
-                      null,
-                      "LinkedIn"
-                    )
-                  )
                 )
               )
             )
