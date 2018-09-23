@@ -24434,7 +24434,6 @@ var Personal = function (_React$Component) {
   }, {
     key: "showTechnical",
     value: function showTechnical() {
-      console.log("hitte");
       this.setState({
         technical: true,
         personal: false
@@ -24564,12 +24563,12 @@ var Technical = function (_React$Component) {
                 _react2.default.createElement(
                   "h4",
                   null,
-                  "Mindfulness"
+                  "Full Stack"
                 ),
                 _react2.default.createElement(
                   "p",
                   null,
-                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                  "I'm now able to confidently code full stack applications and this has really opened up my understanding with what full stack really is. I used to struggle often with how websites logged in users, saved items in a database, all while the user navigated the front end. After extensive practice with internal API's, SQL databases, React and Redux, I'm now confident with the full stack concept. I'm taking this opportunity to teach others in my cohort how to code and understand full stack."
                 )
               )
             )
@@ -24586,12 +24585,12 @@ var Technical = function (_React$Component) {
                 _react2.default.createElement(
                   "h4",
                   null,
-                  "Mindfulness"
+                  "My next areas of focus"
                 ),
                 _react2.default.createElement(
                   "p",
                   null,
-                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                  "In the near future I'll be diving into complex data structures and learning about more efficient ways to complete basic tasks. For example, there's multiple ways to find a single item within an array, but some ways are more efficient than others when the array contains thousands of items. I was inspired by a YouTube video of a Google interview, where the software engineer discoved more than five ways to achieve the same result."
                 )
               )
             ),
@@ -24604,12 +24603,12 @@ var Technical = function (_React$Component) {
                 _react2.default.createElement(
                   "h4",
                   null,
-                  "Mindfulness"
+                  "Technical Mindset"
                 ),
                 _react2.default.createElement(
                   "p",
                   null,
-                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                  "Naturally I've been gifted a technical mindset. I love breaking down problems, finding solutions outside of the box and strategically implementing the solution. If someone tells me that something isn't possible, I'll continue planning and thinking about a solution as their comment will fuel me to find the answer. In saying that, sometimes it's not possible 'yet', but I'll have my eyes and ears open for when it will be possible."
                 )
               )
             )
@@ -24658,7 +24657,6 @@ var PersonalB = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (PersonalB.__proto__ || Object.getPrototypeOf(PersonalB)).call(this, props));
 
     _this.state = {};
-    console.log(props);
     return _this;
   }
 

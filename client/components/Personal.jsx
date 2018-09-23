@@ -23,7 +23,6 @@ class Personal extends React.Component {
   }
 
   showTechnical() {
-    console.log("hitte");
     this.setState({
       technical: true,
       personal: false
