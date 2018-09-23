@@ -22445,7 +22445,7 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: 'showHTML',
+    key: "showHTML",
     value: function showHTML() {
       this.setState(function (prevState) {
         return {
@@ -22459,7 +22459,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: 'showCSS',
+    key: "showCSS",
     value: function showCSS() {
       this.setState(function (prevState) {
         return {
@@ -22473,7 +22473,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: 'showReact',
+    key: "showReact",
     value: function showReact() {
       this.setState(function (prevState) {
         return {
@@ -22487,7 +22487,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: 'showNode',
+    key: "showNode",
     value: function showNode() {
       this.setState(function (prevState) {
         return {
@@ -22501,7 +22501,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: 'showPython',
+    key: "showPython",
     value: function showPython() {
       this.setState(function (prevState) {
         return {
@@ -22515,7 +22515,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: 'showJS',
+    key: "showJS",
     value: function showJS() {
       this.setState(function (prevState) {
         return {
@@ -22529,7 +22529,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
         _reactScrollParallax.ParallaxProvider,
@@ -22537,7 +22537,9 @@ var App = function (_React$Component) {
         _react2.default.createElement(_Navbar2.default, null),
         _react2.default.createElement(_Hero2.default, null),
         _react2.default.createElement(_Blog2.default, null),
-        _react2.default.createElement(_BlogDetail2.default, { showHTML: this.showHTML, showCSS: this.showCSS,
+        _react2.default.createElement(_BlogDetail2.default, {
+          showHTML: this.showHTML,
+          showCSS: this.showCSS,
           showReact: this.showReact,
           showNode: this.showNode,
           showPython: this.showPython,
@@ -23761,92 +23763,87 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Hero = function Hero() {
   return _react2.default.createElement(
-    'div',
-    { 'class': 'target', id: '0' },
+    "div",
+    { "class": "target", id: "0" },
     _react2.default.createElement(
-      'div',
-      { id: 'para' },
+      "div",
+      { id: "para" },
       _react2.default.createElement(
-        'section',
-        { className: 'hero is-info is-fullheight' },
+        "section",
+        { className: "hero is-info is-fullheight" },
         _react2.default.createElement(
-          'div',
-          { className: 'hero-body' },
+          "div",
+          { className: "hero-body" },
           _react2.default.createElement(
-            'div',
-            { className: 'container' },
+            "div",
+            { className: "container" },
             _react2.default.createElement(
-              'h1',
-              { id: 'title', 'data-aos': 'zoom-in', 'data-aos-duration': '4000', className: 'title' },
-              'Leslie Alldridge'
+              "h1",
+              {
+                id: "title",
+                "data-aos": "zoom-in",
+                "data-aos-duration": "4000",
+                className: "title"
+              },
+              "Leslie Alldridge"
             ),
             _react2.default.createElement(
-              'h2',
-              { className: 'subtitle' },
-              'Welcome to my online portfolio'
+              "h2",
+              { className: "subtitle" },
+              "Welcome to my online portfolio"
             ),
             _react2.default.createElement(
-              'h2',
-              { className: 'subtitle' },
+              "h2",
+              { className: "subtitle" },
               _react2.default.createElement(
-                'div',
-                { id: 'lax' },
+                "div",
+                { id: "lax" },
                 _react2.default.createElement(
-                  'ul',
+                  "ul",
                   null,
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    {
-                      offsetXMin: '420px',
-                      offsetXMax: '-820px' },
+                    { offsetXMin: "420px", offsetXMax: "-820px" },
                     _react2.default.createElement(
-                      'li',
+                      "li",
                       null,
-                      'Empathy'
+                      "Empathy"
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    {
-                      offsetXMin: '-620px',
-                      offsetXMax: '620px' },
+                    { offsetXMin: "-620px", offsetXMax: "620px" },
                     _react2.default.createElement(
-                      'li',
+                      "li",
                       null,
-                      'Team Member'
+                      "Team Member"
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    {
-                      offsetXMin: '-320px',
-                      offsetXMax: '920px' },
+                    { offsetXMin: "-320px", offsetXMax: "920px" },
                     _react2.default.createElement(
-                      'li',
+                      "li",
                       null,
-                      'Ability to learn'
+                      "Ability to learn"
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    {
-                      offsetXMin: '620px',
-                      offsetXMax: '-620px' },
+                    { offsetXMin: "620px", offsetXMax: "-620px" },
                     _react2.default.createElement(
-                      'li',
+                      "li",
                       null,
-                      'Optimistic'
+                      "Optimistic"
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    {
-                      offsetXMin: '-620px',
-                      offsetXMax: '620px' },
+                    { offsetXMin: "-620px", offsetXMax: "620px" },
                     _react2.default.createElement(
-                      'li',
+                      "li",
                       null,
-                      'Motivator'
+                      "Motivator"
                     )
                   )
                 )
@@ -23869,7 +23866,7 @@ exports.default = Hero;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _react = __webpack_require__(0);
@@ -23881,38 +23878,36 @@ var _reactScrollParallax = __webpack_require__(3);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Blog = function Blog() {
-    return _react2.default.createElement(
-        'div',
-        { className: 'target', id: '1' },
+  return _react2.default.createElement(
+    "div",
+    { className: "target", id: "1" },
+    _react2.default.createElement(
+      "section",
+      { "class": "hero" },
+      _react2.default.createElement(
+        _reactScrollParallax.ParallaxBanner,
+        {
+          layers: [{
+            image: "/dev.jpeg",
+            amount: 0.4,
+            slowerScrollRate: false
+          }],
+          style: {
+            height: "300px"
+          }
+        },
         _react2.default.createElement(
-            'section',
-            { 'class': 'hero' },
-            _react2.default.createElement(
-                _reactScrollParallax.ParallaxBanner,
-                {
-                    layers: [{
-                        image: '/dev.jpeg',
-                        amount: 0.4,
-                        slowerScrollRate: false
-                    }],
-                    style: {
-                        height: '300px'
-                    }
-                },
-                _react2.default.createElement(
-                    _reactScrollParallax.Parallax,
-                    {
-                        offsetXMin: '-420px',
-                        offsetXMax: '820px' },
-                    _react2.default.createElement(
-                        'h1',
-                        { id: 'blogTitle', 'class': 'title' },
-                        'Personal Porfolio'
-                    )
-                )
-            )
+          _reactScrollParallax.Parallax,
+          { offsetXMin: "-420px", offsetXMax: "820px" },
+          _react2.default.createElement(
+            "h1",
+            { id: "blogTitle", "class": "title" },
+            "Personal Porfolio"
+          )
         )
-    );
+      )
+    )
+  );
 };
 
 exports.default = Blog;
@@ -24107,6 +24102,23 @@ var Rct = function Rct() {
             "li",
             null,
             "I'd love to code within a complex React application and take my skills to the next level."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Other projects built with React:",
+            " ",
+            _react2.default.createElement(
+              "a",
+              { href: "https://react-expensify-leslie.herokuapp.com" },
+              "Expensify,",
+              " "
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "https://github.com/leslie-alldridge/react-redux-weather-api" },
+              "NZ Weather,"
+            )
           )
         ),
         _react2.default.createElement(
@@ -24156,7 +24168,7 @@ var Node = function Node() {
         _react2.default.createElement(
           "p",
           null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+          "Every application I've built has used Node JS. I'm able to write basic command line interfaces that wait for user interaction and load files using the FS filesystem."
         ),
         _react2.default.createElement(
           "ul",
@@ -24164,23 +24176,18 @@ var Node = function Node() {
           _react2.default.createElement(
             "li",
             null,
-            "Ability to create HTML, CSS and Javascript static websites"
+            "Ability to create full stack Web Applications in a Node environment"
           ),
           _react2.default.createElement(
             "li",
             null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
+            "I'm currently looking into Go and Elixir to gain an understanding of the advantages/disadvantages of Node JS compared to other solutions."
           )
         ),
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+          "In summary: My strength is using Node JS but I'm aware that alternatives exist. I'm a fast learner and not afraid to code on a different runtime environment."
         )
       )
     )
@@ -24224,7 +24231,15 @@ var Python = function Python() {
         _react2.default.createElement(
           "p",
           null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+          "At the moment, I'm learning the basics of Python. Machine learning is something I'm interested to delve into, so I can understand how exactly it works. I've created my own Jupyter Notebook",
+          " ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb" },
+            "(here)"
+          ),
+          " ",
+          "that uses machine learning to predict the share price of Apple tomorrow. As the data was imported a few months back, it will be slightly outdated. I hope to use Pandas and learn how to import CSV files, so the alrogithm can do predictions based off the data imported."
         ),
         _react2.default.createElement(
           "ul",
@@ -24232,23 +24247,18 @@ var Python = function Python() {
           _react2.default.createElement(
             "li",
             null,
-            "Ability to create HTML, CSS and Javascript static websites"
+            "An understanding of Python and machine learning models"
           ),
           _react2.default.createElement(
             "li",
             null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
-          ),
-          _react2.default.createElement(
-            "li",
-            null,
-            "Keen to learn how to optimise search results with meta tags."
+            "Undertaking Udemy courses to boost my knowledge and understanding of Python."
           )
         ),
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+          "In summary: I've started studying machine learning and Python to gain an understanding of how it works."
         )
       )
     )
@@ -24311,6 +24321,42 @@ var JS = function JS() {
             "li",
             null,
             "Keen to learn how to optimise search results with meta tags."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Other projects built with Javascript:",
+            " ",
+            _react2.default.createElement(
+              "a",
+              { href: "https://leslie-alldridge.github.io/conways-gol/" },
+              "Conways GOL,",
+              " "
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "https://leslie-alldridge.github.io/Fun-with-Circles/" },
+              "Fun With Circles,",
+              " "
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "https://leslie-alldridge.github.io/dom-pig-game/" },
+              "Pig Game,",
+              " "
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "https://leslie-alldridge.github.io/budgify-leslie/" },
+              "Budgeting App,",
+              " "
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "https://leslie-alldridge.github.io/js-todo/" },
+              "Todo List,",
+              " "
+            )
           )
         ),
         _react2.default.createElement(
@@ -24333,7 +24379,7 @@ exports.default = JS;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24361,78 +24407,75 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Personal = function (_React$Component) {
-    _inherits(Personal, _React$Component);
+  _inherits(Personal, _React$Component);
 
-    function Personal(props) {
-        _classCallCheck(this, Personal);
+  function Personal(props) {
+    _classCallCheck(this, Personal);
 
-        var _this = _possibleConstructorReturn(this, (Personal.__proto__ || Object.getPrototypeOf(Personal)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Personal.__proto__ || Object.getPrototypeOf(Personal)).call(this, props));
 
-        _this.state = {
-            personal: true,
-            technical: false
-        };
-        _this.showPersonal = _this.showPersonal.bind(_this);
-        _this.showTechnical = _this.showTechnical.bind(_this);
-        return _this;
+    _this.state = {
+      personal: true,
+      technical: false
+    };
+    _this.showPersonal = _this.showPersonal.bind(_this);
+    _this.showTechnical = _this.showTechnical.bind(_this);
+    return _this;
+  }
+
+  _createClass(Personal, [{
+    key: "showPersonal",
+    value: function showPersonal() {
+      this.setState({
+        personal: true,
+        technical: false
+      });
     }
-
-    _createClass(Personal, [{
-        key: 'showPersonal',
-        value: function showPersonal() {
-            this.setState({
-                personal: true,
-                technical: false
-            });
-        }
-    }, {
-        key: 'showTechnical',
-        value: function showTechnical() {
-            console.log('hitte');
-            this.setState({
-                technical: true,
-                personal: false
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'target', id: '2' },
+  }, {
+    key: "showTechnical",
+    value: function showTechnical() {
+      console.log("hitte");
+      this.setState({
+        technical: true,
+        personal: false
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        { className: "target", id: "2" },
+        _react2.default.createElement(
+          "div",
+          { "data-aos": "fade-in", id: "skillsContent", "class": "container is-fluid" },
+          _react2.default.createElement(
+            "div",
+            { "class": "container is-fluid" },
+            _react2.default.createElement(
+              "div",
+              { "class": "content" },
+              _react2.default.createElement(
+                _reactScrollParallax.Parallax,
+                { offsetXMin: "-620px", offsetXMax: "800px" },
                 _react2.default.createElement(
-                    'div',
-                    { 'data-aos': 'fade-in', id: 'skillsContent', 'class': 'container is-fluid' },
-                    _react2.default.createElement(
-                        'div',
-                        { 'class': 'container is-fluid' },
-                        _react2.default.createElement(
-                            'div',
-                            { 'class': 'content' },
-                            _react2.default.createElement(
-                                _reactScrollParallax.Parallax,
-                                {
-                                    offsetXMin: '-620px',
-                                    offsetXMax: '800px' },
-                                _react2.default.createElement(
-                                    'h3',
-                                    null,
-                                    'Personal & Technical Blogs'
-                                )
-                            ),
-                            _react2.default.createElement('span', { 'class': 'progress-value green', style: { width: 100 } }),
-                            _react2.default.createElement('br', null),
-                            this.state.technical && _react2.default.createElement(_Technical2.default, { func: this.showPersonal }),
-                            this.state.personal && _react2.default.createElement(_PersonalB2.default, { func: this.showTechnical })
-                        )
-                    )
+                  "h3",
+                  null,
+                  "Personal & Technical Blogs"
                 )
-            );
-        }
-    }]);
+              ),
+              _react2.default.createElement("span", { "class": "progress-value green", style: { width: 100 } }),
+              _react2.default.createElement("br", null),
+              this.state.technical && _react2.default.createElement(_Technical2.default, { func: this.showPersonal }),
+              this.state.personal && _react2.default.createElement(_PersonalB2.default, { func: this.showTechnical })
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return Personal;
+  return Personal;
 }(_react2.default.Component);
 
 exports.default = Personal;
@@ -24471,8 +24514,6 @@ var Technical = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Technical.__proto__ || Object.getPrototypeOf(Technical)).call(this, props));
 
     _this.state = {};
-    console.log(props);
-
     return _this;
   }
 
@@ -24489,7 +24530,8 @@ var Technical = function (_React$Component) {
           _react2.default.createElement(
             "h2",
             { onClick: this.props.func, id: "pbTitle" },
-            "Technical Blog Topics ",
+            "Technical Blog Topics",
+            " ",
             _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
           ),
           _react2.default.createElement(
@@ -24590,7 +24632,7 @@ exports.default = Technical;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24608,120 +24650,120 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var PersonalB = function (_React$Component) {
-    _inherits(PersonalB, _React$Component);
+  _inherits(PersonalB, _React$Component);
 
-    function PersonalB(props) {
-        _classCallCheck(this, PersonalB);
+  function PersonalB(props) {
+    _classCallCheck(this, PersonalB);
 
-        var _this = _possibleConstructorReturn(this, (PersonalB.__proto__ || Object.getPrototypeOf(PersonalB)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (PersonalB.__proto__ || Object.getPrototypeOf(PersonalB)).call(this, props));
 
-        _this.state = {};
-        console.log(props);
+    _this.state = {};
+    console.log(props);
+    return _this;
+  }
 
-        return _this;
-    }
-
-    _createClass(PersonalB, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "div",
+  _createClass(PersonalB, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+          "div",
+          { "class": "container is-fluid" },
+          _react2.default.createElement(
+            "h2",
+            { onClick: this.props.func, id: "pbTitle" },
+            "Personal Blog Topics",
+            " ",
+            _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "columns" },
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
                 null,
                 _react2.default.createElement(
-                    "div",
-                    { "class": "container is-fluid" },
-                    _react2.default.createElement(
-                        "h2",
-                        { onClick: this.props.func, id: "pbTitle" },
-                        "Personal Blog Topics ",
-                        _react2.default.createElement("i", { alt: "Technical", id: "arrow", "class": "fas fa-arrow-right arrow1" })
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { "class": "columns" },
-                        _react2.default.createElement(
-                            "div",
-                            { "class": "column" },
-                            _react2.default.createElement(
-                                "section",
-                                null,
-                                _react2.default.createElement(
-                                    "h4",
-                                    null,
-                                    "Learning to learn"
-                                ),
-                                _react2.default.createElement(
-                                    "p",
-                                    null,
-                                    "Learning to learn is a great skill that isn't acquired naturally for most people. We can all learn, but there's true power in finding what helps you learn best. I've noticed when learning new concepts it no longer takes an entire day. I can apply myself to the subject and in a few hours time, find myself teaching others how to better understand that same topic. I'm never afraid to learn new things and continually reflect on my progress towards goals that I've set for learning new content."
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { "class": "column" },
-                            _react2.default.createElement(
-                                "section",
-                                null,
-                                _react2.default.createElement(
-                                    "h4",
-                                    null,
-                                    "Mindfulness"
-                                ),
-                                _react2.default.createElement(
-                                    "p",
-                                    null,
-                                    "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
-                                )
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        "div",
-                        { "class": "columns target", id: "3" },
-                        _react2.default.createElement(
-                            "div",
-                            { "class": "column" },
-                            _react2.default.createElement(
-                                "section",
-                                null,
-                                _react2.default.createElement(
-                                    "h4",
-                                    null,
-                                    "Mindfulness"
-                                ),
-                                _react2.default.createElement(
-                                    "p",
-                                    null,
-                                    "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
-                                )
-                            )
-                        ),
-                        _react2.default.createElement(
-                            "div",
-                            { className: "target", id: "3", "class": "column" },
-                            _react2.default.createElement(
-                                "section",
-                                null,
-                                _react2.default.createElement(
-                                    "h4",
-                                    null,
-                                    "Mindfulness"
-                                ),
-                                _react2.default.createElement(
-                                    "p",
-                                    null,
-                                    "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
-                                )
-                            )
-                        )
-                    )
+                  "h4",
+                  null,
+                  "Learning to learn"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Learning to learn is a great skill that isn't acquired naturally for most people. We can all learn, but there's true power in finding what helps you learn best. I've noticed when learning new concepts it no longer takes an entire day. I can apply myself to the subject and in a few hours time, find myself teaching others how to better understand that same topic. I'm never afraid to learn new things and continually reflect on my progress towards goals that I've set for learning new content."
                 )
-            );
-        }
-    }]);
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "columns target", id: "3" },
+            _react2.default.createElement(
+              "div",
+              { "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "div",
+              { className: "target", id: "3", "class": "column" },
+              _react2.default.createElement(
+                "section",
+                null,
+                _react2.default.createElement(
+                  "h4",
+                  null,
+                  "Mindfulness"
+                ),
+                _react2.default.createElement(
+                  "p",
+                  null,
+                  "Enspiral Dev Academy has taught me the importantance of mindfulness in the workplace. It's not often we take five minutes to just 'be' and have a clear mind. This has helped my productivity and concentration levels improve so I can do my best work possible. Originally I thought of it as meditation and it was hard to incorporate into my daily routine. Now that I understand mindfulness can be a walk at lunch, five minutes outside in fresh air or solving a rubik's cube, I can continue to practice mindfulness throughout my day."
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
 
-    return PersonalB;
+  return PersonalB;
 }(_react2.default.Component);
 
 exports.default = PersonalB;
@@ -24766,7 +24808,8 @@ var DefaultIntro = function DefaultIntro() {
         _react2.default.createElement(
           "p",
           null,
-          "My passion lies with solving real world problems through code. I enjoy the endless learning that takes place. Historically I'd naturally learn everything my role could offer and look for further opportunities to grow. As a developer I love working in teams and positively adding the the expected output and motivation of the team. I've included a list below to describe my values and mindset.  "
+          "My passion lies with solving real world problems through code. I enjoy the endless learning that takes place. Historically I'd naturally learn everything my role could offer and look for further opportunities to grow. As a developer I love working in teams and positively adding the the expected output and motivation of the team. I've included a list below to describe my values and mindset.",
+          " "
         ),
         _react2.default.createElement(
           "ul",
@@ -24801,7 +24844,8 @@ var DefaultIntro = function DefaultIntro() {
           "h2",
           { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
           _react2.default.createElement("i", { id: "horn", "class": "fas fa-bullhorn" }),
-          "Please check out my ",
+          "Please check out my",
+          " ",
           _react2.default.createElement(
             "a",
             { href: "https://github.com/leslie-alldridge" },
@@ -24813,7 +24857,8 @@ var DefaultIntro = function DefaultIntro() {
         _react2.default.createElement(
           "p",
           null,
-          "I've listed some below, they all use Javascript so it has been omitted from the below: "
+          "I've listed some below, they all use Javascript so it has been omitted from the below:",
+          " "
         ),
         _react2.default.createElement(
           "ul",
@@ -24916,7 +24961,7 @@ var BlogDetail = function BlogDetail(props) {
                     href: "https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer",
                     target: "_blank"
                   },
-                  _react2.default.createElement("img", { src: "/duplicate.png" })
+                  _react2.default.createElement("img", { id: "round", src: "/duplicate.png" })
                 )
               )
             )
@@ -24946,7 +24991,7 @@ var BlogDetail = function BlogDetail(props) {
                     href: "https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1",
                     target: "_blank"
                   },
-                  _react2.default.createElement("img", { src: "/void2.png" })
+                  _react2.default.createElement("img", { id: "round", src: "/void2.png" })
                 )
               )
             )
@@ -24988,7 +25033,7 @@ var BlogDetail = function BlogDetail(props) {
                     href: "https://backpack-tracker.herokuapp.com/",
                     target: "_blank"
                   },
-                  _react2.default.createElement("img", { src: "/Capture.png" })
+                  _react2.default.createElement("img", { id: "round", src: "/Capture.png" })
                 )
               )
             )
@@ -25015,7 +25060,7 @@ var BlogDetail = function BlogDetail(props) {
                 _react2.default.createElement(
                   "a",
                   { href: "https://cubetimer102.herokuapp.com/", target: "_blank" },
-                  _react2.default.createElement("img", { src: "/cube.png" })
+                  _react2.default.createElement("img", { id: "round", src: "/cube.png" })
                 )
               )
             )
@@ -25228,7 +25273,12 @@ var Contact = function Contact() {
                 { "class": "level-left" },
                 _react2.default.createElement(
                   "a",
-                  { href: "https://github.com/leslie-alldridge", target: "_blank", "class": "level-item", "aria-label": "github" },
+                  {
+                    href: "https://github.com/leslie-alldridge",
+                    target: "_blank",
+                    "class": "level-item",
+                    "aria-label": "github"
+                  },
                   _react2.default.createElement(
                     "span",
                     { "class": "icon is-small" },
@@ -25238,7 +25288,12 @@ var Contact = function Contact() {
                 _react2.default.createElement("div", { className: "target", id: "4" }),
                 _react2.default.createElement(
                   "a",
-                  { href: "https://nz.linkedin.com/in/lesliealldridge", target: "_blank", "class": "level-item", "aria-label": "linkedin" },
+                  {
+                    href: "https://nz.linkedin.com/in/lesliealldridge",
+                    target: "_blank",
+                    "class": "level-item",
+                    "aria-label": "linkedin"
+                  },
                   _react2.default.createElement(
                     "span",
                     { "class": "icon is-small" },
@@ -25250,7 +25305,7 @@ var Contact = function Contact() {
           )
         )
       ),
-      "  "
+      " "
     )
   );
 };
@@ -25298,10 +25353,17 @@ var About = function About() {
                 { "class": "tile" },
                 _react2.default.createElement(
                   "div",
-                  { "data-aos": "flip-down", "data-aos-duration": "15000", "class": "tile is-parent is-vertical" },
+                  {
+                    "data-aos": "flip-down",
+                    "data-aos-duration": "15000",
+                    "class": "tile is-parent is-vertical"
+                  },
                   _react2.default.createElement(
                     "article",
-                    { id: "firstTile", "class": "tile is-child notification is-primary" },
+                    {
+                      id: "firstTile",
+                      "class": "tile is-child notification is-primary"
+                    },
                     _react2.default.createElement(
                       "p",
                       { "class": "title" },
@@ -25316,7 +25378,8 @@ var About = function About() {
                       _react2.default.createElement("p", null),
                       "I've finally found my passion after three careers. I'm driven to become a full stack developer and do the best work of my life. This career will offer me a place where I'll never master my role and be continually learning new technologies and stacks as the industry evolves.",
                       _react2.default.createElement("p", null),
-                      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.  ",
+                      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.",
+                      " ",
                       _react2.default.createElement("p", null),
                       _react2.default.createElement("p", null),
                       "I will bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
@@ -25341,11 +25404,17 @@ var About = function About() {
                 { "class": "tile" },
                 _react2.default.createElement(
                   "div",
-                  { "data-aos": "flip-down", "data-aos-duration": "15000",
-                    "class": "tile is-parent is-vertical" },
+                  {
+                    "data-aos": "flip-down",
+                    "data-aos-duration": "15000",
+                    "class": "tile is-parent is-vertical"
+                  },
                   _react2.default.createElement(
                     "article",
-                    { id: "firstTile", "class": "tile is-child notification is-primary" },
+                    {
+                      id: "firstTile",
+                      "class": "tile is-child notification is-primary"
+                    },
                     _react2.default.createElement(
                       "p",
                       { "class": "title" },
@@ -25453,13 +25522,15 @@ var Footer = function Footer() {
         _react2.default.createElement(
           "p",
           null,
-          "Portfolio by Leslie Alldridge - 2018. Created with ",
+          "Portfolio by Leslie Alldridge - 2018. Created with",
+          " ",
           _react2.default.createElement(
             "a",
             { href: "https://reactjs.org/" },
             "React"
           ),
-          ", ",
+          ",",
+          " ",
           _react2.default.createElement(
             "a",
             { href: "https://www.npmjs.com/package/react-scroll-parallax" },

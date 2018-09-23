@@ -8,11 +8,6 @@ const Navbar = () => {
           <i id="navIcon" className="fas fa-code" />
           Leslie Alldridge{" "}
         </a>
-        {/* <div className="navbar-burger burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div> */}
       </div>
 
       <div id="nav" className="navbar-menu">

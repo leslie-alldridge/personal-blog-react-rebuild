@@ -26,7 +26,7 @@ const BlogDetail = props => {
                     href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer"
                     target="_blank"
                   >
-                    <img src="/duplicate.png" />
+                    <img id="round" src="/duplicate.png" />
                   </a>
                 </figure>
               </article>
@@ -40,7 +40,7 @@ const BlogDetail = props => {
                     href="https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1"
                     target="_blank"
                   >
-                    <img src="/void2.png" />
+                    <img id="round" src="/void2.png" />
                   </a>
                 </figure>
               </article>
@@ -63,7 +63,7 @@ const BlogDetail = props => {
                     href="https://backpack-tracker.herokuapp.com/"
                     target="_blank"
                   >
-                    <img src="/Capture.png" />
+                    <img id="round" src="/Capture.png" />
                   </a>
                 </figure>
               </article>
@@ -77,7 +77,7 @@ const BlogDetail = props => {
                 </p>
                 <figure id="blogDetailImg" class="image is-4by3">
                   <a href="https://cubetimer102.herokuapp.com/" target="_blank">
-                    <img src="/cube.png" />
+                    <img id="round" src="/cube.png" />
                   </a>
                 </figure>
               </article>

@@ -26,6 +26,15 @@ const Rct = () => {
               I'd love to code within a complex React application and take my
               skills to the next level.
             </li>
+            <li>
+              Other projects built with React:{" "}
+              <a href="https://react-expensify-leslie.herokuapp.com">
+                Expensify,{" "}
+              </a>
+              <a href="https://github.com/leslie-alldridge/react-redux-weather-api">
+                NZ Weather,
+              </a>
+            </li>
           </ul>
           <blockquote>
             In summary: React is one of my strongest languages and I look
