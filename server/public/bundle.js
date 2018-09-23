@@ -23626,14 +23626,8 @@ var Navbar = function Navbar() {
         "a",
         { id: "navName", className: "navbar-item", href: "#" },
         _react2.default.createElement("i", { id: "navIcon", className: "fas fa-code" }),
-        "Leslie Alldridge "
-      ),
-      _react2.default.createElement(
-        "div",
-        { className: "navbar-burger burger" },
-        _react2.default.createElement("span", null),
-        _react2.default.createElement("span", null),
-        _react2.default.createElement("span", null)
+        "Leslie Alldridge",
+        " "
       )
     ),
     _react2.default.createElement(
@@ -23698,8 +23692,11 @@ var Navbar = function Navbar() {
               { className: "control" },
               _react2.default.createElement(
                 "a",
-                { className: "bd-tw-button button",
-                  target: "_blank", href: "https://github.com/leslie-alldridge" },
+                {
+                  className: "bd-tw-button button",
+                  target: "_blank",
+                  href: "https://github.com/leslie-alldridge"
+                },
                 _react2.default.createElement(
                   "span",
                   { className: "icon" },
@@ -23717,7 +23714,11 @@ var Navbar = function Navbar() {
               { className: "control" },
               _react2.default.createElement(
                 "a",
-                { className: "bd-tw-button button", target: "_blank", href: "https://nz.linkedin.com/in/lesliealldridge" },
+                {
+                  className: "bd-tw-button button",
+                  target: "_blank",
+                  href: "https://nz.linkedin.com/in/lesliealldridge"
+                },
                 _react2.default.createElement(
                   "span",
                   { className: "icon" },
@@ -24019,7 +24020,7 @@ var CSS = function CSS() {
         _react2.default.createElement(
           "p",
           null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+          "Raw CSS3 is very powerful and I love understanding how effects and animations work. Even though frameworks such as Bootstrap and Bulma are available, it's nice to strip back to raw CSS and see how the same outcome can be achieved manually."
         ),
         _react2.default.createElement(
           "ul",
@@ -24027,23 +24028,23 @@ var CSS = function CSS() {
           _react2.default.createElement(
             "li",
             null,
-            "Ability to create HTML, CSS and Javascript static websites"
+            "Ability to incorporate raw CSS without needing to rely on frameworks."
           ),
           _react2.default.createElement(
             "li",
             null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
+            "Able to pick up frameworks with ease and create entire websites using a specific framework"
           ),
           _react2.default.createElement(
             "li",
             null,
-            "Keen to learn how to optimise search results with meta tags."
+            "Interested in gaining more skill with LESS/Sass and semantic CSS."
           )
         ),
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+          "In summary: I enjoy using CSS and can style a webpage quickly. In the meantime I'm focusing on learning Sass and LESS."
         )
       )
     )
@@ -24087,7 +24088,7 @@ var Rct = function Rct() {
         _react2.default.createElement(
           "p",
           null,
-          "I can confidently create HTML boilerplates and use advanced features such as tables, forms and grids. I use semantic HTML and take care to indent tags to meet industry best practice. My current goal is to gain an improved awareness of compability issues that arise on older devices and web browsers, and improve my HTML to provide those users with a smooth experience."
+          "React is my favourite language on the web. I've always wanted to get better at React and build complex web apps with ease. I've completed roughly five full-stack web applications using React. I'd love to learn how companies are taking React to the next level and building complex, scalable and large web applications."
         ),
         _react2.default.createElement(
           "ul",
@@ -24095,23 +24096,23 @@ var Rct = function Rct() {
           _react2.default.createElement(
             "li",
             null,
-            "Ability to create HTML, CSS and Javascript static websites"
+            "I can confidently code full stack with React, Redux, Redux Thunk and other various NPM packages."
           ),
           _react2.default.createElement(
             "li",
             null,
-            "Awareness of compability issues with older technology and the importance of using alt tags."
+            "I've used ReactBootstrap, Sparklines, ChartsJS and various other packages with React."
           ),
           _react2.default.createElement(
             "li",
             null,
-            "Keen to learn how to optimise search results with meta tags."
+            "I'd love to code within a complex React application and take my skills to the next level."
           )
         ),
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: I'm confident with HTML and have an awareness of my strengths and weaknesses."
+          "In summary: React is one of my strongest languages and I look forward to seeing how companies are using it, so I can learn how to scale my code and make highly reusable components from others."
         )
       )
     )
@@ -24868,17 +24869,19 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var BlogDetail = function BlogDetail(props) {
-
   return _react2.default.createElement(
     "div",
-    { "data-aos": "zoom-in",
+    {
+      "data-aos": "zoom-in",
       "data-aos-offset": "0",
       "data-aos-delay": "0",
       "data-aos-duration": "500",
       "data-aos-easing": "ease-in-out",
       "data-aos-mirror": "true",
       "data-aos-once": "false",
-      "data-aos-anchor-placement": "top-top ", id: "blogDetail" },
+      "data-aos-anchor-placement": "top-top ",
+      id: "blogDetail"
+    },
     _react2.default.createElement(
       "div",
       { "class": "tile is-ancestor" },
@@ -24909,7 +24912,10 @@ var BlogDetail = function BlogDetail(props) {
                 { id: "blogDetailImg", "class": "image is-4by3" },
                 _react2.default.createElement(
                   "a",
-                  { href: "https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer", target: "_blank" },
+                  {
+                    href: "https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer",
+                    target: "_blank"
+                  },
                   _react2.default.createElement("img", { src: "/duplicate.png" })
                 )
               )
@@ -24936,8 +24942,53 @@ var BlogDetail = function BlogDetail(props) {
                 { id: "blogDetailImg", "class": "image is-4by3" },
                 _react2.default.createElement(
                   "a",
-                  { href: "https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1", target: "_blank" },
+                  {
+                    href: "https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1",
+                    target: "_blank"
+                  },
                   _react2.default.createElement("img", { src: "/void2.png" })
+                )
+              )
+            )
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      "div",
+      { "class": "tile is-ancestor" },
+      _react2.default.createElement(
+        "div",
+        { "class": "tile is-vertical is-12" },
+        _react2.default.createElement(
+          "div",
+          { "class": "tile" },
+          _react2.default.createElement(
+            "div",
+            { "class": "tile is-parent" },
+            _react2.default.createElement(
+              "article",
+              { "class": "tile is-child notification is-info" },
+              _react2.default.createElement(
+                "p",
+                { "class": "title" },
+                "BackPack Tracker"
+              ),
+              _react2.default.createElement(
+                "p",
+                { "class": "subtitle" },
+                "Keep track of your belongings (mobile first). Contains login and authentication."
+              ),
+              _react2.default.createElement(
+                "figure",
+                { id: "blogDetailImg", "class": "image is-4by3" },
+                _react2.default.createElement(
+                  "a",
+                  {
+                    href: "https://backpack-tracker.herokuapp.com/",
+                    target: "_blank"
+                  },
+                  _react2.default.createElement("img", { src: "/Capture.png" })
                 )
               )
             )
@@ -24951,20 +25002,20 @@ var BlogDetail = function BlogDetail(props) {
               _react2.default.createElement(
                 "p",
                 { "class": "title" },
-                "We all started somewhere"
+                "Rubik's Cube Timer"
               ),
               _react2.default.createElement(
                 "p",
                 { "class": "subtitle" },
-                "Passion for learning"
+                "Includes graphs, historical times, sessions and bests (mobile first)"
               ),
               _react2.default.createElement(
                 "figure",
                 { id: "blogDetailImg", "class": "image is-4by3" },
                 _react2.default.createElement(
                   "a",
-                  { href: "https://leslie-alldridge.github.io/", target: "_blank" },
-                  _react2.default.createElement("img", { src: "/start.png" })
+                  { href: "https://cubetimer102.herokuapp.com/", target: "_blank" },
+                  _react2.default.createElement("img", { src: "/cube.png" })
                 )
               )
             )
