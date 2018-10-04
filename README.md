@@ -17,6 +17,10 @@ Link to commits - today is Sept 08, 2018
 
 https://github.com/leslie-alldridge/personal-blog-react-rebuild/commits/master
 
+Link to website 
+
+https://portfolio-leslie.herokuapp.com/
+
 ## Future goals 
 
 Add to this app overtime and use it as my online portfolio website. Reflect on my learnings as the entire app only required 
