@@ -7,8 +7,11 @@ export default class extends React.Component {
   };
   render() {
     return (
-      <div style={{ height: '20%', width: '90%', margin: 'auto' }}>
+      <div style={{ width: '90%', margin: 'auto' }}>
         <Carousel
+          edgeEasing={true}
+          autoplay={true}
+          autoplayInterval={5000}
           heightMode={'max'}
           initialSlideHeight={'20'}
           slideIndex={this.state.slideIndex}
@@ -19,8 +22,8 @@ export default class extends React.Component {
               <article class="tile is-child notification is-info">
                 <p class="title">BackPack Tracker</p>
                 <p class="subtitle">
-                  Keep track of your belongings (mobile first). Contains login
-                  and authentication.
+                  Keep track of your belongings (mobile first). A full stack
+                  application with authentication, internal API and databases.
                 </p>
                 <figure id="blogDetailImg" class="image is-16by9">
                   <a
@@ -37,13 +40,13 @@ export default class extends React.Component {
             <article class="tile is-child notification is-info">
               <p class="title">Rubik's Cube Timer</p>
               <p class="subtitle">
-                Includes graphs, historical times, sessions and bests (mobile
-                first)
+                Includes a database with graphs, historical times, sessions and
+                bests (mobile first). Consumes external API's.
               </p>
               <figure id="blogDetailImg" class="image is-16by9">
                 {' '}
                 <a href="https://cubetimer102.herokuapp.com/" target="_blank">
-                  <img id="round" src="/new.png" />
+                  <img id="round" src="/cube.png" />
                 </a>
               </figure>
             </article>
@@ -51,7 +54,17 @@ export default class extends React.Component {
           <div id="firstCar" class="tile">
             <article class="tile is-child notification is-info">
               <p class="title">Xero Bulk Voiding Tool</p>
-              <p class="subtitle">Void invoices in bulk</p>
+              <p class="subtitle">
+                Void invoices in bulk using the Xero API. Inspired by a
+                community thread{' '}
+                <a
+                  target="_blank"
+                  href="https://community.xero.com/business/discussion/262531"
+                >
+                  here
+                </a>
+                . Currently building a second version in React.
+              </p>
               <figure id="blogDetailImg" class="image is-16by9">
                 {' '}
                 <a
@@ -66,7 +79,12 @@ export default class extends React.Component {
           <div id="firstCar" class="tile">
             <article class="tile is-child notification is-info">
               <p class="title">Xero Invoice Reducer</p>
-              <p class="subtitle">Create summarised invoices with ease</p>
+              <p class="subtitle">
+                Create summarised invoices with ease. This can help customers
+                who are over our recommended invoice limits, find their
+                duplicates and replace it with a singular invoice. Uses Xero API
+                and complex data structures.
+              </p>
               <figure id="blogDetailImg" class="image is-16by9">
                 {' '}
                 <a
@@ -78,7 +96,26 @@ export default class extends React.Component {
               </figure>
             </article>
           </div>{' '}
-          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide5" />
+          <div id="firstCar" class="tile">
+            <article class="tile is-child notification is-info">
+              <p class="title">Xero Invoice Reducer</p>
+              <p class="subtitle">
+                Create summarised invoices with ease. This can help customers
+                who are over our recommended invoice limits, find their
+                duplicates and replace it with a singular invoice. Uses Xero API
+                and complex data structures.
+              </p>
+              <figure id="blogDetailImg" class="image is-16by9">
+                {' '}
+                <a
+                  href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer"
+                  target="_blank"
+                >
+                  <img id="round" src="/duplicate.png" />
+                </a>
+              </figure>
+            </article>
+          </div>
           <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
         </Carousel>
       </div>

@@ -26515,10 +26515,13 @@ var _class = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { style: { height: '20%', width: '90%', margin: 'auto' } },
+        { style: { width: '90%', margin: 'auto' } },
         _react2.default.createElement(
           _nukaCarousel2.default,
           {
+            edgeEasing: true,
+            autoplay: true,
+            autoplayInterval: 5000,
             heightMode: 'max',
             initialSlideHeight: '20',
             slideIndex: this.state.slideIndex,
@@ -26543,7 +26546,7 @@ var _class = function (_React$Component) {
                 _react2.default.createElement(
                   'p',
                   { 'class': 'subtitle' },
-                  'Keep track of your belongings (mobile first). Contains login and authentication.'
+                  'Keep track of your belongings (mobile first). A full stack application with authentication, internal API and databases.'
                 ),
                 _react2.default.createElement(
                   'figure',
@@ -26574,7 +26577,7 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Includes graphs, historical times, sessions and bests (mobile first)'
+                'Includes a database with graphs, historical times, sessions and bests (mobile first). Consumes external API\'s.'
               ),
               _react2.default.createElement(
                 'figure',
@@ -26583,7 +26586,7 @@ var _class = function (_React$Component) {
                 _react2.default.createElement(
                   'a',
                   { href: 'https://cubetimer102.herokuapp.com/', target: '_blank' },
-                  _react2.default.createElement('img', { id: 'round', src: '/new.png' })
+                  _react2.default.createElement('img', { id: 'round', src: '/cube.png' })
                 )
               )
             )
@@ -26602,7 +26605,17 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Void invoices in bulk'
+                'Void invoices in bulk using the Xero API. Inspired by a community thread',
+                ' ',
+                _react2.default.createElement(
+                  'a',
+                  {
+                    target: '_blank',
+                    href: 'https://community.xero.com/business/discussion/262531'
+                  },
+                  'here'
+                ),
+                '. Currently building a second version in React.'
               ),
               _react2.default.createElement(
                 'figure',
@@ -26633,7 +26646,7 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Create summarised invoices with ease'
+                'Create summarised invoices with ease. This can help customers who are over our recommended invoice limits, find their duplicates and replace it with a singular invoice. Uses Xero API and complex data structures.'
               ),
               _react2.default.createElement(
                 'figure',
@@ -26651,7 +26664,37 @@ var _class = function (_React$Component) {
             )
           ),
           ' ',
-          _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide5' }),
+          _react2.default.createElement(
+            'div',
+            { id: 'firstCar', 'class': 'tile' },
+            _react2.default.createElement(
+              'article',
+              { 'class': 'tile is-child notification is-info' },
+              _react2.default.createElement(
+                'p',
+                { 'class': 'title' },
+                'Xero Invoice Reducer'
+              ),
+              _react2.default.createElement(
+                'p',
+                { 'class': 'subtitle' },
+                'Create summarised invoices with ease. This can help customers who are over our recommended invoice limits, find their duplicates and replace it with a singular invoice. Uses Xero API and complex data structures.'
+              ),
+              _react2.default.createElement(
+                'figure',
+                { id: 'blogDetailImg', 'class': 'image is-16by9' },
+                ' ',
+                _react2.default.createElement(
+                  'a',
+                  {
+                    href: 'https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer',
+                    target: '_blank'
+                  },
+                  _react2.default.createElement('img', { id: 'round', src: '/duplicate.png' })
+                )
+              )
+            )
+          ),
           _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide6' })
         )
       );
