@@ -63,12 +63,14 @@
   transform: scale(1.05); */
 }
 #symbols {
-  display: flex;
+  margin: 0 auto;
+  padding-left: 5%;
   float: left;
+  display: flex;
   width: 100%;
   align-items: center;
-  padding-right: 8%;
 }
+
 #imgBadge {
   margin-left: 30px;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Carousel from './Carousel';
 
 const Footer = () => {
   return (
@@ -15,7 +14,6 @@ const Footer = () => {
             , <a href="https://bulma.io/">Bulma</a>, Node JS and CSS3.
           </p>
         </div>
-        <Carousel />
       </footer>
     </div>
   );

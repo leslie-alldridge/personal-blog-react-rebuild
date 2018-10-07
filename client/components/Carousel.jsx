@@ -11,7 +11,7 @@ export default class extends React.Component {
         <Carousel
           edgeEasing={true}
           autoplay={true}
-          autoplayInterval={5000}
+          autoplayInterval={7000}
           heightMode={'max'}
           initialSlideHeight={'20'}
           slideIndex={this.state.slideIndex}
@@ -38,15 +38,18 @@ export default class extends React.Component {
           </div>
           <div id="firstCar" class="tile">
             <article class="tile is-child notification is-info">
-              <p class="title">Rubik's Cube Timer</p>
+              <p class="title">GYST - Personal Dashboard</p>
               <p class="subtitle">
-                Includes a database with graphs, historical times, sessions and
-                bests (mobile first). Consumes external API's.
+                Final Group Project EDA. Fullstack with many API's (including
+                Google and Spotify). Material UI, React Flex Grid, D3 Charts,
+                live chat and more.
               </p>
               <figure id="blogDetailImg" class="image is-16by9">
-                {' '}
-                <a href="https://cubetimer102.herokuapp.com/" target="_blank">
-                  <img id="round" src="/cube.png" />
+                <a
+                  href="https://github.com/leslie-alldridge/GYST-Final-Project-EDA"
+                  target="_blank"
+                >
+                  <img id="round" src="/gyst.png" />
                 </a>
               </figure>
             </article>
@@ -66,7 +69,6 @@ export default class extends React.Component {
                 . Currently building a second version in React.
               </p>
               <figure id="blogDetailImg" class="image is-16by9">
-                {' '}
                 <a
                   href="https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1"
                   target="_blank"
@@ -86,7 +88,6 @@ export default class extends React.Component {
                 and complex data structures.
               </p>
               <figure id="blogDetailImg" class="image is-16by9">
-                {' '}
                 <a
                   href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer"
                   target="_blank"
@@ -98,18 +99,14 @@ export default class extends React.Component {
           </div>
           <div id="firstCar" class="tile">
             <article class="tile is-child notification is-info">
-              <p class="title">GYST - Personal Dashboard</p>
+              <p class="title">Rubik's Cube Timer</p>
               <p class="subtitle">
-                Final Group Project EDA. Fullstack with many API's (including
-                Google and Spotify). Material UI, React Flex Grid, D3 Charts,
-                live chat and more.
+                Includes a database with graphs, historical times, sessions and
+                bests (mobile first). Consumes external API's.
               </p>
               <figure id="blogDetailImg" class="image is-16by9">
-                <a
-                  href="https://github.com/leslie-alldridge/GYST-Final-Project-EDA"
-                  target="_blank"
-                >
-                  <img id="round" src="/gyst.png" />
+                <a href="https://cubetimer102.herokuapp.com/" target="_blank">
+                  <img id="round" src="/cube.png" />
                 </a>
               </figure>
             </article>

@@ -1,89 +1,22 @@
 import React from 'react';
+import Carousel from './Carousel';
 
 const BlogDetail = props => {
   return (
-    <div
-      data-aos="zoom-in"
-      data-aos-offset="0"
-      data-aos-delay="0"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-top
+    <div>
+      <div
+        data-aos="zoom-in"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-top
         "
-      id="blogDetail"
-    >
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <p class="title">Xero Invoice Reducer</p>
-                <p class="subtitle">Create summarised invoices with ease</p>
-                <figure id="blogDetailImg" class="image is-4by3">
-                  <a
-                    href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer"
-                    target="_blank"
-                  >
-                    <img id="round" src="/duplicate.png" />
-                  </a>
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <p class="title">Xero Bulk Voiding Tool</p>
-                <p class="subtitle">Void invoices in bulk</p>
-                <figure id="blogDetailImg" class="image is-4by3">
-                  <a
-                    href="https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1"
-                    target="_blank"
-                  >
-                    <img id="round" src="/void2.png" />
-                  </a>
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <p class="title">BackPack Tracker</p>
-                <p class="subtitle">
-                  Keep track of your belongings (mobile first). Contains login
-                  and authentication.
-                </p>
-                <figure id="blogDetailImg" class="image is-4by3">
-                  <a
-                    href="https://backpack-tracker.herokuapp.com/"
-                    target="_blank"
-                  >
-                    <img id="round" src="/Capture.png" />
-                  </a>
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <p class="title">Rubik's Cube Timer</p>
-                <p class="subtitle">
-                  Includes graphs, historical times, sessions and bests (mobile
-                  first)
-                </p>
-                <figure id="blogDetailImg" class="image is-4by3">
-                  <a href="https://cubetimer102.herokuapp.com/" target="_blank">
-                    <img id="round" src="/cube.png" />
-                  </a>
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
+        id="blogDetail"
+      >
+        <Carousel />
       </div>
       <div class="container is-fluid">
         <div id="symbols" class="notification">

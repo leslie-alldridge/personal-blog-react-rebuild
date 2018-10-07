@@ -25815,250 +25815,118 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Carousel = __webpack_require__(68);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var BlogDetail = function BlogDetail(props) {
   return _react2.default.createElement(
-    "div",
-    {
-      "data-aos": "zoom-in",
-      "data-aos-offset": "0",
-      "data-aos-delay": "0",
-      "data-aos-duration": "500",
-      "data-aos-easing": "ease-in-out",
-      "data-aos-mirror": "true",
-      "data-aos-once": "false",
-      "data-aos-anchor-placement": "top-top ",
-      id: "blogDetail"
-    },
+    'div',
+    null,
     _react2.default.createElement(
-      "div",
-      { "class": "tile is-ancestor" },
-      _react2.default.createElement(
-        "div",
-        { "class": "tile is-vertical is-12" },
-        _react2.default.createElement(
-          "div",
-          { "class": "tile" },
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-parent" },
-            _react2.default.createElement(
-              "article",
-              { "class": "tile is-child notification is-info" },
-              _react2.default.createElement(
-                "p",
-                { "class": "title" },
-                "Xero Invoice Reducer"
-              ),
-              _react2.default.createElement(
-                "p",
-                { "class": "subtitle" },
-                "Create summarised invoices with ease"
-              ),
-              _react2.default.createElement(
-                "figure",
-                { id: "blogDetailImg", "class": "image is-4by3" },
-                _react2.default.createElement(
-                  "a",
-                  {
-                    href: "https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer",
-                    target: "_blank"
-                  },
-                  _react2.default.createElement("img", { id: "round", src: "/duplicate.png" })
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-parent" },
-            _react2.default.createElement(
-              "article",
-              { "class": "tile is-child notification is-info" },
-              _react2.default.createElement(
-                "p",
-                { "class": "title" },
-                "Xero Bulk Voiding Tool"
-              ),
-              _react2.default.createElement(
-                "p",
-                { "class": "subtitle" },
-                "Void invoices in bulk"
-              ),
-              _react2.default.createElement(
-                "figure",
-                { id: "blogDetailImg", "class": "image is-4by3" },
-                _react2.default.createElement(
-                  "a",
-                  {
-                    href: "https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1",
-                    target: "_blank"
-                  },
-                  _react2.default.createElement("img", { id: "round", src: "/void2.png" })
-                )
-              )
-            )
-          )
-        )
-      )
+      'div',
+      {
+        'data-aos': 'zoom-in',
+        'data-aos-offset': '0',
+        'data-aos-delay': '0',
+        'data-aos-duration': '500',
+        'data-aos-easing': 'ease-in-out',
+        'data-aos-mirror': 'true',
+        'data-aos-once': 'false',
+        'data-aos-anchor-placement': 'top-top ',
+        id: 'blogDetail'
+      },
+      _react2.default.createElement(_Carousel2.default, null)
     ),
     _react2.default.createElement(
-      "div",
-      { "class": "tile is-ancestor" },
+      'div',
+      { 'class': 'container is-fluid' },
       _react2.default.createElement(
-        "div",
-        { "class": "tile is-vertical is-12" },
+        'div',
+        { id: 'symbols', 'class': 'notification' },
         _react2.default.createElement(
-          "div",
-          { "class": "tile" },
+          'figure',
+          { onClick: props.showHTML, 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html2.png' }),
           _react2.default.createElement(
-            "div",
-            { "class": "tile is-parent" },
+            'div',
+            { 'class': 'textHide' },
             _react2.default.createElement(
-              "article",
-              { "class": "tile is-child notification is-info" },
-              _react2.default.createElement(
-                "p",
-                { "class": "title" },
-                "BackPack Tracker"
-              ),
-              _react2.default.createElement(
-                "p",
-                { "class": "subtitle" },
-                "Keep track of your belongings (mobile first). Contains login and authentication."
-              ),
-              _react2.default.createElement(
-                "figure",
-                { id: "blogDetailImg", "class": "image is-4by3" },
-                _react2.default.createElement(
-                  "a",
-                  {
-                    href: "https://backpack-tracker.herokuapp.com/",
-                    target: "_blank"
-                  },
-                  _react2.default.createElement("img", { id: "round", src: "/Capture.png" })
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-parent" },
-            _react2.default.createElement(
-              "article",
-              { "class": "tile is-child notification is-info" },
-              _react2.default.createElement(
-                "p",
-                { "class": "title" },
-                "Rubik's Cube Timer"
-              ),
-              _react2.default.createElement(
-                "p",
-                { "class": "subtitle" },
-                "Includes graphs, historical times, sessions and bests (mobile first)"
-              ),
-              _react2.default.createElement(
-                "figure",
-                { id: "blogDetailImg", "class": "image is-4by3" },
-                _react2.default.createElement(
-                  "a",
-                  { href: "https://cubetimer102.herokuapp.com/", target: "_blank" },
-                  _react2.default.createElement("img", { id: "round", src: "/cube.png" })
-                )
-              )
-            )
-          )
-        )
-      )
-    ),
-    _react2.default.createElement(
-      "div",
-      { "class": "container is-fluid" },
-      _react2.default.createElement(
-        "div",
-        { id: "symbols", "class": "notification" },
-        _react2.default.createElement(
-          "figure",
-          { onClick: props.showHTML, "class": "image is-128x128" },
-          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/html2.png" }),
-          _react2.default.createElement(
-            "div",
-            { "class": "textHide" },
-            _react2.default.createElement(
-              "p",
-              { "class": "textInfo" },
-              "HTML5"
+              'p',
+              { 'class': 'textInfo' },
+              'HTML5'
             )
           )
         ),
         _react2.default.createElement(
-          "figure",
-          { onClick: props.showCSS, "class": "image is-128x128" },
-          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/css2.png" }),
+          'figure',
+          { onClick: props.showCSS, 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css2.png' }),
           _react2.default.createElement(
-            "div",
-            { "class": "textHide" },
+            'div',
+            { 'class': 'textHide' },
             _react2.default.createElement(
-              "p",
-              { "class": "textInfo" },
-              "CSS3"
+              'p',
+              { 'class': 'textInfo' },
+              'CSS3'
             )
           )
         ),
         _react2.default.createElement(
-          "figure",
-          { onClick: props.showReact, "class": "image is-128x128" },
-          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/react2.png" }),
+          'figure',
+          { onClick: props.showReact, 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react2.png' }),
           _react2.default.createElement(
-            "div",
-            { "class": "textHide" },
+            'div',
+            { 'class': 'textHide' },
             _react2.default.createElement(
-              "p",
-              { "class": "textInfo" },
-              " React"
+              'p',
+              { 'class': 'textInfo' },
+              ' React'
             )
           )
         ),
         _react2.default.createElement(
-          "figure",
-          { onClick: props.showNode, "class": "image is-128x128" },
-          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/node2.png" }),
+          'figure',
+          { onClick: props.showNode, 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node2.png' }),
           _react2.default.createElement(
-            "div",
-            { "class": "textHide" },
+            'div',
+            { 'class': 'textHide' },
             _react2.default.createElement(
-              "p",
-              { "class": "textInfo" },
-              "NodeJS"
+              'p',
+              { 'class': 'textInfo' },
+              'NodeJS'
             )
           )
         ),
         _react2.default.createElement(
-          "figure",
-          { onClick: props.showPython, "class": "image is-128x128" },
-          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/p2.png" }),
+          'figure',
+          { onClick: props.showPython, 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/p2.png' }),
           _react2.default.createElement(
-            "div",
-            { "class": "textHide" },
+            'div',
+            { 'class': 'textHide' },
             _react2.default.createElement(
-              "p",
-              { "class": "textInfo" },
-              "Python"
+              'p',
+              { 'class': 'textInfo' },
+              'Python'
             )
           )
         ),
         _react2.default.createElement(
-          "figure",
-          { onClick: props.showJS, "class": "image is-128x128" },
-          _react2.default.createElement("img", { id: "imgBadge", "class": "is-rounded", src: "/js2.png" }),
+          'figure',
+          { onClick: props.showJS, 'class': 'image is-128x128' },
+          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/js2.png' }),
           _react2.default.createElement(
-            "div",
-            { "class": "textHide" },
+            'div',
+            { 'class': 'textHide' },
             _react2.default.createElement(
-              "p",
-              { "class": "textInfo" },
-              "Javascript"
+              'p',
+              { 'class': 'textInfo' },
+              'Javascript'
             )
           )
         )
@@ -26411,49 +26279,44 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Carousel = __webpack_require__(68);
-
-var _Carousel2 = _interopRequireDefault(_Carousel);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer() {
   return _react2.default.createElement(
-    'div',
+    "div",
     null,
     _react2.default.createElement(
-      'footer',
-      { 'class': 'footer' },
+      "footer",
+      { "class": "footer" },
       _react2.default.createElement(
-        'div',
-        { 'class': 'content has-text-centered' },
+        "div",
+        { "class": "content has-text-centered" },
         _react2.default.createElement(
-          'p',
+          "p",
           null,
-          'Portfolio by Leslie Alldridge - 2018. Created with',
+          "Portfolio by Leslie Alldridge - 2018. Created with",
           ' ',
           _react2.default.createElement(
-            'a',
-            { href: 'https://reactjs.org/' },
-            'React'
+            "a",
+            { href: "https://reactjs.org/" },
+            "React"
           ),
-          ',',
+          ",",
           ' ',
           _react2.default.createElement(
-            'a',
-            { href: 'https://www.npmjs.com/package/react-scroll-parallax' },
-            'React Parallax'
+            "a",
+            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
+            "React Parallax"
           ),
-          ', ',
+          ", ",
           _react2.default.createElement(
-            'a',
-            { href: 'https://bulma.io/' },
-            'Bulma'
+            "a",
+            { href: "https://bulma.io/" },
+            "Bulma"
           ),
-          ', Node JS and CSS3.'
+          ", Node JS and CSS3."
         )
-      ),
-      _react2.default.createElement(_Carousel2.default, null)
+      )
     )
   );
 };
@@ -26521,7 +26384,7 @@ var _class = function (_React$Component) {
           {
             edgeEasing: true,
             autoplay: true,
-            autoplayInterval: 5000,
+            autoplayInterval: 7000,
             heightMode: 'max',
             initialSlideHeight: '20',
             slideIndex: this.state.slideIndex,
@@ -26572,21 +26435,23 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { 'class': 'title' },
-                'Rubik\'s Cube Timer'
+                'GYST - Personal Dashboard'
               ),
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Includes a database with graphs, historical times, sessions and bests (mobile first). Consumes external API\'s.'
+                'Final Group Project EDA. Fullstack with many API\'s (including Google and Spotify). Material UI, React Flex Grid, D3 Charts, live chat and more.'
               ),
               _react2.default.createElement(
                 'figure',
                 { id: 'blogDetailImg', 'class': 'image is-16by9' },
-                ' ',
                 _react2.default.createElement(
                   'a',
-                  { href: 'https://cubetimer102.herokuapp.com/', target: '_blank' },
-                  _react2.default.createElement('img', { id: 'round', src: '/cube.png' })
+                  {
+                    href: 'https://github.com/leslie-alldridge/GYST-Final-Project-EDA',
+                    target: '_blank'
+                  },
+                  _react2.default.createElement('img', { id: 'round', src: '/gyst.png' })
                 )
               )
             )
@@ -26620,7 +26485,6 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'figure',
                 { id: 'blogDetailImg', 'class': 'image is-16by9' },
-                ' ',
                 _react2.default.createElement(
                   'a',
                   {
@@ -26651,7 +26515,6 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'figure',
                 { id: 'blogDetailImg', 'class': 'image is-16by9' },
-                ' ',
                 _react2.default.createElement(
                   'a',
                   {
@@ -26672,23 +26535,20 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { 'class': 'title' },
-                'GYST - Personal Dashboard'
+                'Rubik\'s Cube Timer'
               ),
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Final Group Project EDA. Fullstack with many API\'s (including Google and Spotify). Material UI, React Flex Grid, D3 Charts, live chat and more.'
+                'Includes a database with graphs, historical times, sessions and bests (mobile first). Consumes external API\'s.'
               ),
               _react2.default.createElement(
                 'figure',
                 { id: 'blogDetailImg', 'class': 'image is-16by9' },
                 _react2.default.createElement(
                   'a',
-                  {
-                    href: 'https://github.com/leslie-alldridge/GYST-Final-Project-EDA',
-                    target: '_blank'
-                  },
-                  _react2.default.createElement('img', { id: 'round', src: '/gyst.png' })
+                  { href: 'https://cubetimer102.herokuapp.com/', target: '_blank' },
+                  _react2.default.createElement('img', { id: 'round', src: '/cube.png' })
                 )
               )
             )
