@@ -26663,7 +26663,6 @@ var _class = function (_React$Component) {
               )
             )
           ),
-          ' ',
           _react2.default.createElement(
             'div',
             { id: 'firstCar', 'class': 'tile' },
@@ -26673,29 +26672,27 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 { 'class': 'title' },
-                'Xero Invoice Reducer'
+                'GYST - Personal Dashboard'
               ),
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Create summarised invoices with ease. This can help customers who are over our recommended invoice limits, find their duplicates and replace it with a singular invoice. Uses Xero API and complex data structures.'
+                'Final Group Project EDA. Fullstack with many API\'s (including Google and Spotify). Material UI, React Flex Grid, D3 Charts, live chat and more.'
               ),
               _react2.default.createElement(
                 'figure',
                 { id: 'blogDetailImg', 'class': 'image is-16by9' },
-                ' ',
                 _react2.default.createElement(
                   'a',
                   {
-                    href: 'https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer',
+                    href: 'https://github.com/leslie-alldridge/GYST-Final-Project-EDA',
                     target: '_blank'
                   },
-                  _react2.default.createElement('img', { id: 'round', src: '/duplicate.png' })
+                  _react2.default.createElement('img', { id: 'round', src: '/gyst.png' })
                 )
               )
             )
-          ),
-          _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide6' })
+          )
         )
       );
     }

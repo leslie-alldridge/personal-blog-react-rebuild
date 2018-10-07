@@ -95,28 +95,25 @@ export default class extends React.Component {
                 </a>
               </figure>
             </article>
-          </div>{' '}
+          </div>
           <div id="firstCar" class="tile">
             <article class="tile is-child notification is-info">
-              <p class="title">Xero Invoice Reducer</p>
+              <p class="title">GYST - Personal Dashboard</p>
               <p class="subtitle">
-                Create summarised invoices with ease. This can help customers
-                who are over our recommended invoice limits, find their
-                duplicates and replace it with a singular invoice. Uses Xero API
-                and complex data structures.
+                Final Group Project EDA. Fullstack with many API's (including
+                Google and Spotify). Material UI, React Flex Grid, D3 Charts,
+                live chat and more.
               </p>
               <figure id="blogDetailImg" class="image is-16by9">
-                {' '}
                 <a
-                  href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer"
+                  href="https://github.com/leslie-alldridge/GYST-Final-Project-EDA"
                   target="_blank"
                 >
-                  <img id="round" src="/duplicate.png" />
+                  <img id="round" src="/gyst.png" />
                 </a>
               </figure>
             </article>
           </div>
-          <img src="http://placehold.it/1000x400/ffffff/c0392b/&text=slide6" />
         </Carousel>
       </div>
     );
