@@ -1,5 +1,5 @@
-import React from "react";
-import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import React from 'react';
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
 
 const Blog = () => {
   return (
@@ -8,16 +8,16 @@ const Blog = () => {
         <ParallaxBanner
           layers={[
             {
-              image: "/dev.jpeg",
+              image: '/dev.jpeg',
               amount: 0.4,
               slowerScrollRate: false
             }
           ]}
           style={{
-            height: "300px"
+            height: '300px'
           }}
         >
-          <Parallax offsetXMin={"-420px"} offsetXMax={"820px"}>
+          <Parallax offsetXMin={'-420px'} offsetXMax={'820px'}>
             <h1 id="blogTitle" class="title">
               Personal Porfolio
             </h1>

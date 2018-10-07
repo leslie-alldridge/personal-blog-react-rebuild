@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import Carousel from './Carousel';
 
 const Footer = () => {
   return (
@@ -6,14 +7,15 @@ const Footer = () => {
       <footer class="footer">
         <div class="content has-text-centered">
           <p>
-            Portfolio by Leslie Alldridge - 2018. Created with{" "}
-            <a href="https://reactjs.org/">React</a>,{" "}
+            Portfolio by Leslie Alldridge - 2018. Created with{' '}
+            <a href="https://reactjs.org/">React</a>,{' '}
             <a href="https://www.npmjs.com/package/react-scroll-parallax">
               React Parallax
             </a>
             , <a href="https://bulma.io/">Bulma</a>, Node JS and CSS3.
           </p>
         </div>
+        <Carousel />
       </footer>
     </div>
   );
