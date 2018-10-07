@@ -26514,137 +26514,146 @@ var _class = function (_React$Component) {
       var _this2 = this;
 
       return _react2.default.createElement(
-        _nukaCarousel2.default,
-        {
-          slideIndex: this.state.slideIndex,
-          afterSlide: function afterSlide(slideIndex) {
-            return _this2.setState({ slideIndex: slideIndex });
-          }
-        },
+        'div',
+        { style: { height: '20%', width: '90%', margin: 'auto' } },
         _react2.default.createElement(
-          'div',
-          { 'class': 'tile' },
+          _nukaCarousel2.default,
+          {
+            heightMode: 'max',
+            initialSlideHeight: '20',
+            slideIndex: this.state.slideIndex,
+            afterSlide: function afterSlide(slideIndex) {
+              return _this2.setState({ slideIndex: slideIndex });
+            }
+          },
           _react2.default.createElement(
             'div',
-            { 'class': 'tile is-parent' },
+            { id: 'firstCar', 'class': 'tile' },
+            _react2.default.createElement(
+              'div',
+              { 'class': 'tile is-parent' },
+              _react2.default.createElement(
+                'article',
+                { 'class': 'tile is-child notification is-info' },
+                _react2.default.createElement(
+                  'p',
+                  { 'class': 'title' },
+                  'BackPack Tracker'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { 'class': 'subtitle' },
+                  'Keep track of your belongings (mobile first). Contains login and authentication.'
+                ),
+                _react2.default.createElement(
+                  'figure',
+                  { id: 'blogDetailImg', 'class': 'image is-16by9' },
+                  _react2.default.createElement(
+                    'a',
+                    {
+                      href: 'https://backpack-tracker.herokuapp.com/',
+                      target: '_blank'
+                    },
+                    _react2.default.createElement('img', { id: 'round', src: '/new.png' })
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { id: 'firstCar', 'class': 'tile' },
             _react2.default.createElement(
               'article',
               { 'class': 'tile is-child notification is-info' },
               _react2.default.createElement(
                 'p',
                 { 'class': 'title' },
-                'BackPack Tracker'
+                'Rubik\'s Cube Timer'
               ),
               _react2.default.createElement(
                 'p',
                 { 'class': 'subtitle' },
-                'Keep track of your belongings (mobile first). Contains login and authentication.'
+                'Includes graphs, historical times, sessions and bests (mobile first)'
               ),
               _react2.default.createElement(
                 'figure',
-                { id: 'blogDetailImg', 'class': 'image is-4by3' },
+                { id: 'blogDetailImg', 'class': 'image is-16by9' },
+                ' ',
                 _react2.default.createElement(
                   'a',
-                  {
-                    href: 'https://backpack-tracker.herokuapp.com/',
-                    target: '_blank'
-                  },
-                  _react2.default.createElement('img', { id: 'round', src: '/Capture.png' })
+                  { href: 'https://cubetimer102.herokuapp.com/', target: '_blank' },
+                  _react2.default.createElement('img', { id: 'round', src: '/new.png' })
                 )
               )
             )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { 'class': 'tile is-parent' },
+          ),
           _react2.default.createElement(
-            'article',
-            { 'class': 'tile is-child notification is-info' },
+            'div',
+            { id: 'firstCar', 'class': 'tile' },
             _react2.default.createElement(
-              'p',
-              { 'class': 'title' },
-              'Rubik\'s Cube Timer'
-            ),
-            _react2.default.createElement(
-              'p',
-              { 'class': 'subtitle' },
-              'Includes graphs, historical times, sessions and bests (mobile first)'
-            ),
-            _react2.default.createElement(
-              'figure',
-              { id: 'blogDetailImg', 'class': 'image is-4by3' },
+              'article',
+              { 'class': 'tile is-child notification is-info' },
               _react2.default.createElement(
-                'a',
-                { href: 'https://cubetimer102.herokuapp.com/', target: '_blank' },
-                _react2.default.createElement('img', { id: 'round', src: '/cube.png' })
+                'p',
+                { 'class': 'title' },
+                'Xero Bulk Voiding Tool'
+              ),
+              _react2.default.createElement(
+                'p',
+                { 'class': 'subtitle' },
+                'Void invoices in bulk'
+              ),
+              _react2.default.createElement(
+                'figure',
+                { id: 'blogDetailImg', 'class': 'image is-16by9' },
+                ' ',
+                _react2.default.createElement(
+                  'a',
+                  {
+                    href: 'https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1',
+                    target: '_blank'
+                  },
+                  _react2.default.createElement('img', { id: 'round', src: '/void2.png' })
+                )
               )
             )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { 'class': 'tile is-parent' },
+          ),
           _react2.default.createElement(
-            'article',
-            { 'class': 'tile is-child notification is-info' },
+            'div',
+            { id: 'firstCar', 'class': 'tile' },
             _react2.default.createElement(
-              'p',
-              { 'class': 'title' },
-              'Xero Bulk Voiding Tool'
-            ),
-            _react2.default.createElement(
-              'p',
-              { 'class': 'subtitle' },
-              'Void invoices in bulk'
-            ),
-            _react2.default.createElement(
-              'figure',
-              { id: 'blogDetailImg', 'class': 'image is-4by3' },
+              'article',
+              { 'class': 'tile is-child notification is-info' },
               _react2.default.createElement(
-                'a',
-                {
-                  href: 'https://github.com/leslie-alldridge/xero-bulk-void-invoice-tool-v1',
-                  target: '_blank'
-                },
-                _react2.default.createElement('img', { id: 'round', src: '/void2.png' })
+                'p',
+                { 'class': 'title' },
+                'Xero Invoice Reducer'
+              ),
+              _react2.default.createElement(
+                'p',
+                { 'class': 'subtitle' },
+                'Create summarised invoices with ease'
+              ),
+              _react2.default.createElement(
+                'figure',
+                { id: 'blogDetailImg', 'class': 'image is-16by9' },
+                ' ',
+                _react2.default.createElement(
+                  'a',
+                  {
+                    href: 'https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer',
+                    target: '_blank'
+                  },
+                  _react2.default.createElement('img', { id: 'round', src: '/duplicate.png' })
+                )
               )
             )
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { 'class': 'tile is-parent' },
-          _react2.default.createElement(
-            'article',
-            { 'class': 'tile is-child notification is-info' },
-            _react2.default.createElement(
-              'p',
-              { 'class': 'title' },
-              'Xero Invoice Reducer'
-            ),
-            _react2.default.createElement(
-              'p',
-              { 'class': 'subtitle' },
-              'Create summarised invoices with ease'
-            ),
-            _react2.default.createElement(
-              'figure',
-              { id: 'blogDetailImg', 'class': 'image is-4by3' },
-              _react2.default.createElement(
-                'a',
-                {
-                  href: 'https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer',
-                  target: '_blank'
-                },
-                _react2.default.createElement('img', { id: 'round', src: '/duplicate.png' })
-              )
-            )
-          )
-        ),
-        ' ',
-        _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide5' }),
-        _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide6' })
+          ),
+          ' ',
+          _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide5' }),
+          _react2.default.createElement('img', { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide6' })
+        )
       );
     }
   }]);

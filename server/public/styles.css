@@ -227,3 +227,8 @@ a.navbar-item.is-active {
 #round {
   border-radius: 4px;
 }
+
+#firstCar {
+  margin: 0 auto;
+  max-width: 80%;
+}
