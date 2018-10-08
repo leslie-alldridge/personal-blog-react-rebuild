@@ -1,5 +1,5 @@
-import React from "react";
-import { Parallax } from "react-scroll-parallax";
+import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 
 const Hero = () => {
   return (
@@ -20,19 +20,19 @@ const Hero = () => {
               <h2 className="subtitle">
                 <div id="lax">
                   <ul>
-                    <Parallax offsetXMin={"420px"} offsetXMax={"-820px"}>
-                      <li>Empathy</li>
+                    <Parallax offsetXMin={'420px'} offsetXMax={'-820px'}>
+                      <li>Customer Focused</li>
                     </Parallax>
-                    <Parallax offsetXMin={"-620px"} offsetXMax={"620px"}>
+                    <Parallax offsetXMin={'-620px'} offsetXMax={'620px'}>
                       <li>Team Member</li>
                     </Parallax>
-                    <Parallax offsetXMin={"-320px"} offsetXMax={"920px"}>
-                      <li>Ability to learn</li>
+                    <Parallax offsetXMin={'-320px'} offsetXMax={'920px'}>
+                      <li>Fast Learner</li>
                     </Parallax>
-                    <Parallax offsetXMin={"620px"} offsetXMax={"-620px"}>
-                      <li>Optimistic</li>
+                    <Parallax offsetXMin={'620px'} offsetXMax={'-620px'}>
+                      <li>Lateral Thinker</li>
                     </Parallax>
-                    <Parallax offsetXMin={"-620px"} offsetXMax={"620px"}>
+                    <Parallax offsetXMin={'-620px'} offsetXMax={'620px'}>
                       <li>Motivator</li>
                     </Parallax>
                   </ul>

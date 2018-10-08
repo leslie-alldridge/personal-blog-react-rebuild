@@ -24669,87 +24669,87 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Hero = function Hero() {
   return _react2.default.createElement(
-    "div",
-    { "class": "target", id: "0" },
+    'div',
+    { 'class': 'target', id: '0' },
     _react2.default.createElement(
-      "div",
-      { id: "para" },
+      'div',
+      { id: 'para' },
       _react2.default.createElement(
-        "section",
-        { className: "hero is-info is-fullheight" },
+        'section',
+        { className: 'hero is-info is-fullheight' },
         _react2.default.createElement(
-          "div",
-          { className: "hero-body" },
+          'div',
+          { className: 'hero-body' },
           _react2.default.createElement(
-            "div",
-            { className: "container" },
+            'div',
+            { className: 'container' },
             _react2.default.createElement(
-              "h1",
+              'h1',
               {
-                id: "title",
-                "data-aos": "zoom-in",
-                "data-aos-duration": "4000",
-                className: "title"
+                id: 'title',
+                'data-aos': 'zoom-in',
+                'data-aos-duration': '4000',
+                className: 'title'
               },
-              "Leslie Alldridge"
+              'Leslie Alldridge'
             ),
             _react2.default.createElement(
-              "h2",
-              { className: "subtitle" },
-              "Welcome to my online portfolio"
+              'h2',
+              { className: 'subtitle' },
+              'Welcome to my online portfolio'
             ),
             _react2.default.createElement(
-              "h2",
-              { className: "subtitle" },
+              'h2',
+              { className: 'subtitle' },
               _react2.default.createElement(
-                "div",
-                { id: "lax" },
+                'div',
+                { id: 'lax' },
                 _react2.default.createElement(
-                  "ul",
+                  'ul',
                   null,
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    { offsetXMin: "420px", offsetXMax: "-820px" },
+                    { offsetXMin: '420px', offsetXMax: '-820px' },
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Empathy"
+                      'Customer Focused'
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    { offsetXMin: "-620px", offsetXMax: "620px" },
+                    { offsetXMin: '-620px', offsetXMax: '620px' },
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Team Member"
+                      'Team Member'
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    { offsetXMin: "-320px", offsetXMax: "920px" },
+                    { offsetXMin: '-320px', offsetXMax: '920px' },
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Ability to learn"
+                      'Fast Learner'
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    { offsetXMin: "620px", offsetXMax: "-620px" },
+                    { offsetXMin: '620px', offsetXMax: '-620px' },
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Optimistic"
+                      'Lateral Thinker'
                     )
                   ),
                   _react2.default.createElement(
                     _reactScrollParallax.Parallax,
-                    { offsetXMin: "-620px", offsetXMax: "620px" },
+                    { offsetXMin: '-620px', offsetXMax: '620px' },
                     _react2.default.createElement(
-                      "li",
+                      'li',
                       null,
-                      "Motivator"
+                      'Motivator'
                     )
                   )
                 )
@@ -25842,91 +25842,107 @@ var BlogDetail = function BlogDetail(props) {
     ),
     _react2.default.createElement(
       'div',
-      { id: 'symbolsCont', 'class': 'container is-fluid' },
+      { 'class': 'tile is-ancestor' },
       _react2.default.createElement(
         'div',
-        { id: 'symbols', 'class': 'notification' },
+        { 'class': 'tile is-vertical is-12' },
         _react2.default.createElement(
-          'figure',
-          { onClick: props.showHTML, 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html2.png' }),
+          'div',
+          { 'class': 'tile' },
           _react2.default.createElement(
             'div',
-            { 'class': 'textHide' },
+            { 'class': 'tile is-parent' },
             _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'HTML5'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'figure',
-          { onClick: props.showCSS, 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css2.png' }),
-          _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
-            _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'CSS3'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'figure',
-          { onClick: props.showReact, 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react2.png' }),
-          _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
-            _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              ' React'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'figure',
-          { onClick: props.showNode, 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node2.png' }),
-          _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
-            _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'NodeJS'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'figure',
-          { onClick: props.showPython, 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/p2.png' }),
-          _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
-            _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'Python'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'figure',
-          { onClick: props.showJS, 'class': 'image is-128x128' },
-          _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/js2.png' }),
-          _react2.default.createElement(
-            'div',
-            { 'class': 'textHide' },
-            _react2.default.createElement(
-              'p',
-              { 'class': 'textInfo' },
-              'Javascript'
+              'div',
+              { id: 'symbolsCont', 'class': 'container is-fluid' },
+              _react2.default.createElement(
+                'div',
+                { id: 'symbols', 'class': 'notification' },
+                _react2.default.createElement(
+                  'figure',
+                  { onClick: props.showHTML, 'class': 'image is-128x128' },
+                  _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/html2.png' }),
+                  _react2.default.createElement(
+                    'div',
+                    { 'class': 'textHide' },
+                    _react2.default.createElement(
+                      'p',
+                      { 'class': 'textInfo' },
+                      'HTML5'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'figure',
+                  { onClick: props.showCSS, 'class': 'image is-128x128' },
+                  _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/css2.png' }),
+                  _react2.default.createElement(
+                    'div',
+                    { 'class': 'textHide' },
+                    _react2.default.createElement(
+                      'p',
+                      { 'class': 'textInfo' },
+                      'CSS3'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'figure',
+                  { onClick: props.showReact, 'class': 'image is-128x128' },
+                  _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/react2.png' }),
+                  _react2.default.createElement(
+                    'div',
+                    { 'class': 'textHide' },
+                    _react2.default.createElement(
+                      'p',
+                      { 'class': 'textInfo' },
+                      ' React'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'figure',
+                  { onClick: props.showNode, 'class': 'image is-128x128' },
+                  _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/node2.png' }),
+                  _react2.default.createElement(
+                    'div',
+                    { 'class': 'textHide' },
+                    _react2.default.createElement(
+                      'p',
+                      { 'class': 'textInfo' },
+                      'NodeJS'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'figure',
+                  { onClick: props.showPython, 'class': 'image is-128x128' },
+                  _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/p2.png' }),
+                  _react2.default.createElement(
+                    'div',
+                    { 'class': 'textHide' },
+                    _react2.default.createElement(
+                      'p',
+                      { 'class': 'textInfo' },
+                      'Python'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'figure',
+                  { onClick: props.showJS, 'class': 'image is-128x128' },
+                  _react2.default.createElement('img', { id: 'imgBadge', 'class': 'is-rounded', src: '/js2.png' }),
+                  _react2.default.createElement(
+                    'div',
+                    { 'class': 'textHide' },
+                    _react2.default.createElement(
+                      'p',
+                      { 'class': 'textInfo' },
+                      'Javascript'
+                    )
+                  )
+                )
+              )
             )
           )
         )
