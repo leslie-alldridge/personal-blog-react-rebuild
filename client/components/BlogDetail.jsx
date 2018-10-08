@@ -3,7 +3,7 @@ import Carousel from './Carousel';
 
 const BlogDetail = props => {
   return (
-    <div>
+    <div id="containerSlide">
       <div
         data-aos="zoom-in"
         data-aos-offset="0"
@@ -18,7 +18,7 @@ const BlogDetail = props => {
       >
         <Carousel />
       </div>
-      <div class="container is-fluid">
+      <div id="symbolsCont" class="container is-fluid">
         <div id="symbols" class="notification">
           <figure onClick={props.showHTML} class="image is-128x128">
             <img id="imgBadge" class="is-rounded" src="/html2.png" />

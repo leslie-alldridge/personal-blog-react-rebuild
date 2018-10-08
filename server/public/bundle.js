@@ -312,12 +312,12 @@ if (process.env.NODE_ENV !== 'production') {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__color__["e"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_0__color__["g"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_0__color__["f"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lab__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lab__ = __webpack_require__(76);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__lab__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__lab__["b"]; });
 /* unused harmony reexport lch */
 /* unused harmony reexport gray */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cubehelix__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cubehelix__ = __webpack_require__(77);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__cubehelix__["a"]; });
 
 
@@ -1067,9 +1067,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "now", function() { return __WEBPACK_IMPORTED_MODULE_0__timer__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "timer", function() { return __WEBPACK_IMPORTED_MODULE_0__timer__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "timerFlush", function() { return __WEBPACK_IMPORTED_MODULE_0__timer__["d"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timeout__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timeout__ = __webpack_require__(70);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "timeout", function() { return __WEBPACK_IMPORTED_MODULE_1__timeout__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interval__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interval__ = __webpack_require__(71);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interval", function() { return __WEBPACK_IMPORTED_MODULE_2__interval__["a"]; });
 
 
@@ -23303,15 +23303,15 @@ var _BlogDetail = __webpack_require__(64);
 
 var _BlogDetail2 = _interopRequireDefault(_BlogDetail);
 
-var _Contact = __webpack_require__(65);
+var _Contact = __webpack_require__(108);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _About = __webpack_require__(66);
+var _About = __webpack_require__(109);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Footer = __webpack_require__(67);
+var _Footer = __webpack_require__(110);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -25815,7 +25815,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Carousel = __webpack_require__(68);
+var _Carousel = __webpack_require__(65);
 
 var _Carousel2 = _interopRequireDefault(_Carousel);
 
@@ -25824,7 +25824,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var BlogDetail = function BlogDetail(props) {
   return _react2.default.createElement(
     'div',
-    null,
+    { id: 'containerSlide' },
     _react2.default.createElement(
       'div',
       {
@@ -25842,7 +25842,7 @@ var BlogDetail = function BlogDetail(props) {
     ),
     _react2.default.createElement(
       'div',
-      { 'class': 'container is-fluid' },
+      { id: 'symbolsCont', 'class': 'container is-fluid' },
       _react2.default.createElement(
         'div',
         { id: 'symbols', 'class': 'notification' },
@@ -25948,399 +25948,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Contact = function Contact() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "div",
-      { "class": "container" },
-      _react2.default.createElement(
-        "div",
-        { "class": "box" },
-        _react2.default.createElement(
-          "article",
-          { "class": "media" },
-          _react2.default.createElement(
-            "div",
-            { "class": "media-left" },
-            _react2.default.createElement(
-              "figure",
-              { "class": "image is-128x128" },
-              _react2.default.createElement("img", { id: "myIMG", "class": "is-rounded", src: "/pimg.jpg" })
-            )
-          ),
-          _react2.default.createElement(
-            "div",
-            { "class": "media-content" },
-            _react2.default.createElement(
-              "div",
-              { "class": "content" },
-              _react2.default.createElement(
-                "p",
-                null,
-                _react2.default.createElement(
-                  "strong",
-                  { id: "myName" },
-                  "Leslie Alldridge "
-                ),
-                _react2.default.createElement("br", null),
-                _react2.default.createElement(
-                  "ul",
-                  null,
-                  _react2.default.createElement(
-                    "li",
-                    { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
-                    _react2.default.createElement(
-                      "strong",
-                      null,
-                      "Email:"
-                    ),
-                    " leslie.alldridge@gmail.com"
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    { "data-aos": "zoom-in-left", "data-aos-duration": "11000" },
-                    _react2.default.createElement(
-                      "strong",
-                      null,
-                      "Mobile:"
-                    ),
-                    " 027-331-3416"
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    { "data-aos": "zoom-out-left", "data-aos-duration": "13000" },
-                    _react2.default.createElement(
-                      "strong",
-                      null,
-                      "Location:"
-                    ),
-                    " Wellington, New Zealand"
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    { "data-aos": "zoom-in-left", "data-aos-duration": "15000" },
-                    _react2.default.createElement(
-                      "strong",
-                      null,
-                      "Find me online:"
-                    ),
-                    " My GitHub and LinkedIn pages are linked below"
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "nav",
-              { "class": "level is-mobile" },
-              _react2.default.createElement(
-                "div",
-                { "class": "level-left" },
-                _react2.default.createElement(
-                  "a",
-                  {
-                    href: "https://github.com/leslie-alldridge",
-                    target: "_blank",
-                    "class": "level-item",
-                    "aria-label": "github"
-                  },
-                  _react2.default.createElement(
-                    "span",
-                    { "class": "icon is-small" },
-                    _react2.default.createElement("i", { "class": "fab fa-github", "aria-hidden": "true" })
-                  )
-                ),
-                _react2.default.createElement("div", { className: "target", id: "4" }),
-                _react2.default.createElement(
-                  "a",
-                  {
-                    href: "https://nz.linkedin.com/in/lesliealldridge",
-                    target: "_blank",
-                    "class": "level-item",
-                    "aria-label": "linkedin"
-                  },
-                  _react2.default.createElement(
-                    "span",
-                    { "class": "icon is-small" },
-                    _react2.default.createElement("i", { "class": "fab fa-linkedin", "aria-hidden": "true" })
-                  )
-                )
-              )
-            )
-          )
-        )
-      ),
-      " "
-    )
-  );
-};
-
-exports.default = Contact;
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var About = function About() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "div",
-      { id: "aboutPage", "class": "container" },
-      _react2.default.createElement(
-        "div",
-        { "class": "columns" },
-        _react2.default.createElement(
-          "div",
-          { "class": "column" },
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-ancestor" },
-            _react2.default.createElement(
-              "div",
-              { id: "wideTile", "class": "tile is-vertical is-8" },
-              _react2.default.createElement(
-                "div",
-                { "class": "tile" },
-                _react2.default.createElement(
-                  "div",
-                  {
-                    "data-aos": "flip-down",
-                    "data-aos-duration": "15000",
-                    "class": "tile is-parent is-vertical"
-                  },
-                  _react2.default.createElement(
-                    "article",
-                    {
-                      id: "firstTile",
-                      "class": "tile is-child notification is-primary"
-                    },
-                    _react2.default.createElement(
-                      "p",
-                      { "class": "title" },
-                      "About me"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { "class": "content" },
-                      "Hi there! First of all, thanks for checking out my portfolio.",
-                      _react2.default.createElement("p", null),
-                      "My strongest skills are bringing energy into a team, finding more efficient ways to carry out repetitive tasks and thinking of creative solutions to a problem. Outside of the workplace, you'll find me at the gym, practising karate, solving rubik's cubes and learning something new.",
-                      _react2.default.createElement("p", null),
-                      "I've finally found my passion after three careers. I'm driven to become a full stack developer and do the best work of my life. This career will offer me a place where I'll never master my role and be continually learning new technologies and stacks as the industry evolves.",
-                      _react2.default.createElement("p", null),
-                      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.",
-                      " ",
-                      _react2.default.createElement("p", null),
-                      _react2.default.createElement("p", null),
-                      "I will bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { "class": "column" },
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-ancestor" },
-            _react2.default.createElement(
-              "div",
-              { id: "wideTile", "class": "tile is-vertical is-8" },
-              _react2.default.createElement(
-                "div",
-                { "class": "tile" },
-                _react2.default.createElement(
-                  "div",
-                  {
-                    "data-aos": "flip-down",
-                    "data-aos-duration": "15000",
-                    "class": "tile is-parent is-vertical"
-                  },
-                  _react2.default.createElement(
-                    "article",
-                    {
-                      id: "firstTile",
-                      "class": "tile is-child notification is-primary"
-                    },
-                    _react2.default.createElement(
-                      "p",
-                      { "class": "title" },
-                      "About my portfolio"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { "class": "content" },
-                      "During my time at DevAcademy I decided to do a reflection at the halfway point to see how far I've grown in a short amount of time.",
-                      _react2.default.createElement("p", null),
-                      "Compared to my portfolio website pre-bootcamp, I'm proud to say I spent much less time on this website and achieved an outcome that exceeded my expectations.",
-                      _react2.default.createElement("p", null),
-                      "I've included more details about my reflections in the readme over on GitHub (",
-                      _react2.default.createElement(
-                        "a",
-                        { href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild" },
-                        "here"
-                      ),
-                      ") This website is powered by the following technologies:",
-                      _react2.default.createElement(
-                        "ul",
-                        null,
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " React"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " Bulma CSS"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " React Parallax"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " CSS 3 Animations"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " Node JS"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " Webpack"
-                        )
-                      ),
-                      _react2.default.createElement(
-                        "p",
-                        null,
-                        "If you have any questions about the technologies used or want to learn how I developed certain parts of this page, please let me know.",
-                        _react2.default.createElement("p", null),
-                        _react2.default.createElement("p", null),
-                        "For anyone looking at this page thinking \"Wow, how'd he do that?\", drop me a message or email and I'll be in touch.",
-                        _react2.default.createElement("p", null),
-                        "Please note: Page will be edited to reflect my new projects and blogs."
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          )
-        )
-      )
-    )
-  );
-};
-
-exports.default = About;
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Footer = function Footer() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "footer",
-      { "class": "footer" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content has-text-centered" },
-        _react2.default.createElement(
-          "p",
-          null,
-          "Portfolio by Leslie Alldridge - 2018. Created with",
-          ' ',
-          _react2.default.createElement(
-            "a",
-            { href: "https://reactjs.org/" },
-            "React"
-          ),
-          ",",
-          ' ',
-          _react2.default.createElement(
-            "a",
-            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
-            "React Parallax"
-          ),
-          ", ",
-          _react2.default.createElement(
-            "a",
-            { href: "https://bulma.io/" },
-            "Bulma"
-          ),
-          ", Node JS and CSS3."
-        )
-      )
-    )
-  );
-};
-
-exports.default = Footer;
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _nukaCarousel = __webpack_require__(69);
+var _nukaCarousel = __webpack_require__(66);
 
 var _nukaCarousel2 = _interopRequireDefault(_nukaCarousel);
 
@@ -26564,7 +26178,7 @@ var _class = function (_React$Component) {
 exports.default = _class;
 
 /***/ }),
-/* 69 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26574,13 +26188,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_exenv__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_exenv__ = __webpack_require__(67);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_exenv___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_exenv__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_move_Animate__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_move_Animate__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_move_Animate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_move_Animate__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_d3_ease__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__default_controls__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__all_transitions__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_d3_ease__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__default_controls__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__all_transitions__ = __webpack_require__(105);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NextButton", function() { return __WEBPACK_IMPORTED_MODULE_5__default_controls__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "PreviousButton", function() { return __WEBPACK_IMPORTED_MODULE_5__default_controls__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "PagingDots", function() { return __WEBPACK_IMPORTED_MODULE_5__default_controls__["b"]; });
@@ -27845,7 +27459,7 @@ Carousel.defaultProps = {
 
 
 /***/ }),
-/* 70 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -27892,7 +27506,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 71 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27901,7 +27515,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*!
 exports.__esModule = true;
 exports.default = undefined;
 
-var _Animate = __webpack_require__(72);
+var _Animate = __webpack_require__(69);
 
 var _Animate2 = _interopRequireDefault(_Animate);
 
@@ -27910,7 +27524,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Animate2.default; /* eslint-disable flowtype/require-valid-file-annotation */
 
 /***/ }),
-/* 72 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27924,7 +27538,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _d3Timer = __webpack_require__(11);
 
-var _transition = __webpack_require__(75);
+var _transition = __webpack_require__(72);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28043,7 +27657,7 @@ Animate.defaultProps = {
 exports.default = Animate;
 
 /***/ }),
-/* 73 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28062,7 +27676,7 @@ exports.default = Animate;
 
 
 /***/ }),
-/* 74 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28083,7 +27697,7 @@ exports.default = Animate;
 
 
 /***/ }),
-/* 75 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28091,7 +27705,7 @@ exports.default = Animate;
 
 exports.__esModule = true;
 
-var _transition = __webpack_require__(76);
+var _transition = __webpack_require__(73);
 
 Object.defineProperty(exports, 'transition', {
   enumerable: true,
@@ -28100,7 +27714,7 @@ Object.defineProperty(exports, 'transition', {
   }
 });
 
-var _stop = __webpack_require__(95);
+var _stop = __webpack_require__(92);
 
 Object.defineProperty(exports, 'stop', {
   enumerable: true,
@@ -28112,7 +27726,7 @@ Object.defineProperty(exports, 'stop', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 76 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28130,11 +27744,11 @@ exports.default = transition;
 
 var _d3Timer = __webpack_require__(11);
 
-var _tween = __webpack_require__(77);
+var _tween = __webpack_require__(74);
 
 var _tween2 = _interopRequireDefault(_tween);
 
-var _schedule = __webpack_require__(94);
+var _schedule = __webpack_require__(91);
 
 var _schedule2 = _interopRequireDefault(_schedule);
 
@@ -28292,7 +27906,7 @@ function transition(config) {
 }
 
 /***/ }),
-/* 77 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28309,7 +27923,7 @@ exports.default = function (nameSpace, attr, value) {
   return getTween.call(this, nameSpace, attr, value);
 };
 
-var _d3Interpolate = __webpack_require__(78);
+var _d3Interpolate = __webpack_require__(75);
 
 function getInterpolator(attr) {
   if (attr === 'transform') {
@@ -28356,7 +27970,7 @@ function getTween(nameSpace, attr, value1) {
 }
 
 /***/ }),
-/* 78 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28371,41 +27985,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateBasisClosed", function() { return __WEBPACK_IMPORTED_MODULE_3__basisClosed__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__date__ = __webpack_require__(26);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateDate", function() { return __WEBPACK_IMPORTED_MODULE_4__date__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__discrete__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__discrete__ = __webpack_require__(78);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateDiscrete", function() { return __WEBPACK_IMPORTED_MODULE_5__discrete__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hue__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hue__ = __webpack_require__(79);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateHue", function() { return __WEBPACK_IMPORTED_MODULE_6__hue__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__number__ = __webpack_require__(7);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateNumber", function() { return __WEBPACK_IMPORTED_MODULE_7__number__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__object__ = __webpack_require__(27);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateObject", function() { return __WEBPACK_IMPORTED_MODULE_8__object__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__round__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__round__ = __webpack_require__(80);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateRound", function() { return __WEBPACK_IMPORTED_MODULE_9__round__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__string__ = __webpack_require__(28);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateString", function() { return __WEBPACK_IMPORTED_MODULE_10__string__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__transform_index__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__transform_index__ = __webpack_require__(81);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateTransformCss", function() { return __WEBPACK_IMPORTED_MODULE_11__transform_index__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateTransformSvg", function() { return __WEBPACK_IMPORTED_MODULE_11__transform_index__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__zoom__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__zoom__ = __webpack_require__(84);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateZoom", function() { return __WEBPACK_IMPORTED_MODULE_12__zoom__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__rgb__ = __webpack_require__(22);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateRgb", function() { return __WEBPACK_IMPORTED_MODULE_13__rgb__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateRgbBasis", function() { return __WEBPACK_IMPORTED_MODULE_13__rgb__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateRgbBasisClosed", function() { return __WEBPACK_IMPORTED_MODULE_13__rgb__["c"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__hsl__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__hsl__ = __webpack_require__(85);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateHsl", function() { return __WEBPACK_IMPORTED_MODULE_14__hsl__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateHslLong", function() { return __WEBPACK_IMPORTED_MODULE_14__hsl__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__lab__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__lab__ = __webpack_require__(86);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateLab", function() { return __WEBPACK_IMPORTED_MODULE_15__lab__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hcl__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hcl__ = __webpack_require__(87);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateHcl", function() { return __WEBPACK_IMPORTED_MODULE_16__hcl__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateHclLong", function() { return __WEBPACK_IMPORTED_MODULE_16__hcl__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__cubehelix__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__cubehelix__ = __webpack_require__(88);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateCubehelix", function() { return __WEBPACK_IMPORTED_MODULE_17__cubehelix__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "interpolateCubehelixLong", function() { return __WEBPACK_IMPORTED_MODULE_17__cubehelix__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__piecewise__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__piecewise__ = __webpack_require__(89);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "piecewise", function() { return __WEBPACK_IMPORTED_MODULE_18__piecewise__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__quantize__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__quantize__ = __webpack_require__(90);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "quantize", function() { return __WEBPACK_IMPORTED_MODULE_19__quantize__["a"]; });
 
 
@@ -28430,7 +28044,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 79 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28567,7 +28181,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__define__["a" /* default */])(Hcl, hcl, Objec
 
 
 /***/ }),
-/* 80 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28640,7 +28254,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__define__["a" /* default */])(Cubehelix, cube
 
 
 /***/ }),
-/* 81 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28653,7 +28267,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__define__["a" /* default */])(Cubehelix, cube
 
 
 /***/ }),
-/* 82 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28670,7 +28284,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__define__["a" /* default */])(Cubehelix, cube
 
 
 /***/ }),
-/* 83 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28682,14 +28296,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__define__["a" /* default */])(Cubehelix, cube
 
 
 /***/ }),
-/* 84 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return interpolateTransformCss; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return interpolateTransformSvg; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__number__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__parse__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__parse__ = __webpack_require__(82);
 
 
 
@@ -28756,13 +28370,13 @@ var interpolateTransformSvg = interpolateTransform(__WEBPACK_IMPORTED_MODULE_1__
 
 
 /***/ }),
-/* 85 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = parseCss;
 /* harmony export (immutable) */ __webpack_exports__["b"] = parseSvg;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__decompose__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__decompose__ = __webpack_require__(83);
 
 
 var cssNode,
@@ -28791,7 +28405,7 @@ function parseSvg(value) {
 
 
 /***/ }),
-/* 86 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28825,7 +28439,7 @@ var identity = {
 
 
 /***/ }),
-/* 87 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28896,7 +28510,7 @@ function tanh(x) {
 
 
 /***/ }),
-/* 88 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28927,7 +28541,7 @@ var hslLong = hsl(__WEBPACK_IMPORTED_MODULE_1__color__["a" /* default */]);
 
 
 /***/ }),
-/* 89 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28953,7 +28567,7 @@ function lab(start, end) {
 
 
 /***/ }),
-/* 90 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28984,7 +28598,7 @@ var hclLong = hcl(__WEBPACK_IMPORTED_MODULE_1__color__["a" /* default */]);
 
 
 /***/ }),
-/* 91 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29023,7 +28637,7 @@ var cubehelixLong = cubehelix(__WEBPACK_IMPORTED_MODULE_1__color__["a" /* defaul
 
 
 /***/ }),
-/* 92 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29039,7 +28653,7 @@ function piecewise(interpolate, values) {
 
 
 /***/ }),
-/* 93 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29051,7 +28665,7 @@ function piecewise(interpolate, values) {
 
 
 /***/ }),
-/* 94 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29221,7 +28835,7 @@ function create(node, id, config) {
 }
 
 /***/ }),
-/* 95 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29242,54 +28856,54 @@ function stop() {
 }
 
 /***/ }),
-/* 96 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__linear__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__linear__ = __webpack_require__(94);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeLinear", function() { return __WEBPACK_IMPORTED_MODULE_0__linear__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__quad__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__quad__ = __webpack_require__(95);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeQuad", function() { return __WEBPACK_IMPORTED_MODULE_1__quad__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeQuadIn", function() { return __WEBPACK_IMPORTED_MODULE_1__quad__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeQuadOut", function() { return __WEBPACK_IMPORTED_MODULE_1__quad__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeQuadInOut", function() { return __WEBPACK_IMPORTED_MODULE_1__quad__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cubic__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cubic__ = __webpack_require__(96);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCubic", function() { return __WEBPACK_IMPORTED_MODULE_2__cubic__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCubicIn", function() { return __WEBPACK_IMPORTED_MODULE_2__cubic__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCubicOut", function() { return __WEBPACK_IMPORTED_MODULE_2__cubic__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCubicInOut", function() { return __WEBPACK_IMPORTED_MODULE_2__cubic__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__poly__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__poly__ = __webpack_require__(97);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easePoly", function() { return __WEBPACK_IMPORTED_MODULE_3__poly__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easePolyIn", function() { return __WEBPACK_IMPORTED_MODULE_3__poly__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easePolyOut", function() { return __WEBPACK_IMPORTED_MODULE_3__poly__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easePolyInOut", function() { return __WEBPACK_IMPORTED_MODULE_3__poly__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sin__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sin__ = __webpack_require__(98);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeSin", function() { return __WEBPACK_IMPORTED_MODULE_4__sin__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeSinIn", function() { return __WEBPACK_IMPORTED_MODULE_4__sin__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeSinOut", function() { return __WEBPACK_IMPORTED_MODULE_4__sin__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeSinInOut", function() { return __WEBPACK_IMPORTED_MODULE_4__sin__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__exp__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__exp__ = __webpack_require__(99);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeExp", function() { return __WEBPACK_IMPORTED_MODULE_5__exp__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeExpIn", function() { return __WEBPACK_IMPORTED_MODULE_5__exp__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeExpOut", function() { return __WEBPACK_IMPORTED_MODULE_5__exp__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeExpInOut", function() { return __WEBPACK_IMPORTED_MODULE_5__exp__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__circle__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__circle__ = __webpack_require__(100);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCircle", function() { return __WEBPACK_IMPORTED_MODULE_6__circle__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCircleIn", function() { return __WEBPACK_IMPORTED_MODULE_6__circle__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCircleOut", function() { return __WEBPACK_IMPORTED_MODULE_6__circle__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeCircleInOut", function() { return __WEBPACK_IMPORTED_MODULE_6__circle__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bounce__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bounce__ = __webpack_require__(101);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBounce", function() { return __WEBPACK_IMPORTED_MODULE_7__bounce__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBounceIn", function() { return __WEBPACK_IMPORTED_MODULE_7__bounce__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBounceOut", function() { return __WEBPACK_IMPORTED_MODULE_7__bounce__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBounceInOut", function() { return __WEBPACK_IMPORTED_MODULE_7__bounce__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__back__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__back__ = __webpack_require__(102);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBack", function() { return __WEBPACK_IMPORTED_MODULE_8__back__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBackIn", function() { return __WEBPACK_IMPORTED_MODULE_8__back__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBackOut", function() { return __WEBPACK_IMPORTED_MODULE_8__back__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeBackInOut", function() { return __WEBPACK_IMPORTED_MODULE_8__back__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__elastic__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__elastic__ = __webpack_require__(103);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeElastic", function() { return __WEBPACK_IMPORTED_MODULE_9__elastic__["c"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeElasticIn", function() { return __WEBPACK_IMPORTED_MODULE_9__elastic__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "easeElasticOut", function() { return __WEBPACK_IMPORTED_MODULE_9__elastic__["c"]; });
@@ -29316,7 +28930,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 97 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29327,7 +28941,7 @@ function linear(t) {
 
 
 /***/ }),
-/* 98 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29348,7 +28962,7 @@ function quadInOut(t) {
 
 
 /***/ }),
-/* 99 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29369,7 +28983,7 @@ function cubicInOut(t) {
 
 
 /***/ }),
-/* 100 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29416,7 +29030,7 @@ var polyInOut = (function custom(e) {
 
 
 /***/ }),
-/* 101 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29440,7 +29054,7 @@ function sinInOut(t) {
 
 
 /***/ }),
-/* 102 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29461,7 +29075,7 @@ function expInOut(t) {
 
 
 /***/ }),
-/* 103 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29482,7 +29096,7 @@ function circleInOut(t) {
 
 
 /***/ }),
-/* 104 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29514,7 +29128,7 @@ function bounceInOut(t) {
 
 
 /***/ }),
-/* 105 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29561,7 +29175,7 @@ var backInOut = (function custom(s) {
 
 
 /***/ }),
-/* 106 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29615,7 +29229,7 @@ var elasticInOut = (function custom(a, p) {
 
 
 /***/ }),
-/* 107 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29800,12 +29414,12 @@ function (_React$Component3) {
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 /***/ }),
-/* 108 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__transitions_scroll_transition__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_fade_transition__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__transitions_scroll_transition__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__transitions_fade_transition__ = __webpack_require__(107);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -29814,7 +29428,7 @@ function (_React$Component3) {
 });
 
 /***/ }),
-/* 109 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30010,7 +29624,7 @@ ScrollTransition.defaultProps = {
 };
 
 /***/ }),
-/* 110 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30195,6 +29809,392 @@ FadeTransition.defaultProps = {
   wrapAround: false,
   slidesToShow: 1
 };
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Contact = function Contact() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "div",
+      { "class": "container" },
+      _react2.default.createElement(
+        "div",
+        { "class": "box" },
+        _react2.default.createElement(
+          "article",
+          { "class": "media" },
+          _react2.default.createElement(
+            "div",
+            { "class": "media-left" },
+            _react2.default.createElement(
+              "figure",
+              { "class": "image is-128x128" },
+              _react2.default.createElement("img", { id: "myIMG", "class": "is-rounded", src: "/pimg.jpg" })
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            { "class": "media-content" },
+            _react2.default.createElement(
+              "div",
+              { "class": "content" },
+              _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                  "strong",
+                  { id: "myName" },
+                  "Leslie Alldridge "
+                ),
+                _react2.default.createElement("br", null),
+                _react2.default.createElement(
+                  "ul",
+                  null,
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-out-left", "data-aos-duration": "9000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Email:"
+                    ),
+                    " leslie.alldridge@gmail.com"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-in-left", "data-aos-duration": "11000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Mobile:"
+                    ),
+                    " 027-331-3416"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-out-left", "data-aos-duration": "13000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Location:"
+                    ),
+                    " Wellington, New Zealand"
+                  ),
+                  _react2.default.createElement(
+                    "li",
+                    { "data-aos": "zoom-in-left", "data-aos-duration": "15000" },
+                    _react2.default.createElement(
+                      "strong",
+                      null,
+                      "Find me online:"
+                    ),
+                    " My GitHub and LinkedIn pages are linked below"
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              "nav",
+              { "class": "level is-mobile" },
+              _react2.default.createElement(
+                "div",
+                { "class": "level-left" },
+                _react2.default.createElement(
+                  "a",
+                  {
+                    href: "https://github.com/leslie-alldridge",
+                    target: "_blank",
+                    "class": "level-item",
+                    "aria-label": "github"
+                  },
+                  _react2.default.createElement(
+                    "span",
+                    { "class": "icon is-small" },
+                    _react2.default.createElement("i", { "class": "fab fa-github", "aria-hidden": "true" })
+                  )
+                ),
+                _react2.default.createElement("div", { className: "target", id: "4" }),
+                _react2.default.createElement(
+                  "a",
+                  {
+                    href: "https://nz.linkedin.com/in/lesliealldridge",
+                    target: "_blank",
+                    "class": "level-item",
+                    "aria-label": "linkedin"
+                  },
+                  _react2.default.createElement(
+                    "span",
+                    { "class": "icon is-small" },
+                    _react2.default.createElement("i", { "class": "fab fa-linkedin", "aria-hidden": "true" })
+                  )
+                )
+              )
+            )
+          )
+        )
+      ),
+      " "
+    )
+  );
+};
+
+exports.default = Contact;
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = function About() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "div",
+      { id: "aboutPage", "class": "container" },
+      _react2.default.createElement(
+        "div",
+        { "class": "columns" },
+        _react2.default.createElement(
+          "div",
+          { "class": "column" },
+          _react2.default.createElement(
+            "div",
+            { "class": "tile is-ancestor" },
+            _react2.default.createElement(
+              "div",
+              { id: "wideTile", "class": "tile is-vertical is-8" },
+              _react2.default.createElement(
+                "div",
+                { "class": "tile" },
+                _react2.default.createElement(
+                  "div",
+                  {
+                    "data-aos": "flip-down",
+                    "data-aos-duration": "15000",
+                    "class": "tile is-parent is-vertical"
+                  },
+                  _react2.default.createElement(
+                    "article",
+                    {
+                      id: "firstTile",
+                      "class": "tile is-child notification is-primary"
+                    },
+                    _react2.default.createElement(
+                      "p",
+                      { "class": "title" },
+                      "About me"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { "class": "content" },
+                      "Hi there! First of all, thanks for checking out my portfolio.",
+                      _react2.default.createElement("p", null),
+                      "My strongest skills are bringing energy into a team, finding more efficient ways to carry out repetitive tasks and thinking of creative solutions to a problem. Outside of the workplace, you'll find me at the gym, practising karate, solving rubik's cubes and learning something new.",
+                      _react2.default.createElement("p", null),
+                      "I've finally found my passion after three careers. I'm driven to become a full stack developer and do the best work of my life. This career will offer me a place where I'll never master my role and be continually learning new technologies and stacks as the industry evolves.",
+                      _react2.default.createElement("p", null),
+                      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.",
+                      " ",
+                      _react2.default.createElement("p", null),
+                      _react2.default.createElement("p", null),
+                      "I will bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { "class": "column" },
+          _react2.default.createElement(
+            "div",
+            { "class": "tile is-ancestor" },
+            _react2.default.createElement(
+              "div",
+              { id: "wideTile", "class": "tile is-vertical is-8" },
+              _react2.default.createElement(
+                "div",
+                { "class": "tile" },
+                _react2.default.createElement(
+                  "div",
+                  {
+                    "data-aos": "flip-down",
+                    "data-aos-duration": "15000",
+                    "class": "tile is-parent is-vertical"
+                  },
+                  _react2.default.createElement(
+                    "article",
+                    {
+                      id: "firstTile",
+                      "class": "tile is-child notification is-primary"
+                    },
+                    _react2.default.createElement(
+                      "p",
+                      { "class": "title" },
+                      "About my portfolio"
+                    ),
+                    _react2.default.createElement(
+                      "div",
+                      { "class": "content" },
+                      "During my time at DevAcademy I decided to do a reflection at the halfway point to see how far I've grown in a short amount of time.",
+                      _react2.default.createElement("p", null),
+                      "Compared to my portfolio website pre-bootcamp, I'm proud to say I spent much less time on this website and achieved an outcome that exceeded my expectations.",
+                      _react2.default.createElement("p", null),
+                      "I've included more details about my reflections in the readme over on GitHub (",
+                      _react2.default.createElement(
+                        "a",
+                        { href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild" },
+                        "here"
+                      ),
+                      ") This website is powered by the following technologies:",
+                      _react2.default.createElement(
+                        "ul",
+                        null,
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          " React"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          " Bulma CSS"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          " React Parallax"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          " CSS 3 Animations"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          " Node JS"
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          " Webpack"
+                        )
+                      ),
+                      _react2.default.createElement(
+                        "p",
+                        null,
+                        "If you have any questions about the technologies used or want to learn how I developed certain parts of this page, please let me know.",
+                        _react2.default.createElement("p", null),
+                        _react2.default.createElement("p", null),
+                        "For anyone looking at this page thinking \"Wow, how'd he do that?\", drop me a message or email and I'll be in touch.",
+                        _react2.default.createElement("p", null),
+                        "Please note: Page will be edited to reflect my new projects and blogs."
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = About;
+
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "footer",
+      { "class": "footer" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content has-text-centered" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Portfolio by Leslie Alldridge - 2018. Created with",
+          ' ',
+          _react2.default.createElement(
+            "a",
+            { href: "https://reactjs.org/" },
+            "React"
+          ),
+          ",",
+          ' ',
+          _react2.default.createElement(
+            "a",
+            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
+            "React Parallax"
+          ),
+          ", ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://bulma.io/" },
+            "Bulma"
+          ),
+          ", Node JS and CSS3."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
