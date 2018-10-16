@@ -111,6 +111,24 @@ export default class extends React.Component {
               </figure>
             </article>
           </div>
+          <div id="firstCar" class="tile">
+            <article class="tile is-child notification is-info">
+              <p class="title">Motivation Slack Bot</p>
+              <p class="subtitle">
+                Provides users access to motivational videos, images and quotes.
+                The ability to search by topic is also available. Currently
+                added to Xero's workspace and widely used by the team.
+              </p>
+              <figure id="blogDetailImg" class="image is-16by9">
+                <a
+                  href="https://github.com/leslie-alldridge/slackbot-motivation"
+                  target="_blank"
+                >
+                  <img id="round" src="/motivate.png" />
+                </a>
+              </figure>
+            </article>
+          </div>
         </Carousel>
       </div>
     );
