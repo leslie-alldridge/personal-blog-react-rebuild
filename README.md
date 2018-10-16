@@ -33,3 +33,7 @@ I felt confident with Bulma CSS and Parallax effects even though it was my first
 I didn't realise till halfway that App and Personal Blogs both needed to be a stateful component. In future I will include that in my planning phase so I can quickly set up state and add to it during the build, instead of thinking "whoops I needed state, let's redo some components to handle state and props." 
 
 We also learned API and SQL but there's no need for those features at this current time. Redux is coming in the next week. 
+
+
+TODOS: 
+Need to fix image of slackbot so it scales properly + test the link to github
