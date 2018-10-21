@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const DefaultIntro = () => {
   return (
@@ -13,7 +13,7 @@ const DefaultIntro = () => {
             naturally learn everything my role could offer and look for further
             opportunities to grow. As a developer I love working in teams and
             positively adding the the expected output and motivation of the
-            team. I've included a list below to describe my values and mindset.{" "}
+            team. I've included a list below to describe my values and mindset.{' '}
           </p>
           <ul>
             <li>
@@ -33,30 +33,39 @@ const DefaultIntro = () => {
           </blockquote>
           <h2 data-aos="zoom-out-left" data-aos-duration="9000">
             <i id="horn" class="fas fa-bullhorn" />
-            Please check out my{" "}
+            Please check out my{' '}
             <a href="https://github.com/leslie-alldridge">GitHub page</a> to see
             my other projects.
-          </h2>{" "}
+          </h2>{' '}
           <p>
             I've listed some below, they all use Javascript so it has been
-            omitted from the below:{" "}
+            omitted from the below:{' '}
           </p>
           <ul>
             <li>
-              Rubik's Cube timer (mobile friendly) with SQL databases, Charts.js
-              graphs, Bootstrap styling and two API sources
+              <b>Resources for team members I teach</b> - Continually sharing my
+              knowledge with others inside and outside of the workspace.
             </li>
             <li>
-              Xero Invoice Reducer and Bulk Voiding Tools with OAuth, complex
-              data structures and API calls, handlebars, express and Bootstrap
+              <b>Shopping cart mobile friendly boilerplate</b> - A React Redux
+              boilerplate shopping cart summary that I'm hoping to add a store
+              front to over Christmas.
             </li>
             <li>
-              Expensify with React, Redux and Firebase Authentication + Database
+              <b>Slack team bot</b> - Able to private chat and let you know
+              where particular team members are. Uses Google Auth to read their
+              calendars.
             </li>
-            <li>Apple share pricing graph - D3.js graph and API calls</li>
             <li>
-              This portfolio! 100% React based with Bulma CSS, CSS3 animations,
-              React Parallax and more.
+              <b>Expensify</b> - React, Redux and Firebase Authentication +
+              Database
+            </li>
+            <li>
+              <b>Apple share pricing graph</b> - D3.js graph and API calls
+            </li>
+            <li>
+              <b>This portfolio!</b> 100% React based with Bulma CSS, CSS3
+              animations, React Parallax and more.
             </li>
           </ul>
         </div>

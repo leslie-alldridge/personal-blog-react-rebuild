@@ -249,11 +249,20 @@ a.navbar-item.is-active {
   width: 100%;
 }
 
+#port {
+  min-height: 385px;
+  min-width: 350px;
+  /* max-height: 385px;
+  max-width: 350px; */
+}
+
 #port:hover {
+  text-decoration: none;
+  cursor: pointer;
   z-index: 10;
   position: absolute;
   transition-timing-function: ease;
   transition: 0.5s;
-  transform: scale(1.2);
+  transform: scale(1.4);
   border: 1px solid #59f;
 }
