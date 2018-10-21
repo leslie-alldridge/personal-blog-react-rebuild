@@ -1,17 +1,5 @@
 import React from 'react';
-import Carousel from 'nuka-carousel';
-import {
-  Tabs,
-  Tab,
-  Grid,
-  Cell,
-  Card,
-  CardTitle,
-  Thumbnail,
-  Button,
-  Row,
-  Col
-} from 'react-bootstrap';
+import { Grid, Thumbnail, Button, Row, Col } from 'react-bootstrap';
 
 export default class extends React.Component {
   state = {
@@ -22,7 +10,7 @@ export default class extends React.Component {
       <Grid style={{ display: 'flex' }}>
         <Row>
           <Col xs={6} md={4}>
-            <Thumbnail src="/new.png" alt="242x200">
+            <Thumbnail id="port" src="/new.png" alt="242x200">
               <h3>BackPack Tracker - Track multiple bags with ease</h3>
               <p>
                 Keep track of your belongings (mobile first). A full stack
@@ -31,7 +19,7 @@ export default class extends React.Component {
             </Thumbnail>
           </Col>
           <Col xs={6} md={4}>
-            <Thumbnail src="/gyst.png" alt="242x200">
+            <Thumbnail id="port" src="/gyst.png" alt="242x200">
               <h3>GYST - Custom Personal Dashboard</h3>
               <p>
                 Final Group Project EDA. Fullstack with many API's (including
@@ -41,7 +29,7 @@ export default class extends React.Component {
             </Thumbnail>
           </Col>
           <Col xs={6} md={4}>
-            <Thumbnail src="/void2.png" alt="242x200">
+            <Thumbnail id="port" src="/void2.png" alt="242x200">
               <h3> Void invoices in bulk using the Xero API.</h3>
               <p>
                 Inspired by a Xero Community feature request thread. Built using

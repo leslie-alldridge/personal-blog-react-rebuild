@@ -248,3 +248,12 @@ a.navbar-item.is-active {
   margin-top: -10%;
   width: 100%;
 }
+
+#port:hover {
+  z-index: 10;
+  position: absolute;
+  transition-timing-function: ease;
+  transition: 0.5s;
+  transform: scale(1.2);
+  border: 1px solid #59f;
+}
