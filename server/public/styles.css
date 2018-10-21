@@ -73,7 +73,7 @@
 #symbols {
   padding-top: none;
   margin: 0 auto;
-  padding-left: 5%;
+  /* //padding-left: 5%; */
   float: left;
   display: flex;
   width: 100%;
