@@ -36,7 +36,7 @@ We also learned API and SQL but there's no need for those features at this curre
 
 
 TODOS: 
-Need to fix image of slackbot so it scales properly + test the link to github
-Check the contact nav link is working on local and heroku 
-Consider removing the personal and tech blogs title because there's another title below with the arrow anyway
+Change portfolio images so they're identical sizes and visible 
+Code tidy 
+Remove v1 images in the public folder and any packages that are no longer used (as well as css id's)
 
