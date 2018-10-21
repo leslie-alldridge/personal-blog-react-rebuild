@@ -32107,7 +32107,7 @@ var Navbar = function Navbar() {
         { id: "navName", className: "navbar-item", href: "#" },
         _react2.default.createElement("i", { id: "navIcon", className: "fas fa-code" }),
         "Leslie Alldridge",
-        " "
+        ' '
       )
     ),
     _react2.default.createElement(
@@ -32118,7 +32118,7 @@ var Navbar = function Navbar() {
         { className: "navbar-start" },
         _react2.default.createElement(
           "a",
-          { className: "navbar-item is-active", href: "#0" },
+          { id: "nav", className: "navbar-item is-active", href: "#0" },
           "Home"
         ),
         _react2.default.createElement(
@@ -32126,7 +32126,7 @@ var Navbar = function Navbar() {
           { className: "navbar-item is-hoverable" },
           _react2.default.createElement(
             "a",
-            { className: "navbar-item", href: "#1" },
+            { id: "nav", className: "navbar-item", href: "#1" },
             "Portfolio"
           ),
           _react2.default.createElement(
@@ -32134,7 +32134,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item", href: "#2" },
+              { id: "nav", className: "navbar-item", href: "#2" },
               "Blog"
             )
           ),
@@ -32143,7 +32143,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item", href: "#3" },
+              { id: "nav", className: "navbar-item", href: "#3" },
               "Contact"
             )
           ),
@@ -32152,7 +32152,7 @@ var Navbar = function Navbar() {
             { className: "navbar-item is-hoverable" },
             _react2.default.createElement(
               "a",
-              { className: "navbar-item", href: "#4" },
+              { id: "nav", className: "navbar-item", href: "#4" },
               "About"
             )
           )

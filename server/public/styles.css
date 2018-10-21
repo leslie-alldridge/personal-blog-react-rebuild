@@ -9,9 +9,14 @@
 }
 #navName {
   color: #3273dc;
+  padding-top: 12%;
+  text-decoration: none;
 }
 #para {
   text-align: center;
+}
+#nav {
+  text-decoration: none;
 }
 .hero.is-info {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
