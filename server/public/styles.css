@@ -71,6 +71,7 @@
   max-height: 50%;
 }
 #symbols {
+  padding-top: none;
   margin: 0 auto;
   padding-left: 5%;
   float: left;
@@ -80,11 +81,12 @@
 }
 
 #imgBadge {
-  margin-left: 30px;
+  /* margin: 30px; */
 }
 
 .image {
-  margin-left: 6%;
+  /* margin-left: 6%; */
+  margin: 0 auto;
 }
 #skillsContent {
   margin-top: 30px;
@@ -93,12 +95,13 @@
 }
 .textHide {
   display: none;
+  margin: 0 auto;
 }
 #imgBadge:hover + div {
   display: block;
   opacity: 1;
   font-weight: 500;
-  margin-left: 50%;
+  margin-left: 25%;
 }
 #imgBadge:hover {
   cursor: pointer;
