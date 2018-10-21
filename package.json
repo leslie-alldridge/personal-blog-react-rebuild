@@ -37,6 +37,7 @@
     "jest": "^22.1.4",
     "nuka-carousel": "^4.4.0",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.4",
     "react-carousel-slider": "^2.0.13",
     "react-dom": "^16.2.0",
     "react-owl-carousel2": "^0.3.0",

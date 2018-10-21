@@ -9,9 +9,14 @@
 }
 #navName {
   color: #3273dc;
+  padding-top: 12%;
+  text-decoration: none;
 }
 #para {
   text-align: center;
+}
+#nav {
+  text-decoration: none;
 }
 .hero.is-info {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -66,6 +71,7 @@
   max-height: 50%;
 }
 #symbols {
+  padding-top: none;
   margin: 0 auto;
   padding-left: 5%;
   float: left;
@@ -75,11 +81,12 @@
 }
 
 #imgBadge {
-  margin-left: 30px;
+  /* margin: 30px; */
 }
 
 .image {
-  margin-left: 6%;
+  /* margin-left: 6%; */
+  margin: 0 auto;
 }
 #skillsContent {
   margin-top: 30px;
@@ -88,12 +95,13 @@
 }
 .textHide {
   display: none;
+  margin: 0 auto;
 }
 #imgBadge:hover + div {
   display: block;
   opacity: 1;
   font-weight: 500;
-  margin-left: 50%;
+  margin-left: 25%;
 }
 #imgBadge:hover {
   cursor: pointer;
@@ -242,4 +250,22 @@ a.navbar-item.is-active {
 #symbolsCont {
   margin-top: -10%;
   width: 100%;
+}
+
+#port {
+  min-height: 385px;
+  min-width: 350px;
+  /* max-height: 385px;
+  max-width: 350px; */
+}
+
+#port:hover {
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  transition-timing-function: ease;
+  transition: 0.5s;
+  transform: scale(1.4);
+  border: 1px solid #59f;
 }

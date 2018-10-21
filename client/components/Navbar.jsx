@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Navbar = () => {
   return (
@@ -6,32 +6,32 @@ const Navbar = () => {
       <div className="navbar-brand">
         <a id="navName" className="navbar-item" href="#">
           <i id="navIcon" className="fas fa-code" />
-          Leslie Alldridge{" "}
+          Leslie Alldridge{' '}
         </a>
       </div>
 
       <div id="nav" className="navbar-menu">
         <div className="navbar-start">
-          <a className="navbar-item is-active" href="#0">
+          <a id="nav" className="navbar-item is-active" href="#0">
             Home
           </a>
           <div className="navbar-item is-hoverable">
-            <a className="navbar-item" href="#1">
+            <a id="nav" className="navbar-item" href="#1">
               Portfolio
             </a>
 
             <div className="navbar-item is-hoverable">
-              <a className="navbar-item" href="#2">
+              <a id="nav" className="navbar-item" href="#2">
                 Blog
               </a>
             </div>
             <div className="navbar-item is-hoverable">
-              <a className="navbar-item" href="#3">
+              <a id="nav" className="navbar-item" href="#3">
                 Contact
               </a>
             </div>
             <div className="navbar-item is-hoverable">
-              <a className="navbar-item" href="#4">
+              <a id="nav" className="navbar-item" href="#4">
                 About
               </a>
             </div>
