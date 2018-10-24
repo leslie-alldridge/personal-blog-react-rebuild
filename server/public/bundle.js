@@ -32412,10 +32412,11 @@ var DefaultIntro = function DefaultIntro() {
           ' ',
           _react2.default.createElement(
             "a",
-            { href: "https://github.com/leslie-alldridge" },
+            { target: "_blank", href: "https://github.com/leslie-alldridge" },
             "GitHub page"
           ),
-          " to see my other projects."
+          ' ',
+          "to see my other projects."
         ),
         ' ',
         _react2.default.createElement(
