@@ -34,8 +34,10 @@ const DefaultIntro = () => {
           <h2 data-aos="zoom-out-left" data-aos-duration="9000">
             <i id="horn" class="fas fa-bullhorn" />
             Please check out my{' '}
-            <a href="https://github.com/leslie-alldridge">GitHub page</a> to see
-            my other projects.
+            <a target="_blank" href="https://github.com/leslie-alldridge">
+              GitHub page
+            </a>{' '}
+            to see my other projects.
           </h2>{' '}
           <p>
             I've listed some below, they all use Javascript so it has been
