@@ -32,7 +32,7 @@ const Rct = () => {
                 Expensify,{' '}
               </a>
               <a href="https://github.com/leslie-alldridge/react-redux-weather-api">
-                NZ Weather,
+                NZ Weather,{' '}
               </a>
               <a href="https://mobilecartleslie.herokuapp.com/">
                 Cart Checkout Summary

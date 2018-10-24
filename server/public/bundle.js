@@ -31689,7 +31689,8 @@ var Rct = function Rct() {
             _react2.default.createElement(
               "a",
               { href: "https://github.com/leslie-alldridge/react-redux-weather-api" },
-              "NZ Weather,"
+              "NZ Weather,",
+              ' '
             ),
             _react2.default.createElement(
               "a",
