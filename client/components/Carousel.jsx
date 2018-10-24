@@ -111,7 +111,7 @@ export default class extends React.Component {
           <Col xs={6} md={4}>
             <Thumbnail
               id="port"
-              src="/motivate.png"
+              src="/motiv.png"
               alt="242x200"
               href="https://github.com/leslie-alldridge/slackbot-motivation"
               target="_blank"
@@ -123,7 +123,9 @@ export default class extends React.Component {
               <p>
                 Provides users access to motivational videos, images and quotes.
                 The ability to search by topic is also available. Currently
-                added to Xero's workspace and widely used by the team.
+                added to Xero's workspace and widely used by the team. <br />{' '}
+                <br />
+                Enter <b>/motivateme</b> to get started!
               </p>
             </Thumbnail>
           </Col>

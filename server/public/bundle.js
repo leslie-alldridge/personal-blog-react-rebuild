@@ -32859,7 +32859,7 @@ var _class = function (_React$Component) {
               _reactBootstrap.Thumbnail,
               {
                 id: 'port',
-                src: '/motivate.png',
+                src: '/motiv.png',
                 alt: '242x200',
                 href: 'https://github.com/leslie-alldridge/slackbot-motivation',
                 target: '_blank'
@@ -32877,7 +32877,17 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                'Provides users access to motivational videos, images and quotes. The ability to search by topic is also available. Currently added to Xero\'s workspace and widely used by the team.'
+                'Provides users access to motivational videos, images and quotes. The ability to search by topic is also available. Currently added to Xero\'s workspace and widely used by the team. ',
+                _react2.default.createElement('br', null),
+                ' ',
+                _react2.default.createElement('br', null),
+                'Enter ',
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  '/motivateme'
+                ),
+                ' to get started!'
               )
             )
           )
