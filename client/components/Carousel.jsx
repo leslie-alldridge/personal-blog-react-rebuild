@@ -74,7 +74,7 @@ export default class extends React.Component {
               id="port"
               src="/duplicate.png"
               alt="242x200"
-              href="https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer"
+              href="https://v1invoicereducer.herokuapp.com/"
               target="_blank"
             >
               <h3>
