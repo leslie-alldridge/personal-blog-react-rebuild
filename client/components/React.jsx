@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Rct = () => {
   return (
@@ -9,9 +9,9 @@ const Rct = () => {
           <p>
             React is my favourite language on the web. I've always wanted to get
             better at React and build complex web apps with ease. I've completed
-            roughly five full-stack web applications using React. I'd love to
-            learn how companies are taking React to the next level and building
-            complex, scalable and large web applications.
+            multiple full-stack web applications using React. I'd love to learn
+            how companies are taking React to the next level and how it's used
+            in their scalable, highly reusable components.
           </p>
           <ul>
             <li>
@@ -19,20 +19,23 @@ const Rct = () => {
               and other various NPM packages.
             </li>
             <li>
-              I've used ReactBootstrap, Sparklines, ChartsJS and various other
-              packages with React.
+              I've used ReactBootstrap, Sparklines, D3.js, ChartsJS and various
+              other packages with React.
             </li>
             <li>
               I'd love to code within a complex React application and take my
               skills to the next level.
             </li>
             <li>
-              Other projects built with React:{" "}
+              Other projects built with React:{' '}
               <a href="https://react-expensify-leslie.herokuapp.com">
-                Expensify,{" "}
+                Expensify,{' '}
               </a>
               <a href="https://github.com/leslie-alldridge/react-redux-weather-api">
                 NZ Weather,
+              </a>
+              <a href="https://mobilecartleslie.herokuapp.com/">
+                Cart Checkout Summary
               </a>
             </li>
           </ul>

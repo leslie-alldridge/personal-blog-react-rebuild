@@ -11,7 +11,9 @@ const Footer = () => {
             <a href="https://www.npmjs.com/package/react-scroll-parallax">
               React Parallax
             </a>
-            , <a href="https://bulma.io/">Bulma</a>, Node JS and CSS3.
+            , <a href="https://bulma.io/">Bulma</a>,{' '}
+            <a href="https://react-bootstrap.github.io/">React-Bootstrap, </a>{' '}
+            Node JS and CSS3.
           </p>
         </div>
       </footer>

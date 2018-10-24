@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 const About = () => {
   return (
     <div>
@@ -38,7 +38,7 @@ const About = () => {
                         At the moment I'm working in Technical Support for Xero
                         and have completed a developer bootcamp at Enspiral Dev
                         Academy. I'm eager to share my knowledge with my future
-                        team and learn from the best developers in the industry.{" "}
+                        team and learn from the best developers in the industry.{' '}
                         <p />
                         <p />I will bring a great customer awareness and quality
                         of life focus to your team. I love thinking of big
@@ -85,7 +85,7 @@ const About = () => {
                         ) This website is powered by the following technologies:
                         <ul>
                           <li> React</li>
-                          <li> Bulma CSS</li>
+                          <li> Bulma CSS, React-Bootstrap</li>
                           <li> React Parallax</li>
                           <li> CSS 3 Animations</li>
                           <li> Node JS</li>
