@@ -36,7 +36,6 @@ We also learned API and SQL but there's no need for those features at this curre
 
 
 TODOS: 
-Change portfolio images so they're identical sizes and visible 
-Code tidy 
+Create mobile friendly version and link it when someone is browsing this page on mobile 
 Remove v1 images in the public folder and any packages that are no longer used (as well as css id's)
 
