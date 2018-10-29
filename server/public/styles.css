@@ -56,7 +56,6 @@
 #blogDetailImg {
   display: flex;
   margin: 0 auto;
-  /* margin-left: 10px; */
   max-width: 90%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -64,8 +63,6 @@
 }
 #blogDetailImg :hover {
   background: #59f;
-  /* -webkit-transform: scale(1.05);
-  transform: scale(1.05); */
 }
 #containerSlide {
   max-height: 50%;
@@ -73,19 +70,13 @@
 #symbols {
   padding-top: none;
   margin: 0 auto;
-  /* //padding-left: 5%; */
   float: left;
   display: flex;
   width: 100%;
   align-items: center;
 }
 
-#imgBadge {
-  /* margin: 30px; */
-}
-
 .image {
-  /* margin-left: 6%; */
   margin: 0 auto;
 }
 #skillsContent {
@@ -256,8 +247,6 @@ a.navbar-item.is-active {
 #port {
   min-height: 385px;
   min-width: 350px;
-  /* max-height: 385px;
-  max-width: 350px; */
 }
 
 #port:hover {

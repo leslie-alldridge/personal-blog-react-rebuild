@@ -31325,6 +31325,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -31333,100 +31335,168 @@ var _reactScrollParallax = __webpack_require__(51);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Hero = function Hero() {
-  return _react2.default.createElement(
-    'div',
-    { 'class': 'target', id: '0' },
-    _react2.default.createElement(
-      'div',
-      { id: 'para' },
-      _react2.default.createElement(
-        'section',
-        { className: 'hero is-info is-fullheight' },
-        _react2.default.createElement(
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Hero = function (_React$Component) {
+  _inherits(Hero, _React$Component);
+
+  function Hero(props) {
+    _classCallCheck(this, Hero);
+
+    var _this = _possibleConstructorReturn(this, (Hero.__proto__ || Object.getPrototypeOf(Hero)).call(this, props));
+
+    _this.state = { width: 0, height: 0 };
+    _this.updateWindowDimensions = _this.updateWindowDimensions.bind(_this);
+    return _this;
+  }
+
+  _createClass(Hero, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.updateWindowDimensions();
+      window.addEventListener('resize', this.updateWindowDimensions);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+  }, {
+    key: 'updateWindowDimensions',
+    value: function updateWindowDimensions() {
+      this.setState({ width: window.innerWidth, height: window.innerHeight });
+      console.log(this.state);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { 'class': 'target', id: '0' },
+        this.state.width && this.state.width > 1087 && _react2.default.createElement(
           'div',
-          { className: 'hero-body' },
+          { id: 'para' },
           _react2.default.createElement(
-            'div',
-            { className: 'container' },
+            'section',
+            { className: 'hero is-info is-fullheight' },
             _react2.default.createElement(
-              'h1',
-              {
-                id: 'title',
-                'data-aos': 'zoom-in',
-                'data-aos-duration': '4000',
-                className: 'title'
-              },
-              'Leslie Alldridge'
-            ),
-            _react2.default.createElement(
-              'h2',
-              { className: 'subtitle' },
-              'Welcome to my online portfolio'
-            ),
-            _react2.default.createElement(
-              'h2',
-              { className: 'subtitle' },
+              'div',
+              { className: 'hero-body' },
               _react2.default.createElement(
                 'div',
-                { id: 'lax' },
+                { className: 'container' },
                 _react2.default.createElement(
-                  'ul',
-                  null,
+                  'h1',
+                  {
+                    id: 'title',
+                    'data-aos': 'zoom-in',
+                    'data-aos-duration': '4000',
+                    className: 'title'
+                  },
+                  'Leslie Alldridge'
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  { className: 'subtitle' },
+                  'Welcome to my online portfolio'
+                ),
+                _react2.default.createElement(
+                  'h2',
+                  { className: 'subtitle' },
                   _react2.default.createElement(
-                    _reactScrollParallax.Parallax,
-                    { offsetXMin: '420px', offsetXMax: '-820px' },
+                    'div',
+                    { id: 'lax' },
                     _react2.default.createElement(
-                      'li',
+                      'ul',
                       null,
-                      'Customer Focused'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactScrollParallax.Parallax,
-                    { offsetXMin: '-620px', offsetXMax: '620px' },
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Team Member'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactScrollParallax.Parallax,
-                    { offsetXMin: '-320px', offsetXMax: '920px' },
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Fast Learner'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactScrollParallax.Parallax,
-                    { offsetXMin: '620px', offsetXMax: '-620px' },
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Lateral Thinker'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactScrollParallax.Parallax,
-                    { offsetXMin: '-620px', offsetXMax: '620px' },
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Motivator'
+                      _react2.default.createElement(
+                        _reactScrollParallax.Parallax,
+                        { offsetXMin: '420px', offsetXMax: '-820px' },
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          'Customer Focused'
+                        )
+                      ),
+                      _react2.default.createElement(
+                        _reactScrollParallax.Parallax,
+                        { offsetXMin: '-620px', offsetXMax: '620px' },
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          'Team Member'
+                        )
+                      ),
+                      _react2.default.createElement(
+                        _reactScrollParallax.Parallax,
+                        { offsetXMin: '-320px', offsetXMax: '920px' },
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          'Fast Learner'
+                        )
+                      ),
+                      _react2.default.createElement(
+                        _reactScrollParallax.Parallax,
+                        { offsetXMin: '620px', offsetXMax: '-620px' },
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          'Lateral Thinker'
+                        )
+                      ),
+                      _react2.default.createElement(
+                        _reactScrollParallax.Parallax,
+                        { offsetXMin: '-620px', offsetXMax: '620px' },
+                        _react2.default.createElement(
+                          'li',
+                          null,
+                          'Motivator'
+                        )
+                      )
                     )
                   )
                 )
               )
             )
           )
+        ),
+        this.state.width && this.state.width < 1087 && _react2.default.createElement(
+          'div',
+          { id: 'para' },
+          _react2.default.createElement(
+            'section',
+            { className: 'hero is-info is-fullheight' },
+            _react2.default.createElement(
+              'div',
+              { className: 'hero-body' },
+              _react2.default.createElement(
+                'div',
+                { className: 'container' },
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  'It appears that you may be browsing on mobile.'
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'http://lesliemobile.herokuapp.com/' },
+                  'Please click here to see my mobile friendly portfolio.'
+                )
+              )
+            )
+          )
         )
-      )
-    )
-  );
-};
+      );
+    }
+  }]);
+
+  return Hero;
+}(_react2.default.Component);
 
 exports.default = Hero;
 
@@ -32805,7 +32875,7 @@ var _class = function (_React$Component) {
                 id: 'port',
                 src: '/duplicate.png',
                 alt: '242x200',
-                href: 'https://github.com/leslie-alldridge/xero-duplicate-invoice-reducer',
+                href: 'https://v1invoicereducer.herokuapp.com/',
                 target: '_blank'
               },
               _react2.default.createElement(
