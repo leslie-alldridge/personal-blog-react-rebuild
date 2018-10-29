@@ -36,6 +36,11 @@ We also learned API and SQL but there's no need for those features at this curre
 
 
 TODOS: 
-Create mobile friendly version and link it when someone is browsing this page on mobile 
+Create mobile friendly version and link it when someone is browsing this page on mobile DONE
 Remove v1 images in the public folder and any packages that are no longer used (as well as css id's)
+
+# Mobile Friendly version is now live
+http://lesliemobile.herokuapp.com/
+
+The main application will look for users with smaller screens and recommmend that they browse to my mobile portfolio website instead.
 
