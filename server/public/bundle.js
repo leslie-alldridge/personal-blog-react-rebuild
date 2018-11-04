@@ -29973,11 +29973,11 @@ var _Contact = __webpack_require__(308);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _About = __webpack_require__(310);
+var _About = __webpack_require__(309);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Footer = __webpack_require__(309);
+var _Footer = __webpack_require__(312);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -33131,7 +33131,7 @@ var _class = function (_React$Component) {
                 id: 'port',
                 src: '/docker.png',
                 alt: '242x200',
-                href: 'https://bulkvoidxero.herokuapp.com/',
+                href: 'https://github.com/leslie-alldridge/number-guesser',
                 target: '_blank'
               },
               _react2.default.createElement(
@@ -33140,14 +33140,14 @@ var _class = function (_React$Component) {
                 _react2.default.createElement(
                   'b',
                   null,
-                  'Docker Deploys & MERN Boilerplate'
+                  'C# Basics and Number Guessing Game'
                 )
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'p',
                 null,
-                'The cute Docker whale caught my attention while I was browsing the web. I\'ve since learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.s on Docker and deploy them to Her'
+                'I decided to dive into C# and challenge myself to learn something new. I covered the basics and created a small console game to test my skills. C# is definitely something on my radar of languages to learn and it\'s starting to feel natural.'
               )
             )
           ),
@@ -33158,7 +33158,7 @@ var _class = function (_React$Component) {
               _reactBootstrap.Thumbnail,
               {
                 id: 'port',
-                src: '/docker.png',
+                src: '/loading.png',
                 alt: '242x200',
                 href: 'https://bulkvoidxero.herokuapp.com/',
                 target: '_blank'
@@ -33169,14 +33169,14 @@ var _class = function (_React$Component) {
                 _react2.default.createElement(
                   'b',
                   null,
-                  'Docker Deploys & MERN Boilerplate'
+                  'More coming soon'
                 )
               ),
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 'p',
                 null,
-                'The cute Docker whale caught my attention while I was browsing the web. I\'ve learned how to use Docker commands , create images, host projects on Docker and deploy them to Heroku.s on Docker and deploy them to Her'
+                'I\'m learning something new every day! Stay up to date by following me on GitHub or checking back here as my portfolio will be updated regularly.'
               )
             )
           )
@@ -44104,78 +44104,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Footer = function Footer() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "footer",
-      { "class": "footer" },
-      _react2.default.createElement(
-        "div",
-        { "class": "content has-text-centered" },
-        _react2.default.createElement(
-          "p",
-          null,
-          "Portfolio by Leslie Alldridge - 2018. Created with",
-          ' ',
-          _react2.default.createElement(
-            "a",
-            { href: "https://reactjs.org/" },
-            "React"
-          ),
-          ",",
-          ' ',
-          _react2.default.createElement(
-            "a",
-            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
-            "React Parallax"
-          ),
-          ", ",
-          _react2.default.createElement(
-            "a",
-            { href: "https://bulma.io/" },
-            "Bulma"
-          ),
-          ",",
-          ' ',
-          _react2.default.createElement(
-            "a",
-            { href: "https://react-bootstrap.github.io/" },
-            "React-Bootstrap, "
-          ),
-          ' ',
-          "Node JS and CSS3."
-        )
-      )
-    )
-  );
-};
-
-exports.default = Footer;
-
-/***/ }),
-/* 310 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Me = __webpack_require__(311);
+var _Me = __webpack_require__(310);
 
 var _Me2 = _interopRequireDefault(_Me);
 
-var _Blog = __webpack_require__(312);
+var _Blog = __webpack_require__(311);
 
 var _Blog2 = _interopRequireDefault(_Blog);
 
@@ -44263,7 +44196,7 @@ var About = function About() {
 exports.default = About;
 
 /***/ }),
-/* 311 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44307,7 +44240,7 @@ var Me = function Me() {
 exports.default = Me;
 
 /***/ }),
-/* 312 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44394,6 +44327,73 @@ var Blog = function Blog() {
   );
 };
 exports.default = Blog;
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "footer",
+      { "class": "footer" },
+      _react2.default.createElement(
+        "div",
+        { "class": "content has-text-centered" },
+        _react2.default.createElement(
+          "p",
+          null,
+          "Portfolio by Leslie Alldridge - 2018. Created with",
+          ' ',
+          _react2.default.createElement(
+            "a",
+            { href: "https://reactjs.org/" },
+            "React"
+          ),
+          ",",
+          ' ',
+          _react2.default.createElement(
+            "a",
+            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
+            "React Parallax"
+          ),
+          ", ",
+          _react2.default.createElement(
+            "a",
+            { href: "https://bulma.io/" },
+            "Bulma"
+          ),
+          ",",
+          ' ',
+          _react2.default.createElement(
+            "a",
+            { href: "https://react-bootstrap.github.io/" },
+            "React-Bootstrap, "
+          ),
+          ' ',
+          "Node JS and CSS3."
+        )
+      )
+    )
+  );
+};
+
+exports.default = Footer;
 
 /***/ })
 /******/ ]);
