@@ -33097,7 +33097,7 @@ var _class = function (_React$Component) {
               _react2.default.createElement(
                 'p',
                 null,
-                'The cute Docker whale caught my attention while I was browsing the web. I\'ve since learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.',
+                'I\'ve learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.',
                 ' ',
                 _react2.default.createElement(
                   'a',
@@ -33105,7 +33105,7 @@ var _class = function (_React$Component) {
                     href: 'https://github.com/leslie-alldridge/mern-boilerplate',
                     target: '_blank'
                   },
-                  'Boilerplate'
+                  'MERN Boilerplate'
                 ),
                 ' ',
                 'and',
@@ -33116,9 +33116,10 @@ var _class = function (_React$Component) {
                     href: 'https://github.com/leslie-alldridge/docker-node-mongo',
                     target: '_blank'
                   },
-                  'Task List'
+                  'Task List',
+                  ' '
                 ),
-                '.'
+                'are my recent projects.'
               )
             )
           ),
@@ -33129,7 +33130,7 @@ var _class = function (_React$Component) {
               _reactBootstrap.Thumbnail,
               {
                 id: 'port',
-                src: '/docker.png',
+                src: '/numbergame2.png',
                 alt: '242x200',
                 href: 'https://github.com/leslie-alldridge/number-guesser',
                 target: '_blank'

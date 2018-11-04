@@ -206,31 +206,29 @@ export default class extends React.Component {
               </h3>
               <br />
               <p>
-                The cute Docker whale caught my attention while I was browsing
-                the web. I've since learned how to use various Docker commands
-                to create images, host projects on Docker and deploy them to
-                Heroku.{' '}
+                I've learned how to use various Docker commands to create
+                images, host projects on Docker and deploy them to Heroku.{' '}
                 <a
                   href="https://github.com/leslie-alldridge/mern-boilerplate"
                   target="_blank"
                 >
-                  Boilerplate
+                  MERN Boilerplate
                 </a>{' '}
                 and{' '}
                 <a
                   href="https://github.com/leslie-alldridge/docker-node-mongo"
                   target="_blank"
                 >
-                  Task List
+                  Task List{' '}
                 </a>
-                .
+                are my recent projects.
               </p>
             </Thumbnail>
           </Col>
           <Col xs={6} md={4}>
             <Thumbnail
               id="port"
-              src="/docker.png"
+              src="/numbergame2.png"
               alt="242x200"
               href="https://github.com/leslie-alldridge/number-guesser"
               target="_blank"

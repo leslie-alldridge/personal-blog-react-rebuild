@@ -247,6 +247,8 @@ a.navbar-item.is-active {
 #port {
   min-height: 385px;
   min-width: 350px;
+  max-width: 418px;
+  max-height: 385px;
 }
 
 #port:hover {
