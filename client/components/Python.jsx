@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Python = () => {
   return (
@@ -9,10 +9,10 @@ const Python = () => {
           <p>
             At the moment, I'm learning the basics of Python. Machine learning
             is something I'm interested to delve into, so I can understand how
-            exactly it works. I've created my own Jupyter Notebook{" "}
+            exactly it works. I've created my own Jupyter Notebook{' '}
             <a href="https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb">
               (here)
-            </a>{" "}
+            </a>{' '}
             that uses machine learning to predict the share price of Apple
             tomorrow. As the data was imported a few months back, it will be
             slightly outdated. I hope to use Pandas and learn how to import CSV
@@ -24,6 +24,16 @@ const Python = () => {
             <li>
               Undertaking Udemy courses to boost my knowledge and understanding
               of Python.
+            </li>
+            <li>
+              Learning the basics of Python (
+              <a
+                target="_blank"
+                href="https://github.com/leslie-alldridge/learn-python"
+              >
+                link to repo
+              </a>
+              )
             </li>
           </ul>
 

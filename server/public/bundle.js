@@ -29973,11 +29973,11 @@ var _Contact = __webpack_require__(308);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _About = __webpack_require__(309);
+var _About = __webpack_require__(310);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Footer = __webpack_require__(310);
+var _Footer = __webpack_require__(309);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -30017,7 +30017,7 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
-    key: "showHTML",
+    key: 'showHTML',
     value: function showHTML() {
       this.setState(function (prevState) {
         return {
@@ -30031,7 +30031,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: "showCSS",
+    key: 'showCSS',
     value: function showCSS() {
       this.setState(function (prevState) {
         return {
@@ -30045,7 +30045,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: "showReact",
+    key: 'showReact',
     value: function showReact() {
       this.setState(function (prevState) {
         return {
@@ -30059,7 +30059,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: "showNode",
+    key: 'showNode',
     value: function showNode() {
       this.setState(function (prevState) {
         return {
@@ -30073,7 +30073,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: "showPython",
+    key: 'showPython',
     value: function showPython() {
       this.setState(function (prevState) {
         return {
@@ -30087,7 +30087,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: "showJS",
+    key: 'showJS',
     value: function showJS() {
       this.setState(function (prevState) {
         return {
@@ -30101,7 +30101,7 @@ var App = function (_React$Component) {
       });
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
         _reactScrollParallax.ParallaxProvider,
@@ -31880,13 +31880,13 @@ var Python = function Python() {
           "p",
           null,
           "At the moment, I'm learning the basics of Python. Machine learning is something I'm interested to delve into, so I can understand how exactly it works. I've created my own Jupyter Notebook",
-          " ",
+          ' ',
           _react2.default.createElement(
             "a",
             { href: "https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb" },
             "(here)"
           ),
-          " ",
+          ' ',
           "that uses machine learning to predict the share price of Apple tomorrow. As the data was imported a few months back, it will be slightly outdated. I hope to use Pandas and learn how to import CSV files, so the alrogithm can do predictions based off the data imported."
         ),
         _react2.default.createElement(
@@ -31901,6 +31901,20 @@ var Python = function Python() {
             "li",
             null,
             "Undertaking Udemy courses to boost my knowledge and understanding of Python."
+          ),
+          _react2.default.createElement(
+            "li",
+            null,
+            "Learning the basics of Python (",
+            _react2.default.createElement(
+              "a",
+              {
+                target: "_blank",
+                href: "https://github.com/leslie-alldridge/learn-python"
+              },
+              "link to repo"
+            ),
+            ")"
           )
         ),
         _react2.default.createElement(
@@ -33051,6 +33065,118 @@ var _class = function (_React$Component) {
                 'p',
                 null,
                 'I\'ve rebuilt my previous app above with React and Material UI. This enables mobile users to navigate the web page and create summarized invoices on the go with minimal effort.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Row,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { xs: 6, md: 4 },
+            _react2.default.createElement(
+              _reactBootstrap.Thumbnail,
+              {
+                id: 'port',
+                src: '/docker.png',
+                alt: '242x200',
+                href: 'https://bulkvoidxero.herokuapp.com/',
+                target: '_blank'
+              },
+              _react2.default.createElement(
+                'h3',
+                null,
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  'Docker Deploys & MERN Boilerplate'
+                )
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                'The cute Docker whale caught my attention while I was browsing the web. I\'ve since learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.',
+                ' ',
+                _react2.default.createElement(
+                  'a',
+                  {
+                    href: 'https://github.com/leslie-alldridge/mern-boilerplate',
+                    target: '_blank'
+                  },
+                  'Boilerplate'
+                ),
+                ' ',
+                'and',
+                ' ',
+                _react2.default.createElement(
+                  'a',
+                  {
+                    href: 'https://github.com/leslie-alldridge/docker-node-mongo',
+                    target: '_blank'
+                  },
+                  'Task List'
+                ),
+                '.'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { xs: 6, md: 4 },
+            _react2.default.createElement(
+              _reactBootstrap.Thumbnail,
+              {
+                id: 'port',
+                src: '/docker.png',
+                alt: '242x200',
+                href: 'https://bulkvoidxero.herokuapp.com/',
+                target: '_blank'
+              },
+              _react2.default.createElement(
+                'h3',
+                null,
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  'Docker Deploys & MERN Boilerplate'
+                )
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                'The cute Docker whale caught my attention while I was browsing the web. I\'ve since learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.s on Docker and deploy them to Her'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { xs: 6, md: 4 },
+            _react2.default.createElement(
+              _reactBootstrap.Thumbnail,
+              {
+                id: 'port',
+                src: '/docker.png',
+                alt: '242x200',
+                href: 'https://bulkvoidxero.herokuapp.com/',
+                target: '_blank'
+              },
+              _react2.default.createElement(
+                'h3',
+                null,
+                _react2.default.createElement(
+                  'b',
+                  null,
+                  'Docker Deploys & MERN Boilerplate'
+                )
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                null,
+                'The cute Docker whale caught my attention while I was browsing the web. I\'ve learned how to use Docker commands , create images, host projects on Docker and deploy them to Heroku.s on Docker and deploy them to Her'
               )
             )
           )
@@ -43980,186 +44106,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var About = function About() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    _react2.default.createElement(
-      "div",
-      { id: "aboutPage", "class": "container" },
-      _react2.default.createElement(
-        "div",
-        { "class": "columns" },
-        _react2.default.createElement(
-          "div",
-          { "class": "column" },
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-ancestor" },
-            _react2.default.createElement(
-              "div",
-              { id: "wideTile", "class": "tile is-vertical is-8" },
-              _react2.default.createElement(
-                "div",
-                { "class": "tile" },
-                _react2.default.createElement(
-                  "div",
-                  {
-                    "data-aos": "flip-down",
-                    "data-aos-duration": "15000",
-                    "class": "tile is-parent is-vertical"
-                  },
-                  _react2.default.createElement(
-                    "article",
-                    {
-                      id: "firstTile",
-                      "class": "tile is-child notification is-primary"
-                    },
-                    _react2.default.createElement(
-                      "p",
-                      { "class": "title" },
-                      "About me"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { "class": "content" },
-                      "Hi there! First of all, thanks for checking out my portfolio.",
-                      _react2.default.createElement("p", null),
-                      "My strongest skills are bringing energy into a team, finding more efficient ways to carry out repetitive tasks and thinking of creative solutions to a problem. Outside of the workplace, you'll find me at the gym, practising karate, solving rubik's cubes and learning something new.",
-                      _react2.default.createElement("p", null),
-                      "I've finally found my passion after three careers. I'm driven to become a full stack developer and do the best work of my life. This career will offer me a place where I'll never master my role and be continually learning new technologies and stacks as the industry evolves.",
-                      _react2.default.createElement("p", null),
-                      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry.",
-                      ' ',
-                      _react2.default.createElement("p", null),
-                      _react2.default.createElement("p", null),
-                      "I will bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          "div",
-          { "class": "column" },
-          _react2.default.createElement(
-            "div",
-            { "class": "tile is-ancestor" },
-            _react2.default.createElement(
-              "div",
-              { id: "wideTile", "class": "tile is-vertical is-8" },
-              _react2.default.createElement(
-                "div",
-                { "class": "tile" },
-                _react2.default.createElement(
-                  "div",
-                  {
-                    "data-aos": "flip-down",
-                    "data-aos-duration": "15000",
-                    "class": "tile is-parent is-vertical"
-                  },
-                  _react2.default.createElement(
-                    "article",
-                    {
-                      id: "firstTile",
-                      "class": "tile is-child notification is-primary"
-                    },
-                    _react2.default.createElement(
-                      "p",
-                      { "class": "title" },
-                      "About my portfolio"
-                    ),
-                    _react2.default.createElement(
-                      "div",
-                      { "class": "content" },
-                      "During my time at DevAcademy I decided to do a reflection at the halfway point to see how far I've grown in a short amount of time.",
-                      _react2.default.createElement("p", null),
-                      "Compared to my portfolio website pre-bootcamp, I'm proud to say I spent much less time on this website and achieved an outcome that exceeded my expectations.",
-                      _react2.default.createElement("p", null),
-                      "I've included more details about my reflections in the readme over on GitHub (",
-                      _react2.default.createElement(
-                        "a",
-                        { href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild" },
-                        "here"
-                      ),
-                      ") This website is powered by the following technologies:",
-                      _react2.default.createElement(
-                        "ul",
-                        null,
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " React"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " Bulma CSS, React-Bootstrap"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " React Parallax"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " CSS 3 Animations"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " Node JS"
-                        ),
-                        _react2.default.createElement(
-                          "li",
-                          null,
-                          " Webpack"
-                        )
-                      ),
-                      _react2.default.createElement(
-                        "p",
-                        null,
-                        "If you have any questions about the technologies used or want to learn how I developed certain parts of this page, please let me know.",
-                        _react2.default.createElement("p", null),
-                        _react2.default.createElement("p", null),
-                        "For anyone looking at this page thinking \"Wow, how'd he do that?\", drop me a message or email and I'll be in touch.",
-                        _react2.default.createElement("p", null),
-                        "Please note: Page will be edited to reflect my new projects and blogs."
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          )
-        )
-      )
-    )
-  );
-};
-
-exports.default = About;
-
-/***/ }),
-/* 310 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 var Footer = function Footer() {
   return _react2.default.createElement(
     "div",
@@ -44209,6 +44155,245 @@ var Footer = function Footer() {
 };
 
 exports.default = Footer;
+
+/***/ }),
+/* 310 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Me = __webpack_require__(311);
+
+var _Me2 = _interopRequireDefault(_Me);
+
+var _Blog = __webpack_require__(312);
+
+var _Blog2 = _interopRequireDefault(_Blog);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = function About() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'div',
+      { id: 'aboutPage', 'class': 'container' },
+      _react2.default.createElement(
+        'div',
+        { 'class': 'columns' },
+        _react2.default.createElement(
+          'div',
+          { 'class': 'column' },
+          _react2.default.createElement(
+            'div',
+            { 'class': 'tile is-ancestor' },
+            _react2.default.createElement(
+              'div',
+              { id: 'wideTile', 'class': 'tile is-vertical is-8' },
+              _react2.default.createElement(
+                'div',
+                { 'class': 'tile' },
+                _react2.default.createElement(
+                  'div',
+                  {
+                    'data-aos': 'flip-down',
+                    'data-aos-duration': '15000',
+                    'class': 'tile is-parent is-vertical'
+                  },
+                  _react2.default.createElement(
+                    'article',
+                    {
+                      id: 'firstTile',
+                      'class': 'tile is-child notification is-primary'
+                    },
+                    _react2.default.createElement(_Me2.default, null)
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { 'class': 'column' },
+          _react2.default.createElement(
+            'div',
+            { 'class': 'tile is-ancestor' },
+            _react2.default.createElement(
+              'div',
+              { id: 'wideTile', 'class': 'tile is-vertical is-8' },
+              _react2.default.createElement(
+                'div',
+                { 'class': 'tile' },
+                _react2.default.createElement(
+                  'div',
+                  {
+                    'data-aos': 'flip-down',
+                    'data-aos-duration': '15000',
+                    'class': 'tile is-parent is-vertical'
+                  },
+                  _react2.default.createElement(
+                    'article',
+                    {
+                      id: 'firstTile',
+                      'class': 'tile is-child notification is-primary'
+                    },
+                    _react2.default.createElement(_Blog2.default, null)
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = About;
+
+/***/ }),
+/* 311 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Me = function Me() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "p",
+      { "class": "title" },
+      "About me"
+    ),
+    _react2.default.createElement(
+      "div",
+      { "class": "content" },
+      "Hi there! First of all, thanks for checking out my portfolio.",
+      _react2.default.createElement("p", null),
+      "My strongest skills are bringing energy into a team, finding more efficient ways to carry out repetitive tasks and thinking of creative solutions to a problem. Outside of the workplace, you'll find me at the gym, practising karate, solving rubik's cubes and learning something new.",
+      _react2.default.createElement("p", null),
+      "I've finally found my passion after three careers. I'm driven to become a full stack developer and do the best work of my life. This career will offer me a place where I'll never master my role and be continually learning new technologies and stacks as the industry evolves.",
+      _react2.default.createElement("p", null),
+      "At the moment I'm working in Technical Support for Xero and have completed a developer bootcamp at Enspiral Dev Academy. I'm eager to share my knowledge with my future team and learn from the best developers in the industry. ",
+      _react2.default.createElement("p", null),
+      _react2.default.createElement("p", null),
+      "I will bring a great customer awareness and quality of life focus to your team. I love thinking of big outside the box ideas and presenting in front of an audience. I'll frequently get drinks or do dishes for my team to set a good example of how a team should look after one another. I value honesty, caring for others, hard work and timeliness."
+    )
+  );
+};
+exports.default = Me;
+
+/***/ }),
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Blog = function Blog() {
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(
+      "p",
+      { "class": "title" },
+      "About my portfolio"
+    ),
+    _react2.default.createElement(
+      "div",
+      { "class": "content" },
+      "During my time at DevAcademy I decided to do a reflection at the halfway point to see how far I've grown in a short amount of time.",
+      _react2.default.createElement("p", null),
+      "Compared to my portfolio website pre-bootcamp, I'm proud to say I spent much less time on this website and achieved an outcome that exceeded my expectations.",
+      _react2.default.createElement("p", null),
+      "I've included more details about my reflections in the readme over on GitHub (",
+      _react2.default.createElement(
+        "a",
+        { href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild" },
+        "here"
+      ),
+      ") This website is powered by the following technologies:",
+      _react2.default.createElement(
+        "ul",
+        null,
+        _react2.default.createElement(
+          "li",
+          null,
+          " React"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          " Bulma CSS, React-Bootstrap"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          " React Parallax"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          " CSS 3 Animations"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          " Node JS"
+        ),
+        _react2.default.createElement(
+          "li",
+          null,
+          " Webpack"
+        )
+      ),
+      _react2.default.createElement(
+        "p",
+        null,
+        "If you have any questions about the technologies used or want to learn how I developed certain parts of this page, please let me know.",
+        _react2.default.createElement("p", null),
+        _react2.default.createElement("p", null),
+        "For anyone looking at this page thinking \"Wow, how'd he do that?\", drop me a message or email and I'll be in touch.",
+        _react2.default.createElement("p", null),
+        "Please note: Page will be edited to reflect my new projects and blogs."
+      )
+    )
+  );
+};
+exports.default = Blog;
 
 /***/ })
 /******/ ]);

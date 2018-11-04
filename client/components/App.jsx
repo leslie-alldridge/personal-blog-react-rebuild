@@ -1,20 +1,20 @@
-import React from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Navbar from "./Navbar";
-import Hero from "./Hero";
-import Blog from "./Blog";
-import HTML from "./HTML";
-import CSS from "./CSS";
-import Rct from "./React";
-import Node from "./Node";
-import Python from "./Python";
-import JS from "./JS";
-import Personal from "./Personal";
-import DefaultIntro from "./DefaultIntro";
-import BlogDetail from "./BlogDetail";
-import Contact from "./Contact";
-import About from "./About";
-import Footer from "./Footer";
+import React from 'react';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Blog from './Blog';
+import HTML from './HTML';
+import CSS from './CSS';
+import Rct from './React';
+import Node from './Node';
+import Python from './Python';
+import JS from './JS';
+import Personal from './Personal';
+import DefaultIntro from './DefaultIntro';
+import BlogDetail from './BlogDetail';
+import Contact from './Contact';
+import About from './About/About';
+import Footer from './Footer';
 
 class App extends React.Component {
   constructor(props) {
