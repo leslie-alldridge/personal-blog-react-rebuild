@@ -198,7 +198,7 @@ export default class extends React.Component {
               id="port"
               src="/docker.png"
               alt="242x200"
-              href="https://bulkvoidxero.herokuapp.com/"
+              href="https://github.com/leslie-alldridge/mern-boilerplate"
               target="_blank"
             >
               <h3>
@@ -250,7 +250,7 @@ export default class extends React.Component {
               id="port"
               src="/loading.png"
               alt="242x200"
-              href="https://bulkvoidxero.herokuapp.com/"
+              href=""
               target="_blank"
             >
               <h3>
