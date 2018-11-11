@@ -31720,12 +31720,12 @@ var Rct = function Rct() {
         _react2.default.createElement(
           "h3",
           null,
-          "React"
+          "React & Typescript"
         ),
         _react2.default.createElement(
           "p",
           null,
-          "React is my favourite language on the web. I've always wanted to get better at React and build complex web apps with ease. I've completed multiple full-stack web applications using React. I'd love to learn how companies are taking React to the next level and how it's used in their scalable, highly reusable components."
+          "React is my favourite language on the web. I've always wanted to get better at React and build complex web apps with ease. I've completed multiple full-stack web applications using React and have expanded into Typescript recently. I'd love to learn how companies are taking React to the next level and how it's used in their scalable, highly reusable components."
         ),
         _react2.default.createElement(
           "ul",
@@ -31733,7 +31733,7 @@ var Rct = function Rct() {
           _react2.default.createElement(
             "li",
             null,
-            "I can confidently code full stack with React, Redux, Redux Thunk and other various NPM packages."
+            "I can confidently code full stack with React, Redux and Typescript."
           ),
           _react2.default.createElement(
             "li",
@@ -33081,7 +33081,7 @@ var _class = function (_React$Component) {
                 id: 'port',
                 src: '/docker.png',
                 alt: '242x200',
-                href: 'https://bulkvoidxero.herokuapp.com/',
+                href: 'https://github.com/leslie-alldridge/mern-boilerplate',
                 target: '_blank'
               },
               _react2.default.createElement(
@@ -33161,7 +33161,7 @@ var _class = function (_React$Component) {
                 id: 'port',
                 src: '/loading.png',
                 alt: '242x200',
-                href: 'https://bulkvoidxero.herokuapp.com/',
+                href: '',
                 target: '_blank'
               },
               _react2.default.createElement(

@@ -5,18 +5,19 @@ const Rct = () => {
     <div data-aos="slide-right" id="skillsContent" class="container is-fluid">
       <div class="container is-fluid">
         <div class="content">
-          <h3>React</h3>
+          <h3>React &amp; Typescript</h3>
           <p>
             React is my favourite language on the web. I've always wanted to get
             better at React and build complex web apps with ease. I've completed
-            multiple full-stack web applications using React. I'd love to learn
-            how companies are taking React to the next level and how it's used
-            in their scalable, highly reusable components.
+            multiple full-stack web applications using React and have expanded
+            into Typescript recently. I'd love to learn how companies are taking
+            React to the next level and how it's used in their scalable, highly
+            reusable components.
           </p>
           <ul>
             <li>
-              I can confidently code full stack with React, Redux, Redux Thunk
-              and other various NPM packages.
+              I can confidently code full stack with React, Redux and
+              Typescript.
             </li>
             <li>
               I've used ReactBootstrap, Sparklines, D3.js, ChartsJS and various
