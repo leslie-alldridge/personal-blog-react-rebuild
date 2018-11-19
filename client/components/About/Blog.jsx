@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 const Blog = () => {
   return (
     <div>
@@ -13,7 +13,10 @@ const Blog = () => {
         <p />
         I've included more details about my reflections in the readme over on
         GitHub (
-        <a href="https://github.com/leslie-alldridge/personal-blog-react-rebuild">
+        <a
+          target="_blank"
+          href="https://github.com/leslie-alldridge/personal-blog-react-rebuild"
+        >
           here
         </a>
         ) This website is powered by the following technologies:

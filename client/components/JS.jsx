@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const JS = () => {
   return (
@@ -27,21 +27,36 @@ const JS = () => {
               common problems.
             </li>
             <li>
-              Other projects built with Javascript:{' '}
-              <a href="https://leslie-alldridge.github.io/conways-gol/">
-                Conways GOL,{' '}
+              Other projects built with Javascript:{" "}
+              <a
+                target="_blank"
+                href="https://leslie-alldridge.github.io/conways-gol/"
+              >
+                Conways GOL,{" "}
               </a>
-              <a href="https://leslie-alldridge.github.io/Fun-with-Circles/">
-                Fun With Circles,{' '}
+              <a
+                target="_blank"
+                href="https://leslie-alldridge.github.io/Fun-with-Circles/"
+              >
+                Fun With Circles,{" "}
               </a>
-              <a href="https://leslie-alldridge.github.io/dom-pig-game/">
-                Pig Game,{' '}
+              <a
+                target="_blank"
+                href="https://leslie-alldridge.github.io/dom-pig-game/"
+              >
+                Pig Game,{" "}
               </a>
-              <a href="https://leslie-alldridge.github.io/budgify-leslie/">
-                Budgeting App,{' '}
+              <a
+                target="_blank"
+                href="https://leslie-alldridge.github.io/budgify-leslie/"
+              >
+                Budgeting App,{" "}
               </a>
-              <a href="https://leslie-alldridge.github.io/js-todo/">
-                Todo List,{' '}
+              <a
+                target="_blank"
+                href="https://leslie-alldridge.github.io/js-todo/"
+              >
+                Todo List,{" "}
               </a>
             </li>
           </ul>

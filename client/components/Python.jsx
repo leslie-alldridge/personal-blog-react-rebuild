@@ -10,7 +10,10 @@ const Python = () => {
             At the moment, I'm learning the basics of Python. Machine learning
             is something I'm interested to delve into, so I can understand how
             exactly it works. I've created my own Jupyter Notebook{" "}
-            <a href="https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb">
+            <a
+              target="_blank"
+              href="https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb"
+            >
               (here)
             </a>{" "}
             that uses machine learning to predict the share price of Apple
