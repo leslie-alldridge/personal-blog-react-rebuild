@@ -29,16 +29,22 @@ const Rct = () => {
             </li>
             <li>
               Other projects built with React:{" "}
-              <a href="https://react-expensify-leslie.herokuapp.com">
+              <a
+                target="_blank"
+                href="https://react-expensify-leslie.herokuapp.com"
+              >
                 Expensify,{" "}
               </a>
-              <a href="https://github.com/leslie-alldridge/react-redux-weather-api">
+              <a
+                target="_blank"
+                href="https://github.com/leslie-alldridge/react-redux-weather-api"
+              >
                 NZ Weather,{" "}
               </a>
-              <a href="https://mobilecartleslie.herokuapp.com/">
+              <a target="_blank" href="https://mobilecartleslie.herokuapp.com/">
                 Cart Checkout Summary,{" "}
               </a>
-              <a href="https://cxtech.herokuapp.com/">
+              <a target="_blank" href="https://cxtech.herokuapp.com/">
                 Feedback model (awaiting feedback) for my current team at work.{" "}
               </a>
             </li>
