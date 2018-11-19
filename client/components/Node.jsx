@@ -19,7 +19,8 @@ const Node = () => {
             <li>
               I'm currently looking into Go and Elixir to gain an understanding
               of the advantages/disadvantages of Node JS compared to other
-              solutions.
+              solutions. To spice things up in the meantime, I've been deploying
+              Node JS applications in Docker containers.
             </li>
           </ul>
           <blockquote>

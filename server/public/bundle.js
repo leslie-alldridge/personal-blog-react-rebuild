@@ -31749,30 +31749,37 @@ var Rct = function Rct() {
             "li",
             null,
             "Other projects built with React:",
-            ' ',
+            " ",
             _react2.default.createElement(
               "a",
               { href: "https://react-expensify-leslie.herokuapp.com" },
               "Expensify,",
-              ' '
+              " "
             ),
             _react2.default.createElement(
               "a",
               { href: "https://github.com/leslie-alldridge/react-redux-weather-api" },
               "NZ Weather,",
-              ' '
+              " "
             ),
             _react2.default.createElement(
               "a",
               { href: "https://mobilecartleslie.herokuapp.com/" },
-              "Cart Checkout Summary"
+              "Cart Checkout Summary,",
+              " "
+            ),
+            _react2.default.createElement(
+              "a",
+              { href: "https://cxtech.herokuapp.com/" },
+              "Feedback model (awaiting feedback) for my current team at work.",
+              " "
             )
           )
         ),
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: React is one of my strongest languages and I look forward to seeing how companies are using it, so I can learn how to scale my code and make highly reusable components from others."
+          "In summary: React is one of my strongest languages and I look forward to seeing how companies are using it, so I can improve my ability to create highly reusable components within an application that scales effectively. I've converted a few projects into Typescript and those conversions have opened my eyes to how useful Typescript really is."
         )
       )
     )
@@ -31829,7 +31836,7 @@ var Node = function Node() {
           _react2.default.createElement(
             "li",
             null,
-            "I'm currently looking into Go and Elixir to gain an understanding of the advantages/disadvantages of Node JS compared to other solutions."
+            "I'm currently looking into Go and Elixir to gain an understanding of the advantages/disadvantages of Node JS compared to other solutions. To spice things up in the meantime, I've been deploying Node JS applications in Docker containers."
           )
         ),
         _react2.default.createElement(
@@ -31880,13 +31887,13 @@ var Python = function Python() {
           "p",
           null,
           "At the moment, I'm learning the basics of Python. Machine learning is something I'm interested to delve into, so I can understand how exactly it works. I've created my own Jupyter Notebook",
-          ' ',
+          " ",
           _react2.default.createElement(
             "a",
             { href: "https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb" },
             "(here)"
           ),
-          ' ',
+          " ",
           "that uses machine learning to predict the share price of Apple tomorrow. As the data was imported a few months back, it will be slightly outdated. I hope to use Pandas and learn how to import CSV files, so the alrogithm can do predictions based off the data imported."
         ),
         _react2.default.createElement(
@@ -31920,7 +31927,7 @@ var Python = function Python() {
         _react2.default.createElement(
           "blockquote",
           null,
-          "In summary: I've started studying machine learning and Python to gain an understanding of how it works."
+          "In summary: I've started studying machine learning and Python to gain an understanding of how it works. Following this, I'll dive into Django and create some boilerplate projects I can build on top of."
         )
       )
     )

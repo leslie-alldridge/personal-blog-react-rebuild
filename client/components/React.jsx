@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Rct = () => {
   return (
@@ -28,22 +28,28 @@ const Rct = () => {
               skills to the next level.
             </li>
             <li>
-              Other projects built with React:{' '}
+              Other projects built with React:{" "}
               <a href="https://react-expensify-leslie.herokuapp.com">
-                Expensify,{' '}
+                Expensify,{" "}
               </a>
               <a href="https://github.com/leslie-alldridge/react-redux-weather-api">
-                NZ Weather,{' '}
+                NZ Weather,{" "}
               </a>
               <a href="https://mobilecartleslie.herokuapp.com/">
-                Cart Checkout Summary
+                Cart Checkout Summary,{" "}
+              </a>
+              <a href="https://cxtech.herokuapp.com/">
+                Feedback model (awaiting feedback) for my current team at work.{" "}
               </a>
             </li>
           </ul>
           <blockquote>
             In summary: React is one of my strongest languages and I look
-            forward to seeing how companies are using it, so I can learn how to
-            scale my code and make highly reusable components from others.
+            forward to seeing how companies are using it, so I can improve my
+            ability to create highly reusable components within an application
+            that scales effectively. I've converted a few projects into
+            Typescript and those conversions have opened my eyes to how useful
+            Typescript really is.
           </blockquote>
         </div>
       </div>
