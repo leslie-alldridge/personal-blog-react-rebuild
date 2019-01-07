@@ -1,5 +1,5 @@
-import React from 'react';
-import { Grid, Thumbnail, Button, Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Grid, Thumbnail, Button, Row, Col } from "react-bootstrap";
 
 export default class extends React.Component {
   state = {
@@ -123,7 +123,7 @@ export default class extends React.Component {
               <p>
                 Provides users access to motivational videos, images and quotes.
                 The ability to search by topic is also available. Currently
-                added to Xero's workspace and widely used by the team. <br />{' '}
+                added to Xero's workspace and widely used by the team. <br />{" "}
                 <br />
                 Enter <b>/motivateme</b> to get started!
               </p>
@@ -207,19 +207,19 @@ export default class extends React.Component {
               <br />
               <p>
                 I've learned how to use various Docker commands to create
-                images, host projects on Docker and deploy them to Heroku.{' '}
+                images, host projects on Docker and deploy them to Heroku.{" "}
                 <a
                   href="https://github.com/leslie-alldridge/mern-boilerplate"
                   target="_blank"
                 >
                   MERN Boilerplate
-                </a>{' '}
-                and{' '}
+                </a>{" "}
+                and{" "}
                 <a
                   href="https://github.com/leslie-alldridge/docker-node-mongo"
                   target="_blank"
                 >
-                  Task List{' '}
+                  Task List{" "}
                 </a>
                 are my recent projects.
               </p>
@@ -242,6 +242,70 @@ export default class extends React.Component {
                 something new. I covered the basics and created a small console
                 game to test my skills. C# is definitely something on my radar
                 of languages to learn and it's starting to feel natural.
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={6} md={4}>
+            <Thumbnail
+              id="port"
+              src="/oll.png"
+              alt="242x200"
+              href="https://olltrainer.herokuapp.com/"
+              target="_blank"
+            >
+              <h3>
+                <b>OLL Trainer</b>
+              </h3>
+              <br />
+              <p>
+                Learning Rubik's cubes is primarily PDF based. So I've created a
+                site to help me learn all of the OLL cases. This is currently in
+                development.
+              </p>
+            </Thumbnail>
+          </Col>
+        </Row>
+        {/* Fifth ROW */}
+        <Row>
+          <Col xs={6} md={4}>
+            <Thumbnail
+              id="port"
+              src="/hub.png"
+              alt="242x200"
+              href="http://cxtech-wlg.herokuapp.com/#/"
+              target="_blank"
+            >
+              <h3>
+                <b>Feedback App for CX-Tech</b>
+              </h3>
+              <br />
+              <p>
+                I created a prototype app for my current Team Leader and asked
+                for feedback on it. This later turned into an app I could build
+                for my team at work.{" "}
+                <a target="_blank" href="https://cxtech.herokuapp.com/">
+                  First prototype
+                </a>
+                .
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={6} md={4}>
+            <Thumbnail
+              id="port"
+              src="/auth.png"
+              alt="242x200"
+              href="https://github.com/leslie-alldridge/pwreset-auth"
+              target="_blank"
+            >
+              <h3>
+                <b>Passport Auth Boilerplate</b>
+              </h3>
+              <br />
+              <p>
+                During my time at EDA I noticed their Auth assignment needed
+                some love. I've rebuilt it and included password resets.
+                Currently working with them to turn it into an assignment.
               </p>
             </Thumbnail>
           </Col>

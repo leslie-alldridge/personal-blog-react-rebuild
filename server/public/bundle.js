@@ -31355,107 +31355,107 @@ var Hero = function (_React$Component) {
   }
 
   _createClass(Hero, [{
-    key: 'componentDidMount',
+    key: "componentDidMount",
     value: function componentDidMount() {
       this.updateWindowDimensions();
-      window.addEventListener('resize', this.updateWindowDimensions);
+      window.addEventListener("resize", this.updateWindowDimensions);
     }
   }, {
-    key: 'componentWillUnmount',
+    key: "componentWillUnmount",
     value: function componentWillUnmount() {
-      window.removeEventListener('resize', this.updateWindowDimensions);
+      window.removeEventListener("resize", this.updateWindowDimensions);
     }
   }, {
-    key: 'updateWindowDimensions',
+    key: "updateWindowDimensions",
     value: function updateWindowDimensions() {
       this.setState({ width: window.innerWidth, height: window.innerHeight });
       console.log(this.state);
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
-        { 'class': 'target', id: '0' },
+        "div",
+        { "class": "target", id: "0" },
         this.state.width && this.state.width > 1087 && _react2.default.createElement(
-          'div',
-          { id: 'para' },
+          "div",
+          { id: "para" },
           _react2.default.createElement(
-            'section',
-            { className: 'hero is-info is-fullheight' },
+            "section",
+            { className: "hero is-info is-fullheight" },
             _react2.default.createElement(
-              'div',
-              { className: 'hero-body' },
+              "div",
+              { className: "hero-body" },
               _react2.default.createElement(
-                'div',
-                { className: 'container' },
+                "div",
+                { className: "container" },
                 _react2.default.createElement(
-                  'h1',
+                  "h1",
                   {
-                    id: 'title',
-                    'data-aos': 'zoom-in',
-                    'data-aos-duration': '4000',
-                    className: 'title'
+                    id: "title",
+                    "data-aos": "zoom-in",
+                    "data-aos-duration": "4000",
+                    className: "title"
                   },
-                  'Leslie Alldridge'
+                  "Leslie Alldridge"
                 ),
                 _react2.default.createElement(
-                  'h2',
-                  { className: 'subtitle' },
-                  'Welcome to my online portfolio'
+                  "h2",
+                  { className: "subtitle" },
+                  "Welcome to my online portfolio"
                 ),
                 _react2.default.createElement(
-                  'h2',
-                  { className: 'subtitle' },
+                  "h2",
+                  { className: "subtitle" },
                   _react2.default.createElement(
-                    'div',
-                    { id: 'lax' },
+                    "div",
+                    { id: "lax" },
                     _react2.default.createElement(
-                      'ul',
+                      "ul",
                       null,
                       _react2.default.createElement(
                         _reactScrollParallax.Parallax,
-                        { offsetXMin: '420px', offsetXMax: '-820px' },
+                        { offsetXMin: "420px", offsetXMax: "-820px" },
                         _react2.default.createElement(
-                          'li',
+                          "li",
                           null,
-                          'Customer Focused'
+                          "Customer Focused"
                         )
                       ),
                       _react2.default.createElement(
                         _reactScrollParallax.Parallax,
-                        { offsetXMin: '-620px', offsetXMax: '620px' },
+                        { offsetXMin: "-620px", offsetXMax: "620px" },
                         _react2.default.createElement(
-                          'li',
+                          "li",
                           null,
-                          'Team Member'
+                          "Team Member"
                         )
                       ),
                       _react2.default.createElement(
                         _reactScrollParallax.Parallax,
-                        { offsetXMin: '-320px', offsetXMax: '920px' },
+                        { offsetXMin: "-320px", offsetXMax: "920px" },
                         _react2.default.createElement(
-                          'li',
+                          "li",
                           null,
-                          'Fast Learner'
+                          "Fast Learner"
                         )
                       ),
                       _react2.default.createElement(
                         _reactScrollParallax.Parallax,
-                        { offsetXMin: '620px', offsetXMax: '-620px' },
+                        { offsetXMin: "620px", offsetXMax: "-620px" },
                         _react2.default.createElement(
-                          'li',
+                          "li",
                           null,
-                          'Lateral Thinker'
+                          "Lateral Thinker"
                         )
                       ),
                       _react2.default.createElement(
                         _reactScrollParallax.Parallax,
-                        { offsetXMin: '-620px', offsetXMax: '620px' },
+                        { offsetXMin: "-620px", offsetXMax: "620px" },
                         _react2.default.createElement(
-                          'li',
+                          "li",
                           null,
-                          'Motivator'
+                          "Motivator"
                         )
                       )
                     )
@@ -31466,26 +31466,26 @@ var Hero = function (_React$Component) {
           )
         ),
         this.state.width && this.state.width < 1087 && _react2.default.createElement(
-          'div',
-          { id: 'para' },
+          "div",
+          { id: "para" },
           _react2.default.createElement(
-            'section',
-            { className: 'hero is-info is-fullheight' },
+            "section",
+            { className: "hero is-info is-fullheight" },
             _react2.default.createElement(
-              'div',
-              { className: 'hero-body' },
+              "div",
+              { className: "hero-body" },
               _react2.default.createElement(
-                'div',
-                { className: 'container' },
+                "div",
+                { className: "container" },
                 _react2.default.createElement(
-                  'h1',
+                  "h1",
                   null,
-                  'It appears that you may be browsing on mobile.'
+                  "It appears that you may be browsing on mobile."
                 ),
                 _react2.default.createElement(
-                  'a',
-                  { href: 'http://lesliemobile.herokuapp.com/' },
-                  'Please click here to see my mobile friendly portfolio.'
+                  "a",
+                  { target: "_blank", href: "http://lesliemobile.herokuapp.com/" },
+                  "Please click here to see my mobile friendly portfolio."
                 )
               )
             )
@@ -31752,25 +31752,31 @@ var Rct = function Rct() {
             " ",
             _react2.default.createElement(
               "a",
-              { href: "https://react-expensify-leslie.herokuapp.com" },
+              {
+                target: "_blank",
+                href: "https://react-expensify-leslie.herokuapp.com"
+              },
               "Expensify,",
               " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://github.com/leslie-alldridge/react-redux-weather-api" },
+              {
+                target: "_blank",
+                href: "https://github.com/leslie-alldridge/react-redux-weather-api"
+              },
               "NZ Weather,",
               " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://mobilecartleslie.herokuapp.com/" },
+              { target: "_blank", href: "https://mobilecartleslie.herokuapp.com/" },
               "Cart Checkout Summary,",
               " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://cxtech.herokuapp.com/" },
+              { target: "_blank", href: "https://cxtech.herokuapp.com/" },
               "Feedback model (awaiting feedback) for my current team at work.",
               " "
             )
@@ -31890,7 +31896,10 @@ var Python = function Python() {
           " ",
           _react2.default.createElement(
             "a",
-            { href: "https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb" },
+            {
+              target: "_blank",
+              href: "https://github.com/leslie-alldridge/python-linear-prediction-apple-share-price/blob/master/Apple%20Share%20Price%20-%20Linear%20Model.ipynb"
+            },
             "(here)"
           ),
           " ",
@@ -31995,36 +32004,51 @@ var JS = function JS() {
             "li",
             null,
             "Other projects built with Javascript:",
-            ' ',
+            " ",
             _react2.default.createElement(
               "a",
-              { href: "https://leslie-alldridge.github.io/conways-gol/" },
+              {
+                target: "_blank",
+                href: "https://leslie-alldridge.github.io/conways-gol/"
+              },
               "Conways GOL,",
-              ' '
+              " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://leslie-alldridge.github.io/Fun-with-Circles/" },
+              {
+                target: "_blank",
+                href: "https://leslie-alldridge.github.io/Fun-with-Circles/"
+              },
               "Fun With Circles,",
-              ' '
+              " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://leslie-alldridge.github.io/dom-pig-game/" },
+              {
+                target: "_blank",
+                href: "https://leslie-alldridge.github.io/dom-pig-game/"
+              },
               "Pig Game,",
-              ' '
+              " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://leslie-alldridge.github.io/budgify-leslie/" },
+              {
+                target: "_blank",
+                href: "https://leslie-alldridge.github.io/budgify-leslie/"
+              },
               "Budgeting App,",
-              ' '
+              " "
             ),
             _react2.default.createElement(
               "a",
-              { href: "https://leslie-alldridge.github.io/js-todo/" },
+              {
+                target: "_blank",
+                href: "https://leslie-alldridge.github.io/js-todo/"
+              },
               "Todo List,",
-              ' '
+              " "
             )
           )
         ),
@@ -32623,7 +32647,7 @@ var BlogDetail = function BlogDetail(props) {
         'data-aos-easing': 'ease-in-out',
         'data-aos-mirror': 'true',
         'data-aos-once': 'false',
-        'data-aos-anchor-placement': 'top-top ',
+        'data-aos-anchor-placement': 'top-top\r ',
         id: 'blogDetail'
       },
       _react2.default.createElement(_Carousel2.default, null)
@@ -32788,7 +32812,7 @@ var _class = function (_React$Component) {
   }
 
   _createClass(_class, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
         _reactBootstrap.Grid,
@@ -32802,26 +32826,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/new.png',
-                alt: '242x200',
-                href: 'https://backpack-tracker.herokuapp.com/',
-                target: '_blank'
+                id: "port",
+                src: "/new.png",
+                alt: "242x200",
+                href: "https://backpack-tracker.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'BackPack Tracker - Track multiple bags with ease'
+                  "BackPack Tracker - Track multiple bags with ease"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Keep track of your belongings today. A full stack application with authentication, internal API and databases. Built using mobile first design principles.'
+                "Keep track of your belongings today. A full stack application with authentication, internal API and databases. Built using mobile first design principles."
               )
             )
           ),
@@ -32831,26 +32855,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/gyst.png',
-                alt: '242x200',
-                href: 'http://gyst-dash.herokuapp.com/',
-                target: '_blank'
+                id: "port",
+                src: "/gyst.png",
+                alt: "242x200",
+                href: "http://gyst-dash.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'GYST - Custom Personal Dashboard'
+                  "GYST - Custom Personal Dashboard"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Final Group Project EDA. Fullstack with many API\'s (including Google and Spotify). Material UI, React Flex Grid, D3 Charts, sockets live chat and more.'
+                "Final Group Project EDA. Fullstack with many API's (including Google and Spotify). Material UI, React Flex Grid, D3 Charts, sockets live chat and more."
               )
             )
           ),
@@ -32860,26 +32884,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/void2.png',
-                alt: '242x200',
-                target: '_blank',
-                href: 'https://community.xero.com/business/discussion/262531'
+                id: "port",
+                src: "/void2.png",
+                alt: "242x200",
+                target: "_blank",
+                href: "https://community.xero.com/business/discussion/262531"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Void invoices in bulk using the Xero API V1'
+                  "Void invoices in bulk using the Xero API V1"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Inspired by a Xero Community feature request thread. Built using express-handlebars early in my career, new version released below.'
+                "Inspired by a Xero Community feature request thread. Built using express-handlebars early in my career, new version released below."
               )
             )
           )
@@ -32893,26 +32917,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/duplicate.png',
-                alt: '242x200',
-                href: 'https://v1invoicereducer.herokuapp.com/',
-                target: '_blank'
+                id: "port",
+                src: "/duplicate.png",
+                alt: "242x200",
+                href: "https://v1invoicereducer.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Xero Invoice Reducer V1'
+                  "Xero Invoice Reducer V1"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Create summarised invoices with ease. This can help customers who are over our recommended invoice limits, find their duplicates and replace it with a singular invoice. Uses Xero API and complex data structures.'
+                "Create summarised invoices with ease. This can help customers who are over our recommended invoice limits, find their duplicates and replace it with a singular invoice. Uses Xero API and complex data structures."
               )
             )
           ),
@@ -32922,26 +32946,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/cube.png',
-                alt: '242x200',
-                href: 'https://cubetimer102.herokuapp.com/',
-                target: '_blank'
+                id: "port",
+                src: "/cube.png",
+                alt: "242x200",
+                href: "https://cubetimer102.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Rubik\'s Cube Timer'
+                  "Rubik's Cube Timer"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Includes a database with graphs, historical times, sessions and bests. Consumes external API\'s. Constructed with mobile first deisgn.'
+                "Includes a database with graphs, historical times, sessions and bests. Consumes external API's. Constructed with mobile first deisgn."
               )
             )
           ),
@@ -32951,36 +32975,36 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/motiv.png',
-                alt: '242x200',
-                href: 'https://github.com/leslie-alldridge/slackbot-motivation',
-                target: '_blank'
+                id: "port",
+                src: "/motiv.png",
+                alt: "242x200",
+                href: "https://github.com/leslie-alldridge/slackbot-motivation",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Motivation Slack Bot'
+                  "Motivation Slack Bot"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Provides users access to motivational videos, images and quotes. The ability to search by topic is also available. Currently added to Xero\'s workspace and widely used by the team. ',
-                _react2.default.createElement('br', null),
-                ' ',
-                _react2.default.createElement('br', null),
-                'Enter ',
+                "Provides users access to motivational videos, images and quotes. The ability to search by topic is also available. Currently added to Xero's workspace and widely used by the team. ",
+                _react2.default.createElement("br", null),
+                " ",
+                _react2.default.createElement("br", null),
+                "Enter ",
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  '/motivateme'
+                  "/motivateme"
                 ),
-                ' to get started!'
+                " to get started!"
               )
             )
           )
@@ -32994,26 +33018,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/v2void.png',
-                alt: '242x200',
-                href: 'https://bulkvoidxero.herokuapp.com/',
-                target: '_blank'
+                id: "port",
+                src: "/v2void.png",
+                alt: "242x200",
+                href: "https://bulkvoidxero.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Xero Bulk Void Tool V2'
+                  "Xero Bulk Void Tool V2"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'I rebuilt my previous tool above as I felt it was outdated. Express handlebars works, but doesn\'t have the flexibility that React offers. Created with React, Material UI and API calls to Xero.'
+                "I rebuilt my previous tool above as I felt it was outdated. Express handlebars works, but doesn't have the flexibility that React offers. Created with React, Material UI and API calls to Xero."
               )
             )
           ),
@@ -33023,26 +33047,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/circles.png',
-                alt: '242x200',
-                href: 'https://leslie-alldridge.github.io/Fun-with-Circles/',
-                target: '_blank'
+                id: "port",
+                src: "/circles.png",
+                alt: "242x200",
+                href: "https://leslie-alldridge.github.io/Fun-with-Circles/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Fun With Circles'
+                  "Fun With Circles"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'A project I created early in my career. A simple HTML page with Paper.js and a smooth 60 frames per second animation. Endless fun popping bubbles.'
+                "A project I created early in my career. A simple HTML page with Paper.js and a smooth 60 frames per second animation. Endless fun popping bubbles."
               )
             )
           ),
@@ -33052,26 +33076,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/summary2.png',
-                alt: '242x200',
-                href: 'http://dailysummaryxero.herokuapp.com/',
-                target: '_blank'
+                id: "port",
+                src: "/summary2.png",
+                alt: "242x200",
+                href: "http://dailysummaryxero.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Xero Invoice Reducer V2'
+                  "Xero Invoice Reducer V2"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'I\'ve rebuilt my previous app above with React and Material UI. This enables mobile users to navigate the web page and create summarized invoices on the go with minimal effort.'
+                "I've rebuilt my previous app above with React and Material UI. This enables mobile users to navigate the web page and create summarized invoices on the go with minimal effort."
               )
             )
           )
@@ -33085,48 +33109,48 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/docker.png',
-                alt: '242x200',
-                href: 'https://github.com/leslie-alldridge/mern-boilerplate',
-                target: '_blank'
+                id: "port",
+                src: "/docker.png",
+                alt: "242x200",
+                href: "https://github.com/leslie-alldridge/mern-boilerplate",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'Docker Deploys & MERN Boilerplate'
+                  "Docker Deploys & MERN Boilerplate"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'I\'ve learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.',
-                ' ',
+                "I've learned how to use various Docker commands to create images, host projects on Docker and deploy them to Heroku.",
+                " ",
                 _react2.default.createElement(
-                  'a',
+                  "a",
                   {
-                    href: 'https://github.com/leslie-alldridge/mern-boilerplate',
-                    target: '_blank'
+                    href: "https://github.com/leslie-alldridge/mern-boilerplate",
+                    target: "_blank"
                   },
-                  'MERN Boilerplate'
+                  "MERN Boilerplate"
                 ),
-                ' ',
-                'and',
-                ' ',
+                " ",
+                "and",
+                " ",
                 _react2.default.createElement(
-                  'a',
+                  "a",
                   {
-                    href: 'https://github.com/leslie-alldridge/docker-node-mongo',
-                    target: '_blank'
+                    href: "https://github.com/leslie-alldridge/docker-node-mongo",
+                    target: "_blank"
                   },
-                  'Task List',
-                  ' '
+                  "Task List",
+                  " "
                 ),
-                'are my recent projects.'
+                "are my recent projects."
               )
             )
           ),
@@ -33136,26 +33160,26 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/numbergame2.png',
-                alt: '242x200',
-                href: 'https://github.com/leslie-alldridge/number-guesser',
-                target: '_blank'
+                id: "port",
+                src: "/numbergame2.png",
+                alt: "242x200",
+                href: "https://github.com/leslie-alldridge/number-guesser",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'C# Basics and Number Guessing Game'
+                  "C# Basics and Number Guessing Game"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'I decided to dive into C# and challenge myself to learn something new. I covered the basics and created a small console game to test my skills. C# is definitely something on my radar of languages to learn and it\'s starting to feel natural.'
+                "I decided to dive into C# and challenge myself to learn something new. I covered the basics and created a small console game to test my skills. C# is definitely something on my radar of languages to learn and it's starting to feel natural."
               )
             )
           ),
@@ -33165,26 +33189,124 @@ var _class = function (_React$Component) {
             _react2.default.createElement(
               _reactBootstrap.Thumbnail,
               {
-                id: 'port',
-                src: '/loading.png',
-                alt: '242x200',
-                href: '',
-                target: '_blank'
+                id: "port",
+                src: "/oll.png",
+                alt: "242x200",
+                href: "https://olltrainer.herokuapp.com/",
+                target: "_blank"
               },
               _react2.default.createElement(
-                'h3',
+                "h3",
                 null,
                 _react2.default.createElement(
-                  'b',
+                  "b",
                   null,
-                  'More coming soon'
+                  "OLL Trainer"
                 )
               ),
-              _react2.default.createElement('br', null),
+              _react2.default.createElement("br", null),
               _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'I\'m learning something new every day! Stay up to date by following me on GitHub or checking back here as my portfolio will be updated regularly.'
+                "Learning Rubik's cubes is primarily PDF based. So I've created a site to help me learn all of the OLL cases. This is currently in development."
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _reactBootstrap.Row,
+          null,
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { xs: 6, md: 4 },
+            _react2.default.createElement(
+              _reactBootstrap.Thumbnail,
+              {
+                id: "port",
+                src: "/hub.png",
+                alt: "242x200",
+                href: "http://cxtech-wlg.herokuapp.com/#/",
+                target: "_blank"
+              },
+              _react2.default.createElement(
+                "h3",
+                null,
+                _react2.default.createElement(
+                  "b",
+                  null,
+                  "Feedback App for CX-Tech"
+                )
+              ),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "p",
+                null,
+                "I created a prototype app for my current Team Leader and asked for feedback on it. This later turned into an app I could build for my team at work.",
+                " ",
+                _react2.default.createElement(
+                  "a",
+                  { target: "_blank", href: "https://cxtech.herokuapp.com/" },
+                  "First prototype"
+                ),
+                "."
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { xs: 6, md: 4 },
+            _react2.default.createElement(
+              _reactBootstrap.Thumbnail,
+              {
+                id: "port",
+                src: "/auth.png",
+                alt: "242x200",
+                href: "https://github.com/leslie-alldridge/pwreset-auth",
+                target: "_blank"
+              },
+              _react2.default.createElement(
+                "h3",
+                null,
+                _react2.default.createElement(
+                  "b",
+                  null,
+                  "Passport Auth Boilerplate"
+                )
+              ),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "p",
+                null,
+                "During my time at EDA I noticed their Auth assignment needed some love. I've rebuilt it and included password resets. Currently working with them to turn it into an assignment."
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactBootstrap.Col,
+            { xs: 6, md: 4 },
+            _react2.default.createElement(
+              _reactBootstrap.Thumbnail,
+              {
+                id: "port",
+                src: "/loading.png",
+                alt: "242x200",
+                href: "",
+                target: "_blank"
+              },
+              _react2.default.createElement(
+                "h3",
+                null,
+                _react2.default.createElement(
+                  "b",
+                  null,
+                  "More coming soon"
+                )
+              ),
+              _react2.default.createElement("br", null),
+              _react2.default.createElement(
+                "p",
+                null,
+                "I'm learning something new every day! Stay up to date by following me on GitHub or checking back here as my portfolio will be updated regularly."
               )
             )
           )
@@ -44283,7 +44405,10 @@ var Blog = function Blog() {
       "I've included more details about my reflections in the readme over on GitHub (",
       _react2.default.createElement(
         "a",
-        { href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild" },
+        {
+          target: "_blank",
+          href: "https://github.com/leslie-alldridge/personal-blog-react-rebuild"
+        },
         "here"
       ),
       ") This website is powered by the following technologies:",
@@ -44367,33 +44492,38 @@ var Footer = function Footer() {
           "p",
           null,
           "Portfolio by Leslie Alldridge - 2018. Created with",
-          ' ',
+          " ",
           _react2.default.createElement(
             "a",
-            { href: "https://reactjs.org/" },
+            { target: "_blank", href: "https://reactjs.org/" },
             "React"
           ),
           ",",
-          ' ',
+          " ",
           _react2.default.createElement(
             "a",
-            { href: "https://www.npmjs.com/package/react-scroll-parallax" },
+            {
+              target: "_blank",
+              href: "https://www.npmjs.com/package/react-scroll-parallax"
+            },
             "React Parallax"
           ),
-          ", ",
+          ",",
+          " ",
           _react2.default.createElement(
             "a",
-            { href: "https://bulma.io/" },
+            { target: "_blank", href: "https://bulma.io/" },
             "Bulma"
           ),
           ",",
-          ' ',
+          " ",
           _react2.default.createElement(
             "a",
-            { href: "https://react-bootstrap.github.io/" },
-            "React-Bootstrap, "
+            { target: "_blank", href: "https://react-bootstrap.github.io/" },
+            "React-Bootstrap,",
+            " "
           ),
-          ' ',
+          " ",
           "Node JS and CSS3."
         )
       )
